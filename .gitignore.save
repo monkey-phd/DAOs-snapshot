@@ -1,0 +1,43 @@
+# Ignore all .DS_Store files (common on macOS)
+.DS_Store
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Ignore virtual environment directories
+venv/
+env/
+
+# Ignore system-specific files
+.vscode/
+.idea/
+
+# Ignore Archived folder due to file size
+Archived/
+# Ignore all .DS_Store files (common on macOS)
+.DS_Store
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Ignore virtual environment directories
+venv/
+env/
+
+# Ignore system-specific files
+.vscode/
+.idea/
+
+# Ignore Archived folder due to file size
+Archived/
+
+
+

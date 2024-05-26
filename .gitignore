@@ -16,9 +16,7 @@ env/
 .vscode/
 .idea/
 
-# Ignore exported files and raw data
-docs/
-data_room/
+# Ignore Archived and data_room folders due to file size
 Archived/
-
+data_room/
 
