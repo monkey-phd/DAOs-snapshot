@@ -20,3 +20,10 @@ env/
 Archived/
 data_room/
 
+# Ignore R history files
+.Rhistory
+
+# Ignore backup gitignore files
+.gitignore.save
+
+
