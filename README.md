@@ -4,7 +4,6 @@
 This project contains the code for analyzing data related to Decentralized Autonomous Organizations (DAOs).
 
 ## Repository Structure
-- `src/`: Contains the source code.
 - `notebooks/`: Contains Jupyter notebooks for data processing and analysis.
 - `docs/`: Contains exported files from the scripts.
 - `data/`: Placeholder for small example data files.
