@@ -10,7 +10,7 @@ This project analyzes data related to Decentralized Autonomous Organizations (DA
   - `3_import_voter.py`: Script to process voter data.
   - `4_import_proposals.py`: Script to import proposal data.
   - `5_import_votes.py`: Script to process vote data.
-  - `5a_import_votes_and_merge.py`: Script to merge vote data with additional datasets.
+  - `6_import_and_merge.py`: Script to merge vote data with additional datasets.
 
 - **Stata Files**:
   - `0_data_prep_iter.do`: Prepares data iteratively for analysis.
