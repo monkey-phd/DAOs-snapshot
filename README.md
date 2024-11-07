@@ -1,4 +1,4 @@
-# Empirical Paper on DAOs
+# Snapshot DAOs
 
 ## Project Overview
 This project contains the code for analyzing data related to Decentralized Autonomous Organizations (DAOs).
