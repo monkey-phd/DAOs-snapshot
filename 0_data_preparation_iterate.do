@@ -707,7 +707,7 @@ label variable diff_days_last_proposal_all "Days Since Last Proposal (All)"
 label variable diff_days_last_vote_all "Days Since Last Vote (All)"
 label variable voter_space_counter "Voter Space Counter"
 
-save "$dao_folder/processed/panel_almost_full.dta", replace
+save "$dao_folder/processed/panel_almost_full_helge.dta", replace
 
 * Store the end time for the entire process
 scalar end_time = c(current_time)

@@ -97,7 +97,7 @@ def calculate_vote_alignment(data):
                     if not pd.isna(choice)
                 ]
 
-        if voting_type == "basic":
+        if voting_type == "basic" or voting_type == "single-choice-abstain":
             if not choice_dict:
                 Misaligned.append(0)
                 Not_Determined.append(1)
