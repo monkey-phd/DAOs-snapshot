@@ -107,83 +107,56 @@ merge 1:1 space_id space_name proposal_id using "`proposal_voter_agg'", ///
 * Save the proposal-level dataset for further analysis
 save "$dao_folder/processed/temp_proposal_level_data.dta", replace
 
-
 *----------------------------------------------
-* Step 6: CLR Transformation (compositional nature of topic proportions) and Aggregate Proposal Topics to DAO Level
+* Step 6: CLR Transformation and Clustering Analysis
 *----------------------------------------------
-* Load the proposal-level dataset
 use "$dao_folder/processed/temp_proposal_level_data.dta", clear
 
-* Step 1: Log-transform each topic variable directly
+* CLR Transformation
 foreach var of varlist topic_0-topic_19 {
     gen log_`var' = log(`var')
 }
-
-* Step 2: log-transformed values across rows to get the total log value
 egen log_sum = rowtotal(log_topic_*)
-
-* Step 3:  geometric mean by exponentiating the average log value
 gen geom_mean = exp(log_sum / 20)
-
-* Apply CLR transformation to each topic variable
 foreach var of varlist topic_0-topic_19 {
     gen clr_`var' = log(`var'/geom_mean)
 }
-
-* Drop intermediate variables
 drop log_* log_sum geom_mean
 
-* Collapse to DAO level by taking the mean of CLR-transformed topics across proposals
+* Collapse to DAO level
 collapse (mean) clr_topic_*, by(space_id space_name)
 
-*----------------------------------------------
-* Step 4: Identifying Optimal Number of Clusters
-*----------------------------------------------
+* Clear any existing cluster definitions
+cluster drop _all
 
 *---------
-* 4.1 Hierarchical clustering and CH statistic
+* 6.1 Hierarchical clustering
 *---------
 cluster ward clr_topic_*, name(cluster_solution)
 cluster stop cluster_solution, rule(calinski)
 cluster dendrogram cluster_solution, cutnumber(15) showcount
 
 *---------
-* 4.2 K-means clustering and elbow plot
+* 6.2 K-means clustering and elbow plot
 *---------
 preserve
-
-* Save original data
 tempfile original_data
 save `original_data'
 
-* Create dataset for elbow plot
+* Create and fill elbow plot data
 clear
 set obs 9
 gen K = _n + 1
 gen CH_stat = .
-
-* Run kmeans and store CH statistics
-forvalues k = 2/10 {
-    * Run kmeans
-    quietly use `original_data', clear
-    quietly cluster kmeans clr_topic_0-clr_topic_19, k(`k') name(kmeans`k')
-    cluster stop kmeans`k', rule(calinski)
-    
-}
-	* known values
-	clear
-	set obs 9
-	gen K = _n + 1
-	gen CH_stat = .
-	replace CH_stat = 54.34 if K == 2
-	replace CH_stat = 37.49 if K == 3
-	replace CH_stat = 28.68 if K == 4
-	replace CH_stat = 25.77 if K == 5
-	replace CH_stat = 22.03 if K == 6
-	replace CH_stat = 19.98 if K == 7
-	replace CH_stat = 19.50 if K == 8
-	replace CH_stat = 15.83 if K == 9
-	replace CH_stat = 16.38 if K == 10
+replace CH_stat = 54.34 if K == 2
+replace CH_stat = 37.49 if K == 3
+replace CH_stat = 28.68 if K == 4
+replace CH_stat = 25.77 if K == 5
+replace CH_stat = 22.03 if K == 6
+replace CH_stat = 19.98 if K == 7
+replace CH_stat = 19.50 if K == 8
+replace CH_stat = 15.83 if K == 9
+replace CH_stat = 16.38 if K == 10
 
 * Create elbow plot
 twoway connected CH_stat K, ///
@@ -195,93 +168,78 @@ twoway connected CH_stat K, ///
 
 restore
 
-*----------------------------------------------
-* Step 9: Run Final K-means Clustering with Optimal K and Assign Labels
-*----------------------------------------------
-
-* Set the optimal number of clusters based on the elbow plot (e.g., 3)
-local optimal_k = 3
-
-* Reload the original data with CLR-transformed variables
+*---------
+* 6.3 Final K-means clustering
+*---------
 use `original_data', clear
-
-* Run final k-means clustering with optimal_k clusters on CLR-transformed variables
-cluster kmeans clr_topic_0 - clr_topic_19, k(`optimal_k') name(final_kmeans)
-
-* The cluster assignments are stored in 'final_kmeans'
-* Rename 'final_kmeans' to 'dao_cluster' for clarity
+local optimal_k = 3
+cluster kmeans clr_topic_* , k(`optimal_k') name(final_kmeans)
 rename final_kmeans dao_cluster
 
-* Define labels for clusters based on interpretation
+* Label clusters
 label define cluster_labels ///
     1 "Financial and DeFi DAOs" ///
     2 "Gaming, NFTs, and Metaverse DAOs" ///
     3 "Technical and Development-Focused DAOs"
-
-* Assign labels to 'dao_cluster' variable
-label values dao_cluster cluster_labels
-*/
-* Verify the cluster assignments
-tabulate dao_cluster
-
-*----------------------------------------------
-* Step 10: Save the Final Clustered DAO-Level Data
-*----------------------------------------------
-
-* Save the dataset with DAO-level clusters
-save "$dao_folder/processed/dao_level_clustered.dta", replace
-
-*----------------------------------------------
-* Step 11: Calculate Average CLR-Transformed Topic Scores by Cluster
-*----------------------------------------------
-
-* Reload the clustered DAO-level data
-use "$dao_folder/processed/dao_level_clustered.dta", clear
-
-* Calculate average CLR-transformed topic scores by cluster
-collapse (mean) clr_topic_0 - clr_topic_19, by(dao_cluster)
-
-* View the average CLR-transformed topic scores for each cluster
-list dao_cluster clr_topic_0 - clr_topic_19
-
-
-*----------------------------------------------
-* Step 9: Assign Labels to Clusters
-*----------------------------------------------
-
-* Define labels for clusters based on interpretation
-label define cluster_labels ///
-    1 "Financial and DeFi DAOs" ///
-    2 "Gaming, NFTs, and Metaverse DAOs" ///
-    3 "Technical and Development-Focused DAOs"
-
-* Assign labels to 'dao_cluster' variable
 label values dao_cluster cluster_labels
 
-* Verify the cluster assignments
+* Verify cluster assignments
 tabulate dao_cluster
 
-*----------------------------------------------
-* Step 10: Save the Final Clustered DAO-Level Data
-*----------------------------------------------
-
-* Save the dataset with DAO-level clusters
+* Save results
 save "$dao_folder/processed/dao_level_clustered.dta", replace
 
+* Calculate and display cluster averages
+preserve
+collapse (mean) clr_topic_* , by(dao_cluster)
+list dao_cluster clr_topic_*
+restore
+
+* use "$dao_folder/processed/dao_level_clustered.dta"
+
 *----------------------------------------------
-* Step 11: Calculate Average Topic Scores by Cluster
+* 7. Merge DAO Clusters with Panel Data
 *----------------------------------------------
 
-* Reload the clustered DAO-level data
-use "$dao_folder/processed/dao_level_clustered.dta", clear
+* Load the main panel dataset
+use "$dao_folder/processed/panel_almost_full.dta", clear
 
-* Calculate average mean_topic scores by cluster
-collapse (mean) clr_topic_0 - clr_topic_19, by(dao_cluster)
+* Preserve to count DAOs before merge
+preserve 
+    bysort space_id: keep if _n == 1
+    count
+    local n_daos = r(N)
+restore
 
-* View the average topic scores for each cluster
-list dao_cluster clr_topic_0 - clr_topic_19
+* Load and prepare the cluster data
+preserve
+    use "$dao_folder/processed/dao_level_clustered.dta", clear
+    
+    * Keep only necessary variables for the merge
+    keep space_id dao_cluster
+    
+    * Count unique DAOs in cluster data
+    count
+    local n_cluster_daos = r(N)
+    
+    * Save as temporary file
+    tempfile dao_clusters
+    save `dao_clusters'
+restore
 
+* Perform the merge
+merge m:1 space_id using `dao_clusters', keep(match) nogenerate
 
+* Verify the merge
+count if dao_cluster == .
+display "Number of DAOs before merge: `n_daos'"
+display "Number of DAOs with clusters: `n_cluster_daos'"
+
+* Display the distribution of clusters
+tabulate dao_cluster
+
+* Save the merged dataset
+save "$dao_folder/processed/panel_almost_full.dta", replace
 
 /*
 
