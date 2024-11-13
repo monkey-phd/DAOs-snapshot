@@ -35,7 +35,7 @@ reghdfe  voting_6m ///
 	topic_1 topic_2 topic_3 topic_4 topic_5 topic_6 topic_7 topic_8 ///
 	topic_9 topic_10 topic_11 topic_12 topic_13 topic_14 topic_15 topic_16 ///
 	topic_17 topic_18 topic_19 ///
-	relative_voting_power_act if space_id >= 0 & space_id < 20, /// & prps_delegate == 0
+	relative_voting_power_act if end_6m == 0 & own_choice_tied == 0 & space_id >= 0 & space_id < 20 & dao_cluster == 1, /// dao_cluster 1,2,3
 	vce(cluster voter_space_id)	
 estimates store m1, title("S1")	
 
@@ -66,7 +66,7 @@ reghdfe voting_6m ///
 	topic_1 topic_2 topic_3 topic_4 topic_5 topic_6 topic_7 topic_8 ///
 	topic_9 topic_10 topic_11 topic_12 topic_13 topic_14 topic_15 topic_16 ///
 	topic_17 topic_18 topic_19 ///
-	relative_voting_power_act if end_6m == 0 & own_choice_tied == 0 & space_id >= 20 & space_id < 57, /// & prps_delegate == 0
+	relative_voting_power_act if end_6m == 0 & own_choice_tied == 0 & space_id >= 20 & space_id < 57 & dao_cluster == 1, /// dao_cluster 1,2,3
 	absorb(voter_id year_month_num) vce(cluster voter_space_id)	
 estimates store m2, title("S2")	
 
@@ -97,7 +97,7 @@ reghdfe voting_6m ///
 	topic_1 topic_2 topic_3 topic_4 topic_5 topic_6 topic_7 topic_8 ///
 	topic_9 topic_10 topic_11 topic_12 topic_13 topic_14 topic_15 topic_16 ///
 	topic_17 topic_18 topic_19 ///
-	relative_voting_power_act if end_6m == 0 & own_choice_tied == 0 & space_id >= 58 & space_id < 109, /// & prps_delegate == 0
+	relative_voting_power_act if end_6m == 0 & own_choice_tied == 0 & space_id >= 58 & space_id < 109 & dao_cluster == 1, /// dao_cluster 1,2,3
 	absorb(voter_id year_month_num) vce(cluster voter_space_id)	
 estimates store m3, title("S3")	
 
@@ -128,7 +128,7 @@ reghdfe voting_6m ///
 	topic_1 topic_2 topic_3 topic_4 topic_5 topic_6 topic_7 topic_8 ///
 	topic_9 topic_10 topic_11 topic_12 topic_13 topic_14 topic_15 topic_16 ///
 	topic_17 topic_18 topic_19 ///
-	relative_voting_power_act if end_6m == 0 & own_choice_tied == 0 & space_id >= 110 & space_id < 180, /// & prps_delegate == 0
+	relative_voting_power_act if end_6m == 0 & own_choice_tied == 0 & space_id >= 110 & space_id < 180 & dao_cluster == 1, /// dao_cluster 1,2,3
 	absorb(voter_id year_month_num) vce(cluster voter_space_id)	
 estimates store m4, title("S4")	
 
@@ -159,7 +159,7 @@ reghdfe voting_6m ///
 	topic_1 topic_2 topic_3 topic_4 topic_5 topic_6 topic_7 topic_8 ///
 	topic_9 topic_10 topic_11 topic_12 topic_13 topic_14 topic_15 topic_16 ///
 	topic_17 topic_18 topic_19 ///
-	relative_voting_power_act if end_6m == 0 & own_choice_tied == 0 & space_id >= 180 & space_id < 225, /// & prps_delegate == 0,
+	relative_voting_power_act if end_6m == 0 & own_choice_tied == 0 & space_id >= 180 & space_id < 225 & dao_cluster == 1, /// dao_cluster 1,2,3
 	absorb(voter_id year_month_num) vce(cluster voter_space_id)	
 estimates store m5, title("S5")	
 
