@@ -2,6 +2,9 @@
 import pandas as pd
 import json
 
+# working directory to the parent directory of the script's location
+os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 # Load the users CSV file into a DataFrame
 users = pd.read_csv("input/snapshot-hub-mainnet-2023-08-30-users_0.csv")
 

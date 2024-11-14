@@ -4,6 +4,9 @@ import pandas as pd
 import numpy as np
 import json
 
+# working directory to the parent directory of the script's location
+os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 # Load the CSV file
 spaces = pd.read_csv("input/snapshot-hub-mainnet-2023-08-30-spaces_0.csv")
 

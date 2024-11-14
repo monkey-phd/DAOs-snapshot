@@ -4,6 +4,10 @@ import pandas as pd
 import numpy as np
 import json
 
+# working directory to the parent directory of the script's location
+os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+# Now your original line will work as expected
 props = pd.read_csv(
     "input/snapshot-hub-mainnet-2023-08-30-proposals_0.csv", low_memory=False
 )
