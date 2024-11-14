@@ -4,6 +4,9 @@ import numpy as np
 import json
 import ast
 
+# working directory to the parent directory of the script's location
+os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 
 # Function to determine each voter's alignment with winning choice
 def calculate_vote_alignment(data):
