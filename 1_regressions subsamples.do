@@ -168,7 +168,7 @@ estfe m*, labels(voter_id "Voter fixed effects" year_month_num 	///
 	"Month fixed effects" proposal_id "Proposal fixed effects") 
 */
 
-esttab m1 m3 m2 m4 m5 using "$dao_folder/results/tables/subsamples_2d.rtf", ///
+esttab m1 m3 m2 m4 m5 using "$dao_folder/results/tables/full_subsamples.rtf", ///
 	cells(b(fmt(%9.3f)) se(par) p(fmt(3) par([ ]))) ///
 	stats(r2 r2_within N, fmt(%9.3f %9.3f %9.0gc) ///
 	labels("R-squared overall" "R-squared within" "Observations")) ///
