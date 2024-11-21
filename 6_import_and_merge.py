@@ -296,6 +296,8 @@ def calculate_own_margin(data):
 
 
 # Majority vs power winners calculation functions
+
+
 def parse_vote_choice(choice, vote_type):
     """Parse vote choice into a dictionary {choice: weight} based on the vote type."""
     if pd.isna(choice) or not choice:
