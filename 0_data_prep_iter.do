@@ -286,7 +286,7 @@ foreach dao in `daos' {
     * Set time-series structure
     tsset voter_space_id proposal_space_counter
 
-    /* If you experience issues, uncomment. Handle large vote (e.g., cakevote.eth)
+    * If you experience issues, uncomment. Handle large vote (e.g., cakevote.eth)
     if space == "cakevote.eth" {
         gen dummy = 1
         by voter_id, sort: egen voter_total = total(dummy)
@@ -300,7 +300,6 @@ foreach dao in `daos' {
         drop if proposal_total <= 10 
         drop dummy voter_total voter_first proposal_total proposal_first 
     }
-    */
 
     * Drop temporary variables
     qui drop newv last_voter_space already_voting_last_proposal proposal_start_datetime
