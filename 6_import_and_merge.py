@@ -445,6 +445,7 @@ def calculate_winners_for_proposal(proposal_group):
     # Determine the power-weighted winner (choice with the maximum weighted voting power)
     power_winner, total_vp = max(power_sums.items(), key=lambda x: x[1])
     is_majority_win = majority_choice == power_winner
+    is_majority_win = 1 if is_majority_win else 0
 
     return pd.Series(
         {
@@ -571,6 +572,7 @@ for space in verified_dao_spaces:
         "prps_len",
         "prps_link",
         "prps_stub",
+        "privacy",
         "topic_0",
         "topic_1",
         "topic_2",

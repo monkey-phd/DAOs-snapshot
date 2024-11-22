@@ -7,7 +7,7 @@ import json
 # working directory to the parent directory of the script's location
 os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-# Now your original line will work as expected
+# load propos
 props = pd.read_csv(
     "input/snapshot-hub-mainnet-2023-08-30-proposals_0.csv", low_memory=False
 )
@@ -385,6 +385,9 @@ props.rename(columns={"end": "prps_end"}, inplace=True)
 props["prps_start"] = pd.to_datetime(props["prps_start"], unit="s")
 props["prps_end"] = pd.to_datetime(props["prps_end"], unit="s")
 
+# privacy column contains 'shutter' if privacy is enabled
+props["privacy"] = props["privacy"].map({"shutter": 1}).fillna(0).astype(int)
+
 print(props.columns)
 
 # %%
@@ -414,6 +417,7 @@ props = props[
         "prps_len",
         "prps_link",
         "prps_stub",
+        "privacy",
         "topic_0",
         "topic_1",
         "topic_2",
@@ -442,3 +446,5 @@ props.to_csv("processed/proposals.csv", index=False)
 
 # Save the DataFrame as a pickle file
 props.to_pickle("processed/proposals_final.pkl")
+
+props = pd.read_pickle("processed/proposals_final.pkl")
