@@ -1,6 +1,9 @@
 # Import relevant libraries
 import pandas as pd
 
+# working directory to the parent directory of the script's location
+os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 # Load the CSV file
 follows = pd.read_csv("input/snapshot-hub-mainnet-2023-08-30-follows_0.csv")
 

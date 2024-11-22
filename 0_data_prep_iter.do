@@ -30,7 +30,7 @@ set linesize 200
 *------------------------------------------------------*
 
 * Load the master list containing DAO names
-import delimited "$dao_folder/input/verified-spaces_almost_full.csv", varnames(1) clear 
+import delimited "$dao_folder/input/verified-spaces.csv", varnames(1) clear /// before, verified-spaces_almost_full.csv
 
 * Extract DAO names into a local macro
 levelsof space_name, local(daos)
@@ -194,9 +194,9 @@ foreach dao in `daos' {
     qui replace type_weighted = 1 if type == "weighted"
     qui replace type_numeric = 6 if type == "weighted"
 	
-	/// qui gen type_sc_abstain = 0
-	/// qui replace type_sc_abstain = 1 if type == "single-choice-abstain"
-	/// qui replace type_numeric = 7 if type == "single-choice-abstain"
+	qui gen type_sc_abstain = 0
+	qui replace type_sc_abstain = 1 if type == "single-choice-abstain"
+	qui replace type_numeric = 7 if type == "single-choice-abstain"
     
 	* Rename votes variable
     qui rename votes total_votes
@@ -259,8 +259,9 @@ foreach dao in `daos' {
         vote_datetime prps_choices_bin prps_choices met_quorum own_choice_tied ///
         vote_date dao_creation_date proposal_end_datetime proposal_end_date ///
         voting_period_length month year year_month_num type_numeric ///
-        type_approval type_basic type_quadratic type_ranked_choice /// type_sc_abstain
-        type_single_choice type_weighted  { /// prps_delegate
+        type_approval type_basic type_quadratic type_ranked_choice type_sc_abstain ///
+        type_single_choice type_weighted /// prps_delegate
+        {
         qui replace `v' = . if newv == 1 
     }
 
@@ -285,7 +286,7 @@ foreach dao in `daos' {
     * Set time-series structure
     tsset voter_space_id proposal_space_counter
 
-    * Handle large datasets (e.g., cakevote.eth)
+    * If you experience issues, uncomment. Handle large vote (e.g., cakevote.eth)
     if space == "cakevote.eth" {
         gen dummy = 1
         by voter_id, sort: egen voter_total = total(dummy)
@@ -380,7 +381,7 @@ foreach dao in `daos' {
 
     * Fill in proposal-related variables
     foreach x of varlist proposal_space_id scores_total total_votes type_approval type_basic met_quorum /// 
-        type_quadratic type_ranked_choice type_single_choice type_weighted /// type_sc_abstain
+        type_quadratic type_ranked_choice type_single_choice type_weighted type_sc_abstain /// 
         year month year_month_num type_numeric proposal_end_datetime ///
         proposal_end_date topic_0 topic_1 topic_2 topic_3 prps_choices_bin prps_choices prps_len ///
         voting_period_length prps_link prps_stub prps_rel_quorum prps_quorum_bin ///
@@ -716,7 +717,7 @@ label variable plugin_safesnap "Safesnap On-chain"
 label variable strategy_delegation "Strategy Delegation"
 
 * Save the final dataset
-save "$dao_folder/processed/panel_almost_full.dta", replace
+save "$dao_folder/processed/panel_full.dta", replace
 
 *------------------------------------------------------*
 * 9. End of Script and Clean Up

@@ -4,6 +4,9 @@ import numpy as np
 import json
 import ast
 
+# working directory to the parent directory of the script's location
+os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 
 # Function to determine each voter's alignment with winning choice
 def calculate_vote_alignment(data):
@@ -292,6 +295,169 @@ def calculate_own_margin(data):
     return own_margin_list
 
 
+# Majority vs power winners calculation functions
+
+
+def parse_vote_choice(choice, vote_type):
+    """Parse vote choice into a dictionary {choice: weight} based on the vote type."""
+    if pd.isna(choice) or not choice:
+        return {}
+
+    # Convert numeric single choices directly
+    if isinstance(choice, (int, float)):
+        return {str(int(choice)): 1.0}
+
+    # For string inputs:
+    if not isinstance(choice, str):
+        return {}
+
+    if vote_type in ["basic", "single-choice", "single-choice-abstain"]:
+        # Single-choice or basic (including single-choice-abstain):
+        # The user selects exactly one option
+        try:
+            selected_choice = int(float(choice))
+            return {str(selected_choice): 1.0}
+        except ValueError:
+            return {}
+
+    elif vote_type in ["weighted", "quadratic"]:
+        # Weighted and quadratic votes: JSON dictionary format
+        # The dictionary stores allocated weights or quadratic votes for each choice
+        if choice.startswith("{"):
+            try:
+                weights = json.loads(choice)
+                if isinstance(weights, dict):
+                    # Convert all keys to strings and values to floats
+                    return {
+                        str(k): float(v) for k, v in weights.items() if float(v) > 0
+                    }
+            except:
+                return {}
+        return {}
+
+    elif vote_type == "approval":
+        # Approval voting: the user can approve multiple choices equally
+        if choice.startswith("["):
+            try:
+                approved_choices = json.loads(choice)
+                if isinstance(approved_choices, list) and approved_choices:
+                    # Each approved choice gets an equal share of weight out of 1
+                    weight_per_choice = 1.0 / len(approved_choices)
+                    return {
+                        str(int(c)): weight_per_choice
+                        for c in approved_choices
+                        if not pd.isna(c)
+                    }
+            except:
+                return {}
+        return {}
+
+    elif vote_type == "ranked-choice":
+        # Ranked-choice: the user provides an ordered list of preferences
+        if choice.startswith("["):
+            try:
+                ranked_choices = json.loads(choice)
+                if isinstance(ranked_choices, list) and ranked_choices:
+                    # Assign descending weights by rank (top choice = n, second = n-1, etc.)
+                    n = len(ranked_choices)
+                    return {
+                        str(int(ch)): float(n - i)
+                        for i, ch in enumerate(ranked_choices)
+                        if not pd.isna(ch)
+                    }
+            except:
+                return {}
+        return {}
+
+    return {}
+
+
+def calculate_winners_for_proposal(proposal_group):
+    """Calculate majority and power-weighted winners for a proposal based on vote type."""
+    vote_type = proposal_group["type"].iloc[0]
+    raw_vote_counts = {}
+    power_sums = {}
+
+    for _, vote in proposal_group.iterrows():
+        user_vp = vote.get("vp", 0.0)
+        choice_weights = parse_vote_choice(vote.get("choice"), vote_type)
+
+        # Sum of all weights allocated by the user
+        total_user_weight = sum(choice_weights.values())
+
+        if total_user_weight <= 0:
+            continue
+
+        # Each user contributes to raw votes and power sums based on their choices' proportions
+        for ch, wt in choice_weights.items():
+            # For raw vote count:
+            if vote_type in ["weighted", "quadratic", "ranked-choice", "approval"]:
+                # Weighted or Quadratic or ranked-choice or approval scenario
+                raw_vote_increment = wt
+            else:
+                # Single-Choice, Basic, Single-Choice-Abstain:
+                fraction = wt / total_user_weight if total_user_weight > 0 else 0
+                raw_vote_increment = fraction
+
+            raw_vote_counts[ch] = raw_vote_counts.get(ch, 0.0) + raw_vote_increment
+
+            # For power sums:
+            if total_user_weight > 0:
+                if vote_type in ["weighted", "quadratic"]:
+                    # Weighted or quadratic scenario
+                    power_contribution = user_vp * (wt / total_user_weight)
+                else:
+                    # For other voting types, distribute user power proportionally
+                    fraction = wt / total_user_weight
+                    power_contribution = user_vp * fraction
+            else:
+                power_contribution = 0.0
+
+            power_sums[ch] = power_sums.get(ch, 0.0) + power_contribution
+
+    if not raw_vote_counts:
+        # If no votes or invalid data, return default values
+        return pd.Series(
+            {
+                "majority_choice": None,
+                "majority_votes": 0.0,
+                "power_winner": None,
+                "total_vp": 0.0,
+                "is_majority_win": None,
+            }
+        )
+
+    # Determine the majority winner (choice with the maximum raw vote count)
+    majority_choice, majority_votes = max(raw_vote_counts.items(), key=lambda x: x[1])
+
+    if not power_sums:
+        # If no valid power sums data
+        return pd.Series(
+            {
+                "majority_choice": majority_choice,
+                "majority_votes": majority_votes,
+                "power_winner": None,
+                "total_vp": 0.0,
+                "is_majority_win": None,
+            }
+        )
+
+    # Determine the power-weighted winner (choice with the maximum weighted voting power)
+    power_winner, total_vp = max(power_sums.items(), key=lambda x: x[1])
+    is_majority_win = majority_choice == power_winner
+    is_majority_win = 1 if is_majority_win else 0
+
+    return pd.Series(
+        {
+            "majority_choice": majority_choice,
+            "majority_votes": majority_votes,
+            "power_winner": power_winner,
+            "total_vp": total_vp,
+            "is_majority_win": is_majority_win,
+        }
+    )
+
+
 proposals = pd.read_pickle("processed/proposals_final.pkl")
 spaces = pd.read_pickle("processed/spaces.pkl")
 follows = pd.read_pickle("processed/follows.pkl")
@@ -309,6 +475,16 @@ for space in verified_dao_spaces:
     if max_rows_votes == 0:
         print("No votes in this DAO ", space)
         continue
+
+    result_comparison = (
+        votes_small.groupby("proposal")
+        .apply(calculate_winners_for_proposal)
+        .reset_index()
+    )
+    votes_small = votes_small.merge(
+        result_comparison[["proposal", "is_majority_win"]], on="proposal", how="left"
+    )
+
     (
         votes_small["misaligned"],
         votes_small["not_determined"],
@@ -320,6 +496,7 @@ for space in verified_dao_spaces:
     votes_small.rename(columns={"created": "vote_created"}, inplace=True)
     votes_small.rename(columns={"vp": "voting_power"}, inplace=True)
     votes_small.rename(columns={"tied": "own_choice_tied"}, inplace=True)
+
     # Select only the specified columns
     votes_small = votes_small[
         [
@@ -336,6 +513,7 @@ for space in verified_dao_spaces:
             "misaligned_c",
             "own_choice_tied",
             "own_margin",
+            "is_majority_win",
         ]
     ]
     # Save the DataFrame as a CSV file
@@ -394,6 +572,7 @@ for space in verified_dao_spaces:
         "prps_len",
         "prps_link",
         "prps_stub",
+        "privacy",
         "topic_0",
         "topic_1",
         "topic_2",
@@ -417,6 +596,7 @@ for space in verified_dao_spaces:
         "space_created_at",
         "voter_created",
         "winning_choices",
+        "is_majority_win",
     ]
 
     # Only keep required columns
