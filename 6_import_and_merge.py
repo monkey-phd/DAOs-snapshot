@@ -258,7 +258,7 @@ def calculate_own_margin(data):
                     if isinstance(choice, (int, str))
                 }
             elif isinstance(row["choice"], list):
-                # Assign weights based on rank position (1st = n, 2nd = n-1, ...)
+                # Assign weights based on 1 for all approved choices
                 n = len(row["choice"])
                 choice_vp_dict = {
                     str(int(choice)): 1
