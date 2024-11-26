@@ -65,19 +65,19 @@ foreach type in type_approval type_basic type_quadratic type_ranked_choice type_
         kernel(triangular) bwselect(mserd)
 }
 
-// By voting power quartiles
-xtile vp_quartile = relative_voting_power_act, nq(4)
-forvalues q = 1/4 {
-    eststo quartile_`q': rdrobust voting_3m own_margin if vp_quartile == `q' & !decisive_whale, ///
+// By voting power quintiles (changed from quartiles)
+xtile vp_quintile = relative_voting_power_act, nq(5)
+forvalues q = 1/5 {
+    eststo quintile_`q': rdrobust voting_3m own_margin if vp_quintile == `q' & !decisive_whale, ///
         c(0) kernel(triangular) bwselect(mserd)
 }
 
 ********************************************************************************
 // 6. Robustness Checks 
 ********************************************************************************
-// Different bandwidths
-foreach h in 10 20 30 {
-    local h_decimal = `h'/100  // 
+// More precise bandwidths (added smaller increments)
+foreach h in 5 7.5 10 12.5 15 17.5 20 22.5 25 27.5 30 {
+    local h_decimal = `h'/100  // Convert to decimal
     eststo bw_h`h': rdrobust voting_3m own_margin if !decisive_whale, c(0) h(`h_decimal') kernel(triangular)
 }
 
@@ -93,28 +93,29 @@ eststo full_covs: rdrobust voting_3m own_margin, c(0) ///
 // 7. Export Tables
 ********************************************************************************
 // Main results table
-esttab basic covariates full_covs using "$dao_folder/results/tables/main_rdd_results.rtf", ///
+esttab basic covariates full_covs using "$dao_folder/results/tables/main_rdd_results_1a.rtf", ///
     replace cells(b(star fmt(3)) se(par fmt(3))) ///
     star(* 0.10 ** 0.05 *** 0.01) ///
     title("Main RDD Results") ///
     note("Standard errors in parentheses. * p<0.10, ** p<0.05, *** p<0.01")
 
 // Heterogeneity by voting type
-esttab type_* using "$dao_folder/results/tables/heterogeneity_votetype.rtf", ///
+esttab type_* using "$dao_folder/results/tables/heterogeneity_votetype_1a.rtf", ///
     replace cells(b(star fmt(3)) se(par fmt(3))) ///
     star(* 0.10 ** 0.05 *** 0.01) ///
     title("RDD Results by Voting Type") ///
     note("Standard errors in parentheses. * p<0.10, ** p<0.05, *** p<0.01")
 
-// Heterogeneity by voting power
-esttab quartile_* using "$dao_folder/results/tables/heterogeneity_power.rtf", ///
+// Heterogeneity by voting power (updated for quintiles)
+esttab quintile_* using "$dao_folder/results/tables/heterogeneity_power_1a.rtf", ///
     replace cells(b(star fmt(3)) se(par fmt(3))) ///
     star(* 0.10 ** 0.05 *** 0.01) ///
-    title("RDD Results by Voting Power Quartile") ///
+    title("RDD Results by Voting Power Quintile") ///
     note("Standard errors in parentheses. * p<0.10, ** p<0.05, *** p<0.01")
 
-// Bandwidth sensitivity
-esttab bw_* using "$dao_folder/results/tables/robustness_bandwidth.rtf", ///
+// Bandwidth sensitivity (with more precise bandwidths)
+esttab bw_h5 bw_h7_5 bw_h10 bw_h12_5 bw_h15 bw_h17_5 bw_h20 bw_h22_5 bw_h25 bw_h27_5 bw_h30 ///
+    using "$dao_folder/results/tables/robustness_bandwidth_1a.rtf", ///
     replace cells(b(star fmt(3)) se(par fmt(3))) ///
     star(* 0.10 ** 0.05 *** 0.01) ///
     title("RDD Results with Different Bandwidths") ///
