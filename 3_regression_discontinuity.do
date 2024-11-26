@@ -75,10 +75,11 @@ forvalues q = 1/5 {
 ********************************************************************************
 // 6. Robustness Checks 
 ********************************************************************************
-// More precise bandwidths (added smaller increments)
-foreach h in 5 7.5 10 12.5 15 17.5 20 22.5 25 27.5 30 {
+// Bandwidths in increments of 5
+foreach h in 5 10 15 20 25 30 {
     local h_decimal = `h'/100  // Convert to decimal
-    eststo bw_h`h': rdrobust voting_3m own_margin if !decisive_whale, c(0) h(`h_decimal') kernel(triangular)
+    eststo bw_h`h': rdrobust voting_3m own_margin if !decisive_whale & abs(own_margin) <= `h_decimal', ///
+        c(0) h(`h_decimal') kernel(triangular)
 }
 
 // Full covariate specification
@@ -86,7 +87,7 @@ eststo full_covs: rdrobust voting_3m own_margin, c(0) ///
     covs(type_approval type_basic type_quadratic type_ranked_choice type_weighted ///
          relative_voting_power_act prps_rel_quorum voter_tenure_space ///
          prps_len prps_choices_bin ///
-         space_age space_id_size ///
+         space_age space_id_size) ///
     kernel(triangular) bwselect(mserd)
 
 ********************************************************************************
@@ -106,17 +107,20 @@ esttab type_* using "$dao_folder/results/tables/heterogeneity_votetype_1a.rtf", 
     title("RDD Results by Voting Type") ///
     note("Standard errors in parentheses. * p<0.10, ** p<0.05, *** p<0.01")
 
-// Heterogeneity by voting power (updated for quintiles)
+// Heterogeneity by voting power (quintiles)
 esttab quintile_* using "$dao_folder/results/tables/heterogeneity_power_1a.rtf", ///
     replace cells(b(star fmt(3)) se(par fmt(3))) ///
     star(* 0.10 ** 0.05 *** 0.01) ///
     title("RDD Results by Voting Power Quintile") ///
     note("Standard errors in parentheses. * p<0.10, ** p<0.05, *** p<0.01")
 
-// Bandwidth sensitivity (with more precise bandwidths)
-esttab bw_h5 bw_h7_5 bw_h10 bw_h12_5 bw_h15 bw_h17_5 bw_h20 bw_h22_5 bw_h25 bw_h27_5 bw_h30 ///
+// Bandwidth sensitivity (with 5% increments)
+esttab bw_h5 bw_h10 bw_h15 bw_h20 bw_h25 bw_h30 ///
     using "$dao_folder/results/tables/robustness_bandwidth_1a.rtf", ///
     replace cells(b(star fmt(3)) se(par fmt(3))) ///
+    keep(RD_Estimate) ///
+    stats(N bandwidth, fmt(%9.0fc %9.3fc) labels("Observations" "Bandwidth")) ///
     star(* 0.10 ** 0.05 *** 0.01) ///
+    mtitle("h=5%" "h=10%" "h=15%" "h=20%" "h=25%" "h=30%") ///
     title("RDD Results with Different Bandwidths") ///
-    note("Standard errors in parentheses. * p<0.10, ** p<0.05, *** p<0.01")
+    note("Standard errors in parentheses. * p<0.10, ** p<0.05, *** p<0.01. Each column shows results for different bandwidth windows.")
