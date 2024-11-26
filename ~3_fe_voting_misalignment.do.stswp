@@ -105,7 +105,7 @@ foreach var in 1m 3m 6m {
        cells(b(star fmt(3)) se(par fmt(3))) ///
        star(* 0.10 ** 0.05 *** 0.01) ///
        title("Misalignment Effects on Future Voting: `var' horizon") ///
-       mtitles("Basic" "Vote Types" "+Voter Char" "Full") ///
+       mtitles("Basic" "Vote Inter" "+Voter Char" "Full") ///
        scalars("r2_a Adjusted R-sq" "N Observations") ///
        note("Standard errors clustered at voter-space level in parentheses" ///
             "* p<0.10, ** p<0.05, *** p<0.01") ///
@@ -118,7 +118,7 @@ esttab voting_`var'_m1 voting_`var'_m2 voting_`var'_m3 voting_`var'_m4 ///
     keep(voted misaligned_wmiss) ///        // Remove the c. prefix
     star(* 0.10 ** 0.05 *** 0.01) ///
     title("Key Effects on Future Voting: `var' horizon") ///
-    mtitles("Basic" "Vote Types" "+Voter Char" "Full") ///
+    mtitles("Basic" "Vote Inter" "+Voter Char" "Full") ///
     scalars("r2_a Adjusted R-sq" "N Observations") ///
     note("Standard errors clustered at voter-space level in parentheses" ///
          "* p<0.10, ** p<0.05, *** p<0.01") ///
