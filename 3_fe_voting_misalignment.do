@@ -32,21 +32,17 @@ foreach var in 1m 3m 6m {
        if end_`var' == 0 & own_choice_tied == 0 & own_margin != 0, ///
        absorb(voter_id year_month_num) vce(cluster voter_space_id)
 
-   // Model 2: Add vote type interactions
+   // Model 2: Add interactions
    eststo voting_`var'_m2: reghdfe voting_`var' ///
        c.voted ///
        c.misaligned_wmiss ///
-       c.voted#c.type_basic ///
-       c.voted#c.type_approval ///
-       c.voted#c.type_quadratic ///
-       c.voted#c.type_ranked_choice ///
-       c.voted#c.type_weighted ///
-       c.misaligned_wmiss#c.type_basic ///
-       c.misaligned_wmiss#c.type_approval ///
-       c.misaligned_wmiss#c.type_quadratic ///
-       c.misaligned_wmiss#c.type_ranked_choice ///
-       c.misaligned_wmiss#c.type_weighted ///
-       type_approval type_basic type_quadratic type_ranked_choice type_weighted ///
+       c.voted#c.is_majority_win ///
+       c.voted#c.plugin_safesnap ///
+       c.voted#c.strategy_delegation /// 
+       c.misaligned_wmiss#c.is_majority_win ///
+       c.misaligned_wmiss#c.plugin_safesnap ///
+       c.misaligned_wmiss#c.strategy_delegation ///
+       plugin_safesnap strategy_delegation is_majority_win ///
        if end_`var' == 0 & own_choice_tied == 0 & own_margin != 0, ///
        absorb(voter_id year_month_num) vce(cluster voter_space_id)
 
@@ -54,22 +50,18 @@ foreach var in 1m 3m 6m {
    eststo voting_`var'_m3: reghdfe voting_`var' ///
        c.voted ///
        c.misaligned_wmiss ///
-       c.voted#c.type_basic ///
-       c.voted#c.type_approval ///
-       c.voted#c.type_quadratic ///
-       c.voted#c.type_ranked_choice ///
-       c.voted#c.type_weighted ///
-       c.misaligned_wmiss#c.type_basic ///
-       c.misaligned_wmiss#c.type_approval ///
-       c.misaligned_wmiss#c.type_quadratic ///
-       c.misaligned_wmiss#c.type_ranked_choice ///
-       c.misaligned_wmiss#c.type_weighted ///
-       type_approval type_basic type_quadratic type_ranked_choice type_weighted ///
-       c.voter_tenure_space ///                  // tenure in space
-       c.times_voted_space_cum ///               // total votes
-       c.diff_days_last_vote_space ///           // days since last vote
-       c.relative_voting_power_act ///           // voting power
-       c.votes_dao_cum ///                       // cumulative votes in DAO
+       c.voted#c.is_majority_win ///
+       c.voted#c.plugin_safesnap ///
+       c.voted#c.strategy_delegation /// 
+       c.misaligned_wmiss#c.is_majority_win ///
+       c.misaligned_wmiss#c.plugin_safesnap ///
+       c.misaligned_wmiss#c.strategy_delegation ///
+       plugin_safesnap strategy_delegation is_majority_win ///
+       c.voter_tenure_space ///                  // 
+       c.times_voted_space_cum ///               // 
+       c.diff_days_last_vote_space ///           //
+       c.relative_voting_power_act ///           // 
+       c.votes_dao_cum ///                       // 
        if end_`var' == 0 & own_choice_tied == 0 & own_margin != 0, ///
        absorb(voter_id year_month_num) vce(cluster voter_space_id)
 
@@ -77,20 +69,17 @@ foreach var in 1m 3m 6m {
    eststo voting_`var'_m4: reghdfe voting_`var' ///
        c.voted ///
        c.misaligned_wmiss ///
-       c.voted#c.type_basic ///
-       c.voted#c.type_approval ///
-       c.voted#c.type_quadratic ///
-       c.voted#c.type_ranked_choice ///
-       c.voted#c.type_weighted ///
-       c.misaligned_wmiss#c.type_basic ///
-       c.misaligned_wmiss#c.type_approval ///
-       c.misaligned_wmiss#c.type_quadratic ///
-       c.misaligned_wmiss#c.type_ranked_choice ///
-       c.misaligned_wmiss#c.type_weighted ///
-       type_approval type_basic type_quadratic type_ranked_choice type_weighted ///
+       c.voted#c.is_majority_win ///
+       c.voted#c.plugin_safesnap ///
+       c.voted#c.strategy_delegation /// 
+       c.misaligned_wmiss#c.is_majority_win ///
+       c.misaligned_wmiss#c.plugin_safesnap ///
+       c.misaligned_wmiss#c.strategy_delegation ///
+       plugin_safesnap strategy_delegation is_majority_win ///
        c.voter_tenure_space c.times_voted_space_cum ///
        c.diff_days_last_vote_space c.relative_voting_power_act ///
        c.votes_dao_cum ///
+       type_approval type_basic type_quadratic type_ranked_choice type_weighted ///
        c.prps_len prps_choices_bin c.prps_rel_quorum ///
        plugin_safesnap strategy_delegation ///
        met_quorum is_majority_win privacy ///
@@ -111,7 +100,7 @@ foreach var in 1m 3m 6m {
 foreach var in 1m 3m 6m {
    // Full table
    esttab voting_`var'_m1 voting_`var'_m2 voting_`var'_m3 voting_`var'_m4 ///
-       using "$dao_folder/results/tables/fe_voting_`var'_misalignment.rtf", ///
+       using "$dao_folder/results/tables/fe_voting_`var'_misalignment_1a.rtf", ///
        replace ///
        cells(b(star fmt(3)) se(par fmt(3))) ///
        star(* 0.10 ** 0.05 *** 0.01) ///
@@ -123,7 +112,7 @@ foreach var in 1m 3m 6m {
        label compress
 
 esttab voting_`var'_m1 voting_`var'_m2 voting_`var'_m3 voting_`var'_m4 ///
-    using "$dao_folder/results/tables/fe_voting_`var'_key_coef.rtf", ///
+    using "$dao_folder/results/tables/fe_voting_`var'_key_coef_1a.rtf", ///
     replace ///
     cells(b(star fmt(3)) se(par fmt(3))) ///
     keep(voted misaligned_wmiss) ///        // Remove the c. prefix
@@ -138,7 +127,7 @@ esttab voting_`var'_m1 voting_`var'_m2 voting_`var'_m3 voting_`var'_m4 ///
 
 // Compare across time horizons (full model)
 esttab voting_1m_m4 voting_3m_m4 voting_6m_m4 ///
-   using "$dao_folder/results/tables/fe_misalignment_comparison.rtf", ///
+   using "$dao_folder/results/tables/fe_misalignment_comparison_1a.rtf", ///
    replace ///
    cells(b(star fmt(3)) se(par fmt(3))) ///
    star(* 0.10 ** 0.05 *** 0.01) ///
