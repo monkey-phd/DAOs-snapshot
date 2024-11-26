@@ -49,38 +49,11 @@ graph export "$dao_folder/results/figures/rd_plot_binscatter.png", replace
 // Basic RDD (baseline)
 eststo basic: rdrobust voting_3m own_margin, c(0) kernel(triangular) bwselect(mserd)
 
-// RDD with core covariates. Effect size drops yet significant "sore loser" effect remains
+// RDD with core covariates
 eststo covariates: rdrobust voting_3m own_margin, c(0) ///
     covs(type_approval type_basic type_quadratic type_ranked_choice type_weighted ///
          relative_voting_power_act prps_rel_quorum voter_tenure_space) ///
     kernel(triangular) bwselect(mserd)
-
-********************************************************************************
-// 5. Heterogeneity Analysis 
-********************************************************************************
-// By voting type
-foreach type in type_approval type_basic type_quadratic type_ranked_choice type_weighted {
-    eststo `type': rdrobust voting_3m own_margin if `type' == 1 & !decisive_whale, ///
-        c(0) covs(relative_voting_power_act prps_rel_quorum) ///
-        kernel(triangular) bwselect(mserd)
-}
-
-// By voting power quintiles (changed from quartiles)
-xtile vp_quintile = relative_voting_power_act, nq(5)
-forvalues q = 1/5 {
-    eststo quintile_`q': rdrobust voting_3m own_margin if vp_quintile == `q' & !decisive_whale, ///
-        c(0) kernel(triangular) bwselect(mserd)
-}
-
-********************************************************************************
-// 6. Robustness Checks 
-********************************************************************************
-// Bandwidths in increments of 5
-foreach h in 5 10 15 20 25 30 {
-    local h_decimal = `h'/100  // Convert to decimal
-    eststo bw_h`h': rdrobust voting_3m own_margin if !decisive_whale & abs(own_margin) <= `h_decimal', ///
-        c(0) h(`h_decimal') kernel(triangular)
-}
 
 // Full covariate specification
 eststo full_covs: rdrobust voting_3m own_margin, c(0) ///
@@ -89,6 +62,45 @@ eststo full_covs: rdrobust voting_3m own_margin, c(0) ///
          prps_len prps_choices_bin ///
          space_age space_id_size) ///
     kernel(triangular) bwselect(mserd)
+
+********************************************************************************
+// 5. Heterogeneity Analysis 
+********************************************************************************
+// By voting type (with full covariates)
+foreach type in type_approval type_basic type_quadratic type_ranked_choice type_weighted {
+    eststo `type': rdrobust voting_3m own_margin if `type' == 1 & !decisive_whale, ///
+        c(0) covs(type_approval type_basic type_quadratic type_ranked_choice type_weighted ///
+                  relative_voting_power_act prps_rel_quorum voter_tenure_space ///
+                  prps_len prps_choices_bin ///
+                  space_age space_id_size) ///
+        kernel(triangular) bwselect(mserd)
+}
+
+// By voting power quintiles (with full covariates)
+xtile vp_quintile = relative_voting_power_act, nq(5)
+forvalues q = 1/5 {
+    eststo quintile_`q': rdrobust voting_3m own_margin if vp_quintile == `q' & !decisive_whale, ///
+        c(0) covs(type_approval type_basic type_quadratic type_ranked_choice type_weighted ///
+                  relative_voting_power_act prps_rel_quorum voter_tenure_space ///
+                  prps_len prps_choices_bin ///
+                  space_age space_id_size) ///
+        kernel(triangular) bwselect(mserd)
+}
+
+********************************************************************************
+// 6. Robustness Checks 
+********************************************************************************
+// Bandwidths in increments of 5 (with full covariates)
+foreach h in 5 10 15 20 25 30 {
+    local h_decimal = `h'/100  // Convert to decimal
+    eststo bw_h`h': rdrobust voting_3m own_margin if !decisive_whale & abs(own_margin) <= `h_decimal', ///
+        c(0) h(`h_decimal') ///
+        covs(type_approval type_basic type_quadratic type_ranked_choice type_weighted ///
+             relative_voting_power_act prps_rel_quorum voter_tenure_space ///
+             prps_len prps_choices_bin ///
+             space_age space_id_size) ///
+        kernel(triangular)
+}
 
 ********************************************************************************
 // 7. Export Tables
