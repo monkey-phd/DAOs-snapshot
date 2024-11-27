@@ -26,19 +26,19 @@ gen decisive_whale = (whale == 1 & abs(own_margin) < relative_voting_power_act)
 // 3. Visualization and Initial Tests 
 ********************************************************************************
 // density test (more observations just above the threshold than below it)
-rdrobust voting_3m own_margin, c(0) kernel(triangular) bwselect(mserd)
+rdrobust voting_3m own_margin if own_margin != 0, c(0) kernel(triangular) bwselect(mserd)
 rddensity own_margin, c(0) plot
 graph export "$dao_folder/results/figures/density_test.png", replace
 
-// basic visualization
+// basic visualization (wider window for general overview)
 twoway (histogram own_margin if own_margin > -1 & own_margin < 1, bin(50) color(blue%30)) ///
     (scatteri 0 0 10 0, recast(line) lcolor(red)), ///
     xtitle("Own Margin") ytitle("Density") ///
     title("Distribution around threshold")
 graph export "$dao_folder/results/figures/threshold_dist.png", replace
 
-// RD Plot with binscatter. All show "sore loser" (losers vote more) effect across 1m, 3m, and 6m. Effect size decreases with time.
-binscatter voting_3m own_margin if own_margin > -0.98 & own_margin < 0.98 & own_margin !=0, ///
+// RD Plot with binscatter (narrower window for analysis)
+binscatter voting_3m own_margin if own_margin > -0.98 & own_margin < 0.98 & own_margin != 0, ///
     nquantiles(50) rd(0) ///
     title("RD Plot: Voting Behavior around Threshold")
 graph export "$dao_folder/results/figures/rd_plot_binscatter.png", replace
@@ -47,16 +47,16 @@ graph export "$dao_folder/results/figures/rd_plot_binscatter.png", replace
 // 4. Main RDD Analysis
 ********************************************************************************
 // Basic RDD (baseline)
-eststo basic: rdrobust voting_3m own_margin, c(0) kernel(triangular) bwselect(mserd)
+eststo basic: rdrobust voting_3m own_margin if own_margin != 0, c(0) kernel(triangular) bwselect(mserd)
 
-// RDD with core covariates
-eststo covariates: rdrobust voting_3m own_margin, c(0) ///
+// RDD with core covariates. Effect size drops yet significant "sore loser" effect remains
+eststo covariates: rdrobust voting_3m own_margin if own_margin != 0, c(0) ///
     covs(type_approval type_basic type_quadratic type_ranked_choice type_weighted ///
          relative_voting_power_act prps_rel_quorum voter_tenure_space) ///
     kernel(triangular) bwselect(mserd)
 
 // Full covariate specification
-eststo full_covs: rdrobust voting_3m own_margin, c(0) ///
+eststo full_covs: rdrobust voting_3m own_margin if own_margin != 0, c(0) ///
     covs(type_approval type_basic type_quadratic type_ranked_choice type_weighted ///
          relative_voting_power_act prps_rel_quorum voter_tenure_space ///
          prps_len prps_choices_bin ///
@@ -68,7 +68,7 @@ eststo full_covs: rdrobust voting_3m own_margin, c(0) ///
 ********************************************************************************
 // By voting type (with full covariates)
 foreach type in type_approval type_basic type_quadratic type_ranked_choice type_weighted {
-    eststo `type': rdrobust voting_3m own_margin if `type' == 1 & !decisive_whale, ///
+    eststo `type': rdrobust voting_3m own_margin if `type' == 1 & !decisive_whale & own_margin != 0, ///
         c(0) covs(type_approval type_basic type_quadratic type_ranked_choice type_weighted ///
                   relative_voting_power_act prps_rel_quorum voter_tenure_space ///
                   prps_len prps_choices_bin ///
@@ -79,7 +79,7 @@ foreach type in type_approval type_basic type_quadratic type_ranked_choice type_
 // By voting power quintiles (with full covariates)
 xtile vp_quintile = relative_voting_power_act, nq(5)
 forvalues q = 1/5 {
-    eststo quintile_`q': rdrobust voting_3m own_margin if vp_quintile == `q' & !decisive_whale, ///
+    eststo quintile_`q': rdrobust voting_3m own_margin if vp_quintile == `q' & !decisive_whale & own_margin != 0, ///
         c(0) covs(type_approval type_basic type_quadratic type_ranked_choice type_weighted ///
                   relative_voting_power_act prps_rel_quorum voter_tenure_space ///
                   prps_len prps_choices_bin ///
@@ -93,7 +93,7 @@ forvalues q = 1/5 {
 // Bandwidths in increments of 5 (with full covariates)
 foreach h in 5 10 15 20 25 30 {
     local h_decimal = `h'/100  // Convert to decimal
-    eststo bw_h`h': rdrobust voting_3m own_margin if !decisive_whale & abs(own_margin) <= `h_decimal', ///
+    eststo bw_h`h': rdrobust voting_3m own_margin if !decisive_whale & own_margin != 0 & abs(own_margin) <= `h_decimal', ///
         c(0) h(`h_decimal') ///
         covs(type_approval type_basic type_quadratic type_ranked_choice type_weighted ///
              relative_voting_power_act prps_rel_quorum voter_tenure_space ///
