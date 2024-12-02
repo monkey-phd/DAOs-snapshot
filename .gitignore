@@ -1,4 +1,7 @@
 *.ipynb
+*.stswp
+__000000
+__000001
 /input
 /logs
 /results
