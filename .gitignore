@@ -9,3 +9,4 @@ __000001
 1_import_following.ipynb
 5a_import_votes_and_merge_helge.py
 dao_misalignment.code-workspace
+*.stswp
