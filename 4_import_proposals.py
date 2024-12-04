@@ -1,11 +1,36 @@
-# %%
-# Import relevant libraries
 import pandas as pd
 import numpy as np
 import json
+import os
+import ast
+from itertools import zip_longest
+from sklearn.feature_extraction.text import CountVectorizer
+from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
+from nltk.tokenize import word_tokenize
+import nltk
+import re
+from langdetect import detect, DetectorFactory
+from langdetect.lang_detect_exception import LangDetectException
+from sklearn.decomposition import LatentDirichletAllocation
+from tqdm import tqdm
+
+
+nltk.download("punkt")
+nltk.download("stopwords")
+nltk.download("wordnet")
+nltk.download("punkt_tab")
+
+# Ensure consistent results
+DetectorFactory.seed = 0
+
+# Number of topics
+n_topics = 20
+
+no_top_words = 10
 
 # working directory to the parent directory of the script's location
-os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # load propos
 props = pd.read_csv(
@@ -39,25 +64,6 @@ def parse_json_column_to_columns(df, column_name):
     df = df.loc[:, df.notna().sum() > 2]
 
     return df
-
-
-# spaces = parse_json_column_to_columns(spaces, 'settings')
-max_rows_votes = len(props)
-print(f"Maximum number of rows in dataframe: {max_rows_votes}")
-
-# Drop proposals that have only one voter
-props = props[props["votes"] > 1]
-
-print(props.columns)
-
-max_rows_votes = len(props)
-print(f"Maximum number of rows in dataframe: {max_rows_votes}")
-
-
-# %%
-import ast
-import pandas as pd
-import numpy as np
 
 
 def determine_winning_choice_and_score(row):
@@ -101,20 +107,6 @@ def determine_winning_choice_and_score(row):
             return max_indexes, max_score, second_max_score, met_quorum
     return None, None, None, None
 
-
-# Apply the function to the filtered dataset data_basic
-props[["winning_choices", "winning_score", "second_score", "met_quorum"]] = props.apply(
-    determine_winning_choice_and_score, axis=1, result_type="expand"
-)
-
-# Number of choices
-props["choices"] = props["choices"].apply(ast.literal_eval)
-props["prps_choices"] = props["choices"].apply(len)
-
-
-# %%
-# Strategy mapping
-# Function to parse the JSON field in the data
 def extract_first_field(json_str):
     try:
         # Parse the JSON string into a dictionary or list of dictionaries
@@ -135,77 +127,23 @@ def extract_first_field(json_str):
         return None
 
 
-props["strategy_name"] = props["strategies"].apply(extract_first_field)
-
-# Parse 'plugins' and 'strategies' columns
-props["plugins"] = props["plugins"].apply(
-    lambda x: json.loads(x) if isinstance(x, str) and x.strip() != "" else {}
-)
-props["strategies"] = props["strategies"].apply(
-    lambda x: json.loads(x) if isinstance(x, str) and x.strip() != "" else []
-)
-
-# Create indicator columns
-props["plugin_safesnap"] = props["plugins"].apply(lambda x: 1 if "safeSnap" in x else 0)
-props["strategy_delegation"] = props["strategies"].apply(
-    lambda x: 1
-    if any("delegation" in strategy.get("name", "") for strategy in x)
-    else 0
-)
-
-# %%
-# Determine whether overlapping
-# Check whether prior proposals end time is later than current proposals start time
-# Sort the DataFrame by Category, Space, and StartTime
-props = props.sort_values(by=["space", "start"])
-
-# Shift the EndTime column within each group
-props["prior_end"] = props.groupby("space")["end"].shift()
-
-# Create the overlap column
-props["overlap"] = (props["start"] > props["prior_end"]).astype(int)
-
-del props["prior_end"]
-# Save the DataFrame as a pickle file
-props.to_pickle("processed/proposals.pkl")
-
-# %%
-import pandas as pd
-import json
-from itertools import zip_longest
-
-props_text = props["body"]
-props_text.to_csv("processed/proposal_text.csv", index=False)
-# What about foreign languages?
-# Just use length
-# discussion link
-# How many section
-
-# %%
-import pandas as pd
-from sklearn.feature_extraction.text import CountVectorizer
-from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer
-from nltk.tokenize import word_tokenize
-import nltk
-import re
-from langdetect import detect, DetectorFactory
-from langdetect.lang_detect_exception import LangDetectException
-
-nltk.download("punkt")
-nltk.download("stopwords")
-nltk.download("wordnet")
-nltk.download("punkt_tab")
-# Check
-
-# Ensure consistent results
-DetectorFactory.seed = 0
-
-props = pd.read_pickle("processed/proposals.pkl")
-
-# Assuming data_clean contains 'title' and 'body' columns
-# Combine titles and bodies with a space in between and ensure all are strings
-props["body"] = props["body"].astype(str)
+# Function to extract the first strategy name
+def extract_first_strategy_name(strategy_str):
+    # Find all complete JSON objects in the string
+    strategies = list()
+    # print(strategy_str)
+    matches = re.findall(r'\{.*?\}', strategy_str)
+    if matches:
+        for match in matches:
+            # print(match)
+            # Parse the first matched JSON object
+            strat = re.search(r'"name":"(.*?)"', strategy_str)
+            # print(stra.group(1))
+            # Return the first name found
+            new_strat  = strat.group(1)
+            if new_strat not in strategies:
+                strategies.append(new_strat)
+    return strategies
 
 
 # Function to check for links and remove them
@@ -228,11 +166,117 @@ def remove_non_english(text):
         # If language detection fails, return the original text
         return text
 
-
 # Function to keep only specific Unicode characters in the text
 def keep_specific_unicode_characters(text):
     return re.sub(r"[^\u0000-\u0370]", "", text)
 
+
+def preprocess_text(text):
+    # Tokenize
+    tokens = word_tokenize(text)
+    # Remove stop words and lemmatize
+    lemmatized_tokens = [
+        lemmatizer.lemmatize(word.lower())
+        for word in tokens
+        if word.isalpha() and word.lower() not in stop_words
+    ]
+    return " ".join(lemmatized_tokens)
+
+# Function to display the top words in each topic
+def display_topics(model, feature_names, no_top_words):
+    for topic_idx, topic in enumerate(model.components_):
+        print("Topic %d:" % (topic_idx))
+        print(
+            " ".join(
+                [feature_names[i] for i in topic.argsort()[: -no_top_words - 1 : -1]]
+            )
+        )
+
+
+# spaces = parse_json_column_to_columns(spaces, 'settings')
+max_rows_votes = len(props)
+print(f"Maximum number of rows in dataframe: {max_rows_votes}")
+
+# Drop proposals that have only one voter
+props = props[props["votes"] > 1]
+
+print(props.columns)
+
+max_rows_votes = len(props)
+print(f"Maximum number of rows in dataframe: {max_rows_votes}")
+
+# Apply the function to the filtered dataset data_basic
+props[["winning_choices", "winning_score", "second_score", "met_quorum"]] = props.apply(
+    determine_winning_choice_and_score, axis=1, result_type="expand"
+)
+
+# Number of choices
+props["choices"] = props["choices"].apply(ast.literal_eval)
+
+props["prps_choices"] = props["choices"].apply(len)
+
+# Apply the function to create a new column
+props['first_strategy_names'] = props['strategies'].apply(extract_first_strategy_name)
+
+# Count unique values in column 'A'
+value_counts = props['first_strategy_names'].value_counts()
+
+print(value_counts)
+
+props['first_strategy_name'] = props['first_strategy_names'].astype(str)
+
+del props['first_strategy_names']
+
+props['delegation'] = props['first_strategy_name'].apply(lambda x: 1 if 'delegat' in x else 0)
+
+# Ensure "choices" is treated as a string and check for "abstain" in any capitalization
+props.loc[
+    (props['type'] == 'single-choice') &
+    (props['prps_choices'] == 3) &
+    (props['choices'].astype(str).str.contains('abstain', case=False, na=False)),
+    'type'
+] = 'single-choice-abstain'
+
+# Parse 'plugins' and 'strategies' columns
+props["plugins"] = props["plugins"].apply(
+    lambda x: json.loads(x) if isinstance(x, str) and x.strip() != "" else {}
+)
+props["strategies"] = props["strategies"].apply(
+    lambda x: json.loads(x) if isinstance(x, str) and x.strip() != "" else []
+)
+
+# Create indicator columns
+props["plugin_safesnap"] = props["plugins"].apply(lambda x: 1 if "safeSnap" in x else 0)
+props["strategy_delegation"] = props["strategies"].apply(
+    lambda x: 1
+    if any("delegation" in strategy.get("name", "") for strategy in x)
+    else 0
+)
+
+# Determine whether overlapping
+# Check whether prior proposals end time is later than current proposals start time
+# Sort the DataFrame by Category, Space, and StartTime
+props = props.sort_values(by=["space", "start"])
+
+# Shift the EndTime column within each group
+props["prior_end"] = props.groupby("space")["end"].shift()
+
+# Create the overlap column
+props["overlap"] = (props["start"] > props["prior_end"]).astype(int)
+
+del props["prior_end"]
+# Save the DataFrame as a pickle file
+props.to_pickle("processed/proposals.pkl")
+
+props_text = props["body"]
+props_text.to_csv("processed/proposal_text.csv", index=False)
+# What about foreign languages?
+
+props = pd.read_pickle("processed/proposals.pkl")
+
+# Assuming data_clean contains 'title' and 'body' columns
+# Combine titles and bodies with a space in between and ensure all are strings
+props["body"] = props["body"].astype(str)
 
 props["prps_len"] = props["body"].apply(len)
 
@@ -266,19 +310,6 @@ props["body"] = props["body"].apply(keep_specific_unicode_characters)
 stop_words = set(stopwords.words("english"))
 lemmatizer = WordNetLemmatizer()
 
-
-def preprocess_text(text):
-    # Tokenize
-    tokens = word_tokenize(text)
-    # Remove stop words and lemmatize
-    lemmatized_tokens = [
-        lemmatizer.lemmatize(word.lower())
-        for word in tokens
-        if word.isalpha() and word.lower() not in stop_words
-    ]
-    return " ".join(lemmatized_tokens)
-
-
 # Save the DataFrame as a pickle file
 props.to_pickle("processed/proposals_formatted.pkl")
 
@@ -289,15 +320,6 @@ proposal_text = props["body"].apply(preprocess_text)
 vectorizer = CountVectorizer(max_df=0.95, min_df=2, stop_words="english")
 dtm = vectorizer.fit_transform(proposal_text)
 
-
-# %%
-from sklearn.decomposition import LatentDirichletAllocation
-from tqdm import tqdm
-
-# Number of topics
-n_topics = 20
-
-
 # Create and fit the LDA model
 class ProgressBarLDA(LatentDirichletAllocation):
     def fit(self, X, y=None):
@@ -307,29 +329,13 @@ class ProgressBarLDA(LatentDirichletAllocation):
                 pbar.update(1)
         return self
 
-
 lda = ProgressBarLDA(
     n_components=n_topics, max_iter=10, learning_method="online", random_state=42
 )
 lda.fit(dtm)
 
-
-# Function to display the top words in each topic
-def display_topics(model, feature_names, no_top_words):
-    for topic_idx, topic in enumerate(model.components_):
-        print("Topic %d:" % (topic_idx))
-        print(
-            " ".join(
-                [feature_names[i] for i in topic.argsort()[: -no_top_words - 1 : -1]]
-            )
-        )
-
-
-no_top_words = 10
 display_topics(lda, vectorizer.get_feature_names_out(), no_top_words)
 
-
-# %%
 # Generate topic distributions
 topic_distributions = lda.transform(dtm)
 
@@ -350,14 +356,10 @@ print(correlation_matrix)
 
 print(topics.columns)
 
-# %%
-import pandas as pd
-
 # Load 'data_clean_drop' and 'topic_title_body_df' DataFrame from the pickle file
 props = pd.read_pickle("processed/proposals_formatted.pkl")
 topics = pd.read_pickle("processed/topics.pkl")
 
-# %%
 # Extract only the topic columns from topic_title_body_df
 topic_columns = [col for col in topics.columns if col.startswith("Topic ")]
 topics = topics[topic_columns]
@@ -373,13 +375,16 @@ props = pd.concat([props, topics], axis=1)
 for i in range(31):
     props.rename(columns={f"Topic {i}": f"topic_{i}"}, inplace=True)
 
-
-# %%
 props.rename(columns={"id": "proposal_id"}, inplace=True)
 props.rename(columns={"author": "prps_author"}, inplace=True)
 props.rename(columns={"created": "prps_created"}, inplace=True)
 props.rename(columns={"start": "prps_start"}, inplace=True)
 props.rename(columns={"end": "prps_end"}, inplace=True)
+props.rename(columns={"first_strategy_name": "prps_strategy"}, inplace=True)
+props.rename(columns={"plugin_safesnap": "prps_safesnap"}, inplace=True)
+props.rename(columns={"first_strategy_name": "prps_strategy"}, inplace=True)
+props.rename(columns={"strategy_delegation": "prps_delegation"}, inplace=True)
+props.rename(columns={"quorum": "prps_quorum"}, inplace=True)
 
 # Convert to datetime
 props["prps_start"] = pd.to_datetime(props["prps_start"], unit="s")
@@ -399,11 +404,12 @@ props = props[
         "prps_created",
         "space",
         "type",
-        "plugin_safesnap",
-        "strategy_delegation",
+        "prps_safesnap",
+        "prps_delegation",
+        "prps_strategy",
         "prps_start",
         "prps_end",
-        "quorum",
+        "prps_quorum",
         "scores_total",
         "prps_choices",
         "scores",
@@ -412,7 +418,6 @@ props = props[
         "met_quorum",
         "second_score",
         "winning_score",
-        "strategy_name",
         "overlap",
         "prps_len",
         "prps_link",
