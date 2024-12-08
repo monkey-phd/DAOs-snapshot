@@ -11,6 +11,12 @@ use "$dao_folder/processed/panel_almost_full.dta", clear
 // Setup panel structure
 xtset voter_space_id voter_space_prps_counter
 
+
+
+********************************************************************************
+// 2. Apply CEM Matching (based on Helge's coarsening choices)
+// We match proposals where prps_first == 1, treating voting_type_nonsc as treatment.
+********************************************************************************
 // Identify first proposal vote
 bysort proposal_id (vote_datetime): gen prps_first = 1 if _n==1
 
@@ -18,15 +24,13 @@ bysort proposal_id (vote_datetime): gen prps_first = 1 if _n==1
 gen voting_type_nonsc = 0
 replace voting_type_nonsc = 1 if type_single_choice == 0
 
-// Install cem if not already done
-ssc install cem, replace
-
-********************************************************************************
-// 2. Apply CEM Matching (based on Helge's coarsening choices)
-// We match proposals where prps_first == 1, treating voting_type_nonsc as treatment.
-********************************************************************************
 cem  ///
-    prps_choices_bin (#0) ///
+    type_approval (#0) ///
+    type_basic (#0) ///
+    type_quadratic (#0) ///
+    type_ranked_choice (#0) ///
+    type_weighted (#0) ///
+	prps_choices_bin (#0) ///
     prps_rel_quorum (0 0.05 0.1 0.2 0.3 1) ///
     prps_link (#0) ///
     prps_stub (#0) /// 

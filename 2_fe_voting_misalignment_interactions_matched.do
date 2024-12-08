@@ -16,16 +16,17 @@ use "$dao_folder/processed/panel_almost_full.dta", clear
 // Setup panel structure    
 xtset voter_space_id voter_space_prps_counter
 
-// Define treatment for matching: for instance, proposals with own_margin > 0 (treated)
-gen treatment = (own_margin > 0 & own_margin != .)
-
-// Restrict to observations close to the margin if desired (adjust as needed)
-keep if abs(own_margin) < 0.5 & own_margin != 0
-
 ********************************************************************************
 // 1a. Apply CEM Matching
-// Choose key covariates from your full specification. Adjust cutpoints as needed.
+// Key covariates from full specification. Adjust cutpoints as needed.
 ********************************************************************************
+// Identify first proposal vote
+bysort proposal_id (vote_datetime): gen prps_first = 1 if _n==1
+
+// Create treatment variable 
+gen voting_type_nonsc = 0
+replace voting_type_nonsc = 1 if type_single_choice == 0
+
 cem ///
     type_approval (#0) ///
     type_basic (#0) ///
@@ -39,7 +40,6 @@ cem ///
     prps_len (0 2 5 10 999) ///
     space_age (0 6 12 24 999) ///
     space_id_size (0 10 50 100 999) ///
-    // The topics are proportions; we can coarsen similarly to previous examples:
     topic_1 (0 0.02 0.05 0.1 0.2 0.4 1) ///
     topic_2 (0 0.02 0.05 0.1 0.2 0.4 1) ///
     topic_3 (0 0.02 0.05 0.1 0.2 0.4 1) ///
@@ -59,13 +59,13 @@ cem ///
     topic_17 (0 0.02 0.05 0.1 0.2 0.4 1) ///
     topic_18 (0 0.02 0.05 0.1 0.2 0.4 1) ///
     topic_19 (0 0.02 0.05 0.1 0.2 0.4 1) ///
-    , tr(treatment) showbreaks autocuts(ss)
+    if prps_first == 1, tr(voting_type_nonsc) showbreaks autocuts(ss)
 
 // Keep only matched observations
 keep if cem_weights > 0
 
 ********************************************************************************
-// 2. Fixed Effects Analysis - Voting Misalignment (on matched sample)
+// 2. Fixed Effects Analysis - Voting Misalignment (matching)
 ********************************************************************************
 eststo clear
 foreach var in 1m 3m 6m {
@@ -93,7 +93,7 @@ foreach var in 1m 3m 6m {
        if end_`var' == 0 & own_choice_tied == 0 & own_margin != 0, ///
        absorb(voter_id year_month_num) vce(cluster voter_space_id)
 
-   // Model 3: Add voter characteristics
+   // Model 3: Add voter characteristics (matched)
    eststo voting_`var'_m3: reghdfe voting_`var' ///
        c.voted ///
        c.misaligned_wmiss ///
@@ -114,7 +114,7 @@ foreach var in 1m 3m 6m {
        if end_`var' == 0 & own_choice_tied == 0 & own_margin != 0, ///
        absorb(voter_id year_month_num) vce(cluster voter_space_id)
 
-   // Model 4: Full specification
+   // Model 4: Full specification (matched)
    eststo voting_`var'_m4: reghdfe voting_`var' ///
        c.voted ///
        c.misaligned_wmiss ///
@@ -126,7 +126,6 @@ foreach var in 1m 3m 6m {
        c.misaligned_wmiss#c.plugin_safesnap ///
        c.misaligned_wmiss#c.strategy_delegation ///
        c.misaligned_wmiss#c.privacy ///
-       plugin_safesnap strategy_delegation is_majority_win privacy ///
        c.voter_tenure_space c.times_voted_space_cum ///
        c.diff_days_last_vote_space c.relative_voting_power_act ///
        c.votes_dao_cum ///
