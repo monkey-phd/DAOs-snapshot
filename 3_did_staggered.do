@@ -9,12 +9,12 @@ global dao_folder "/Users/magnusvanhaaren/Erasmus Universiteit Rotterdam Dropbox
 
 use "$dao_folder/processed/panel_almost_full.dta", clear
 
-// Optional: sample 20% for performance
+// Optional: sample 30% for performance
 set seed 123456
-sample 0.2
+sample 0.3
 
 /********************************************************************
- 1. Prepare Data for DiD After Matching
+ 1. Prepare Data for DiD
 ********************************************************************/
 // Identify the first treatment month per voter-space
 bysort voter_id space_id (year_month_num): gen voting_change = 0
@@ -43,9 +43,12 @@ xtset panel_id time
 /********************************************************************
  2. Run Staggered DiD with CSDID
 ********************************************************************/
-// Run the DID, 'voted'  represents a monthly mean of voted proposals.
+// Create a lead variable for voted
+by panel_id: gen voted_lead = voted[_n+1]
+drop if missing(voted_lead)
+
 // 'treatment_time_all' is lagged by one month to ensure proper identification.
-csdid voted voter_tenure_space times_voted_space_cum relative_voting_power_act ///
+csdid voted_lead voter_tenure_space times_voted_space_cum relative_voting_power_act ///
     prps_len prps_choices met_quorum, ///
     ivar(panel_id) time(time) gvar(treatment_time_all) method(dripw) notyet
 
