@@ -11,7 +11,7 @@ use "$dao_folder/processed/panel_almost_full.dta", clear
 
 // Optional: sample x% for performance
 set seed 123456
-sample 0.5
+sample 0.9
 
 /********************************************************************
  1. Prepare Data for DiD
@@ -92,27 +92,27 @@ estat event, estore(cs_event)
 * Aggregate ATT
 estimates restore cs_simple        
 estadd scalar Nobs = Nobs         
-esttab cs_simple using "$dao_folder/results/tables/csdid/csdid_main_results_simple_0.5.rtf", ///
+esttab cs_simple using "$dao_folder/results/tables/csdid/csdid_main_results_simple_0.9.rtf", ///
     replace title("CSDID Results: Aggregate ATT") star(* 0.10 ** 0.05 *** 0.01) ///
     se label compress noomitted stats(Nobs, labels("Observations"))
 
 * Cohort-specific effects
 estimates restore cs_group
 estadd scalar Nobs = Nobs
-esttab cs_group using "$dao_folder/results/tables/csdid/csdid_main_results_group_0.5.rtf", ///
+esttab cs_group using "$dao_folder/results/tables/csdid/csdid_main_results_group_0.9.rtf", ///
     replace title("CSDID Results: ATT by Group") star(* 0.10 ** 0.05 *** 0.01) ///
     se label compress noomitted stats(Nobs, labels("Observations"))
 
 * Calendar time effects
 estimates restore cs_calendar
 estadd scalar Nobs = Nobs
-esttab cs_calendar using "$dao_folder/results/tables/csdid/csdid_main_results_calendar_0.5.rtf", ///
+esttab cs_calendar using "$dao_folder/results/tables/csdid/csdid_main_results_calendar_09.rtf", ///
     replace title("CSDID Results: Calendar Time Effects") star(* 0.10 ** 0.05 *** 0.01) ///
     se label compress noomitted stats(Nobs, labels("Observations"))
 
 * Event-study style dynamic effects
 estimates restore cs_event
 estadd scalar Nobs = Nobs
-esttab cs_event using "$dao_folder/results/tables/csdid/csdid_main_results_event_0.5.rtf", ///
+esttab cs_event using "$dao_folder/results/tables/csdid/csdid_main_results_event_0.9.rtf", ///
     replace title("CSDID Results: Event Study") star(* 0.10 ** 0.05 *** 0.01) ///
     se label compress noomitted stats(Nobs, labels("Observations"))
