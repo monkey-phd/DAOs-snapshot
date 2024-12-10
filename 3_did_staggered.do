@@ -11,7 +11,7 @@ use "$dao_folder/processed/panel_almost_full.dta", clear
 
 // Optional: sample x% for performance
 set seed 123456
-sample 0.2
+sample 0.5
 
 /********************************************************************
  1. Prepare Data for DiD
@@ -39,7 +39,7 @@ isid panel_id time
 xtset panel_id time
 
 /********************************************************************
- ***  Create Lags Immediately and Drop Missing Lags
+ ***  Create Lags and Drop Missing Lags
 ********************************************************************/
 
 sort panel_id time
@@ -66,7 +66,8 @@ keep if obs_per_panel >= 2
 by panel_id: gen pre_treatment = sum(time < treatment_time_all)
 by panel_id: gen post_treatment = sum(time >= treatment_time_all)
 
-// Require at least one pre-treatment observation. & post_treatment >= 1
+// Require at least one pre-treatment observation (pre_treatment >= 1). We do NOT also enforce post_treatment >= 1 because doing so removes all treated units that never appear post-treatment. Without any treated units observed after treatment, the DiD cannot identify a treatment effect. By not forcing post_treatment >= 1, we ensure that some treated units with post-treatment data remain, allowing for effect estimation. Units without post-treatment observations stay in the dataset but do not harm the analysis.
+count if treatment_time_all != . & pre_treatment >= 1 & post_treatment >= 1
 keep if pre_treatment >= 1 
 
 /********************************************************************
@@ -91,27 +92,27 @@ estat event, estore(cs_event)
 * Aggregate ATT
 estimates restore cs_simple        
 estadd scalar Nobs = Nobs         
-esttab cs_simple using "$dao_folder/results/tables/csdid/csdid_main_results_simple.rtf", ///
+esttab cs_simple using "$dao_folder/results/tables/csdid/csdid_main_results_simple_0.5.rtf", ///
     replace title("CSDID Results: Aggregate ATT") star(* 0.10 ** 0.05 *** 0.01) ///
     se label compress noomitted stats(Nobs, labels("Observations"))
 
 * Cohort-specific effects
 estimates restore cs_group
 estadd scalar Nobs = Nobs
-esttab cs_group using "$dao_folder/results/tables/csdid/csdid_main_results_group.rtf", ///
+esttab cs_group using "$dao_folder/results/tables/csdid/csdid_main_results_group_0.5.rtf", ///
     replace title("CSDID Results: ATT by Group") star(* 0.10 ** 0.05 *** 0.01) ///
     se label compress noomitted stats(Nobs, labels("Observations"))
 
 * Calendar time effects
 estimates restore cs_calendar
 estadd scalar Nobs = Nobs
-esttab cs_calendar using "$dao_folder/results/tables/csdid/csdid_main_results_calendar.rtf", ///
+esttab cs_calendar using "$dao_folder/results/tables/csdid/csdid_main_results_calendar_0.5.rtf", ///
     replace title("CSDID Results: Calendar Time Effects") star(* 0.10 ** 0.05 *** 0.01) ///
     se label compress noomitted stats(Nobs, labels("Observations"))
 
 * Event-study style dynamic effects
 estimates restore cs_event
 estadd scalar Nobs = Nobs
-esttab cs_event using "$dao_folder/results/tables/csdid/csdid_main_results_event.rtf", ///
+esttab cs_event using "$dao_folder/results/tables/csdid/csdid_main_results_event_0.5.rtf", ///
     replace title("CSDID Results: Event Study") star(* 0.10 ** 0.05 *** 0.01) ///
     se label compress noomitted stats(Nobs, labels("Observations"))
