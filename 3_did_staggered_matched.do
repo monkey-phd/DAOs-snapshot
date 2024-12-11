@@ -76,20 +76,6 @@ cem prps_choices_bin (#0) ///
     topic_3 (0 0.05 0.2 1) ///
     topic_4 (0 0.05 0.2 1) ///
     topic_5 (0 0.05 0.2 1) ///
-    topic_6 (0 0.05 0.2 1) ///
-    topic_7 (0 0.05 0.2 1) ///
-    topic_8 (0 0.05 0.2 1) ///
-    topic_9 (0 0.05 0.2 1) ///
-    topic_10 (0 0.05 0.2 1) ///
-    topic_11 (0 0.05 0.2 1) ///
-    topic_12 (0 0.05 0.2 1) ///
-    topic_13 (0 0.05 0.2 1) ///
-    topic_14 (0 0.05 0.2 1) ///
-    topic_15 (0 0.05 0.2 1) ///
-    topic_16 (0 0.05 0.2 1) ///
-    topic_17 (0 0.05 0.2 1) ///
-    topic_18 (0 0.05 0.2 1) ///
-    topic_19 (0 0.05 0.2 1) ///
     , tr(treated) showbreaks
 
 /*// Run CEM at monthly level
