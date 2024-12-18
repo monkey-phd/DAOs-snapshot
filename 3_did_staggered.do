@@ -13,6 +13,23 @@ use "$dao_folder/processed/panel_almost_full.dta", clear
 set seed 123456
 sample 0.96
 
+
+/*// Randomly sample by voter
+set seed 123456
+bysort voter_id: gen double rand_voter = runiform() if _n == 1
+by voter_id: replace rand_voter = rand_voter[1]
+keep if rand_voter < `fraction'
+drop rand_voter
+*/
+
+/*// Randomly sample by DAO
+set seed 123456
+bysort space_id: gen double rand_dao = runiform() if _n == 1
+by space_id: replace rand_dao = rand_dao[1]
+keep if rand_dao < `fraction'
+drop rand_dao
+*/
+
 /********************************************************************
  1. Prepare Data for DiD
 ********************************************************************/

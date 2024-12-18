@@ -24,7 +24,6 @@ by voter_id: replace rand_voter = rand_voter[1]
 keep if rand_voter < `fraction'
 drop rand_voter
 
-
 /*// Randomly sample by DAO
 set seed 123456
 bysort space_id: gen double rand_dao = runiform() if _n == 1
@@ -48,10 +47,6 @@ foreach vtype of local votetypes {
      0. Initial Setup and Data Preparation
     ********************************************************************/
     use "$dao_folder/processed/panel_almost_full.dta", clear
-
-    // Optional: sample x% for performance
-    set seed 123456
-    sample `fraction'
 
     // Count unique voters and DAOs before manipulation
     egen tag_voter = tag(voter_id)
@@ -110,6 +105,7 @@ foreach vtype of local votetypes {
     by panel_id: gen L1_type_quadratic = type_quadratic[_n-1]
     by panel_id: gen L1_type_ranked_choice = type_ranked_choice[_n-1]
     by panel_id: gen L1_type_weighted = type_weighted[_n-1]
+	by panel_id: gen L1_misaligned_c = misaligned_c[_n-1]
 
     forvalues i=0/19 {
         by panel_id: gen L1_topic_`i' = topic_`i'[_n-1]
@@ -119,7 +115,7 @@ foreach vtype of local votetypes {
     drop if missing(L1_voter_tenure_space, L1_times_voted_space_cum, L1_relative_voting_power_act, ///
                     L1_prps_len, L1_prps_choices, L1_met_quorum, ///
                     L1_type_single_choice, L1_type_approval, L1_type_basic, L1_type_quadratic, ///
-                    L1_type_ranked_choice, L1_type_weighted, ///
+                    L1_type_ranked_choice, L1_type_weighted, L1_misaligned_c, ///
                     L1_topic_0, L1_topic_1, L1_topic_2, L1_topic_3, L1_topic_4, ///
                     L1_topic_5, L1_topic_6, L1_topic_7, L1_topic_8, L1_topic_9, ///
                     L1_topic_10, L1_topic_11, L1_topic_12, L1_topic_13, L1_topic_14, ///
@@ -134,10 +130,15 @@ foreach vtype of local votetypes {
     by panel_id: gen post_treatment = sum(time >= treatment_time_all)
     keep if pre_treatment >= 1
 
+	// Treatment dummy and interaction with misaligned_c
+    gen treatment = (time >= treatment_time_all & treatment_time_all != .)
+    gen treat_x_misaligned = treatment * L1_misaligned_c
+	
     /********************************************************************
      Run Staggered DiD with CSDID
     ********************************************************************/
     capture csdid voted ///
+        L1_misaligned_c treat_x_misaligned ///
         L1_voter_tenure_space L1_times_voted_space_cum L1_relative_voting_power_act ///
         L1_prps_len L1_prps_choices L1_met_quorum ///
         L1_type_single_choice L1_type_approval L1_type_basic L1_type_quadratic L1_type_ranked_choice L1_type_weighted ///
@@ -157,7 +158,7 @@ foreach vtype of local votetypes {
         estat event, estore(cs_event)
 
         // Create results directory dynamically based on fraction and voting type
-        local results_dir "$dao_folder/results/tables/3_csdid_multi/csdid_`vtype'_`fraction'_rand_voter"
+        local results_dir "$dao_folder/results/tables/3_csdid_multi/csdid_`vtype'_`fraction'_inter_rand_voter"
         capture mkdir "`results_dir'"
 
         // Export results to RTF files, naming them based on `fraction` and `vtype`
