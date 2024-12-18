@@ -4,6 +4,9 @@
 clear all
 set more off
 
+* Set your desired fraction here
+local fraction 0.5
+
 * Adjust as needed
 global dao_folder "/Users/magnusvanhaaren/Erasmus Universiteit Rotterdam Dropbox/Magnus van Haaren/Empirical Paper on DAOs/Empirical Paper on DAOs (MvHxHK)/Data"
 
