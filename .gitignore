@@ -1,11 +1,21 @@
+# Ignore all Jupyter notebooks
 *.ipynb
+
+# Ignore Stata swap/temporary files
 *.stswp
+
+# Ignore specific named files
 __000000
 __000001
+1_import_following.ipynb
+5a_import_votes_and_merge_helge.py
+dao_misalignment.code-workspace
+
+# Ignore these directories
 /input
 /logs
 /results
 /processed
-1_import_following.ipynb
-5a_import_votes_and_merge_helge.py
-dao_misalignment.code-workspace
+
+# Ignore macOS system file
+.DS_Store
