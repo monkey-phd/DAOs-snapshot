@@ -21,7 +21,7 @@ This repository features both **Python** and **Stata** scripts to:
 
 - **Collect and merge** data on DAOs, proposals, voters, and vote outcomes.  
 - **Analyze governance patterns** such as voting alignment, majority power, clustering, and system changes.  
-- **Provide statistical insight** through multiple regressions, regression discontinuity, matching approaches, and more.
+- **Provide statistical insight** through multiple regressions, regression discontinuity, matching approaches, diff-in-diff and more.
 
 ---
 
