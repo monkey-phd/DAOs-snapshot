@@ -1,0 +1,2544 @@
+Scanning /Users/magnusvanhaaren/Erasmus Universiteit Rotterdam Dropbox/Magnus van Haaren/Empirical Paper on DAOs/Empirical Paper on DAOs (MvHxHK)/Data
+RENAME? .DS_Store → ds_store
+RENAME? Icon → icon
+RENAME? .DS_Store → ds_store
+RENAME? 1_regressions subsamples.do → 1_regressions_subsamples.do
+RENAME? LICENSE → license
+RENAME? 2_regressions effects of individual DAOs.do → 2_regressions_effects_of_individual_daos.do
+RENAME? 1_DiD.do → 1_did.do
+RENAME? README.md → readme.md
+RENAME? 2_regressions subsamples.do → 2_regressions_subsamples.do
+RENAME? .gitignore → gitignore
+RENAME? 1_regressions subsamples hazard.do → 1_regressions_subsamples_hazard.do
+RENAME? 2_DiD_voting_system_change.do → 2_did_voting_system_change.do
+RENAME? 1_regressions subsamples v2.do → 1_regressions_subsamples_v2.do
+RENAME? 2_regressions matching.do → 2_regressions_matching.do
+RENAME? 2_regression discontinuity.do → 2_regression_discontinuity.do
+RENAME? .DS_Store → ds_store
+RENAME? ORIG_HEAD → orig_head
+RENAME? HEAD → head
+RENAME? packed-refs → packed_refs
+RENAME? COMMIT_EDITMSG → commit_editmsg
+RENAME? FETCH_HEAD → fetch_head
+RENAME? .DS_Store → ds_store
+RENAME? pack-01b7023fa955999b964168cc773da00a7fb56024.rev → pack_01b7023fa955999b964168cc773da00a7fb56024.rev
+RENAME? pack-01b7023fa955999b964168cc773da00a7fb56024.pack → pack_01b7023fa955999b964168cc773da00a7fb56024.pack
+RENAME? pack-01b7023fa955999b964168cc773da00a7fb56024.idx → pack_01b7023fa955999b964168cc773da00a7fb56024.idx
+RENAME? .DS_Store → ds_store
+RENAME? HEAD → head
+RENAME? HEAD → head
+RENAME? commit-msg.sample → commit_msg.sample
+RENAME? pre-rebase.sample → pre_rebase.sample
+RENAME? sendemail-validate.sample → sendemail_validate.sample
+RENAME? pre-commit.sample → pre_commit.sample
+RENAME? applypatch-msg.sample → applypatch_msg.sample
+RENAME? fsmonitor-watchman.sample → fsmonitor_watchman.sample
+RENAME? pre-receive.sample → pre_receive.sample
+RENAME? prepare-commit-msg.sample → prepare_commit_msg.sample
+RENAME? post-update.sample → post_update.sample
+RENAME? pre-merge-commit.sample → pre_merge_commit.sample
+RENAME? pre-applypatch.sample → pre_applypatch.sample
+RENAME? pre-push.sample → pre_push.sample
+RENAME? push-to-checkout.sample → push_to_checkout.sample
+RENAME? .DS_Store → ds_store
+RENAME? HEAD → head
+RENAME? regressions subsamples_mvh.do → regressions_subsamples_mvh.do
+RENAME? weighted csdid, fraction.do → weighted_csdid_fraction.do
+RENAME? clustering experimenting.do → clustering_experimenting.do
+RENAME? ~single and multi csdid.do.stswp → single_and_multi_csdid_do.stswp
+RENAME? .DS_Store → ds_store
+RENAME? ~did_staggered_matched.do.stswp → did_staggered_matched_do.stswp
+RENAME? Untitled_latest.do → untitled_latest.do
+RENAME? ~did_staggered_voting_types.do.stswp → did_staggered_voting_types_do.stswp
+RENAME? did_staggered_voting_1-6.do → did_staggered_voting_1_6.do
+RENAME? multi csdid.do → multi_csdid.do
+RENAME? regressions effects of individual DAOs.do → regressions_effects_of_individual_daos.do
+RENAME? ~3_multi_weighted.do.stswp → 3_multi_weighted_do.stswp
+RENAME? ~weighted csdid, fraction (by voter).do.stswp → weighted_csdid_fraction_by_voter_do.stswp
+RENAME? regressions batches_mvh.do → regressions_batches_mvh.do
+RENAME? ~multi csdid.do.stswp → multi_csdid_do.stswp
+RENAME? regressions clean proposal.do → regressions_clean_proposal.do
+RENAME? DiD.do → did.do
+RENAME? weighted csdid_fraction_inter.do → weighted_csdid_fraction_inter.do
+RENAME? 3_did_staggered (rand voters).do → 3_did_staggered_rand_voters.do
+RENAME? weighted csdid, fraction (by voter).do → weighted_csdid_fraction_by_voter.do
+RENAME? data_preparation_aggregate iterate.do → data_preparation_aggregate_iterate.do
+RENAME? regressions TEMP.do → regressions_temp.do
+RENAME? __000001 → 000001
+RENAME? 3_did_staggered (rand dao).do → 3_did_staggered_rand_dao.do
+RENAME? ~did_staggered_dvs.do.stswp → did_staggered_dvs_do.stswp
+RENAME? __000000 → 000000
+RENAME? regressions agg.do → regressions_agg.do
+RENAME? regressions subsamples.do → regressions_subsamples.do
+RENAME? ~data_prep_multi.do.stswp → data_prep_multi_do.stswp
+RENAME? Untitled.do → untitled.do
+RENAME? DiD [Recovered]2.do → did_recovered_2.do
+RENAME? ~data_preparation_aggregate.do.stswp → data_preparation_aggregate_do.stswp
+RENAME? ~weighted csdid, fraction.do.stswp → weighted_csdid_fraction_do.stswp
+RENAME? weighted csdid.do → weighted_csdid.do
+RENAME? single and multi csdid.do → single_and_multi_csdid.do
+RENAME? DiD [Recovered].do → did_recovered.do
+RENAME? ~3_multi_weighted_inter.do.stswp → 3_multi_weighted_inter_do.stswp
+RENAME? ~weighted csdid.do.stswp → weighted_csdid_do.stswp
+RENAME? .DS_Store → ds_store
+RENAME? Python.code-workspace → python.code-workspace
+RENAME? snapshot-hub-mainnet-2023-08-30-follows_0.csv → snapshot_hub_mainnet_2023_08_30_follows_0.csv
+RENAME? verified-spaces_shorty.csv → verified_spaces_shorty.csv
+RENAME? snapshot-hub-mainnet-2023-08-30-spaces_0.csv → snapshot_hub_mainnet_2023_08_30_spaces_0.csv
+RENAME? snapshot-hub-mainnet-2023-08-30-votes_0-verified.csv → snapshot_hub_mainnet_2023_08_30_votes_0_verified.csv
+RENAME? .DS_Store → ds_store
+RENAME? verified-spaces_shorter.csv → verified_spaces_shorter.csv
+RENAME? snapshot-hub-mainnet-2023-08-30-votes_0.csv → snapshot_hub_mainnet_2023_08_30_votes_0.csv
+RENAME? snapshot-hub-mainnet-2023-08-30-users_0.csv → snapshot_hub_mainnet_2023_08_30_users_0.csv
+RENAME? snapshot-hub-mainnet-09-05-2566-spaces.csv → snapshot_hub_mainnet_09_05_2566_spaces.csv
+RENAME? snapshot-hub-mainnet-2023-08-30-proposals_0.csv → snapshot_hub_mainnet_2023_08_30_proposals_0.csv
+RENAME? flagged-spaces.csv → flagged_spaces.csv
+RENAME? verified-spaces_short.csv → verified_spaces_short.csv
+RENAME? verified-spaces.csv → verified_spaces.csv
+RENAME? verified-spaces_almost_full.csv → verified_spaces_almost_full.csv
+RENAME? data_h_dlytoken.eth.csv → data_h_dlytoken_eth.csv
+RENAME? data_h_sharkdao.eth.csv → data_h_sharkdao_eth.csv
+RENAME? data_jbdao.eth.csv → data_jbdao_eth.csv
+RENAME? data_h_layer2dao.org.csv → data_h_layer2dao_org.csv
+RENAME? data_people-dao.eth.csv → data_people_dao_eth.csv
+RENAME? data_harvestfi.eth.csv → data_harvestfi_eth.csv
+RENAME? data_piedao.eth.csv → data_piedao_eth.csv
+RENAME? data_banklessvault.eth.csv → data_banklessvault_eth.csv
+RENAME? data_popcorn-snapshot.eth.csv → data_popcorn_snapshot_eth.csv
+RENAME? data_h_dodobird.eth.csv → data_h_dodobird_eth.csv
+RENAME? data_h_harvestfi.eth.csv → data_h_harvestfi_eth.csv
+RENAME? data_h_meebitsdao.eth.csv → data_h_meebitsdao_eth.csv
+RENAME? data_futera.eth.csv → data_futera_eth.csv
+RENAME? data_wagdie.eth.csv → data_wagdie_eth.csv
+RENAME? data_h_vote.airswap.eth.csv → data_h_vote_airswap_eth.csv
+RENAME? data_rallygov.eth.csv → data_rallygov_eth.csv
+RENAME? data_layer2dao.org.csv → data_layer2dao_org.csv
+RENAME? data_h_gauge.rbn.eth.csv → data_h_gauge_rbn_eth.csv
+RENAME? data_bullsontheblock.eth.csv → data_bullsontheblock_eth.csv
+RENAME? data_pushdao.eth.csv → data_pushdao_eth.csv
+RENAME? data_stakedao.eth.csv → data_stakedao_eth.csv
+RENAME? data_vote.airswap.eth.csv → data_vote_airswap_eth.csv
+RENAME? data_opiumprotocol.eth.csv → data_opiumprotocol_eth.csv
+RENAME? data_h_decrypt-media.eth.csv → data_h_decrypt_media_eth.csv
+RENAME? data_h_cow.eth.csv → data_h_cow_eth.csv
+RENAME? data_h_gearbox.eth.csv → data_h_gearbox_eth.csv
+RENAME? data_h_beets.eth.csv → data_h_beets_eth.csv
+RENAME? data_h_metislayer2.eth.csv → data_h_metislayer2_eth.csv
+RENAME? data_streamr.eth.csv → data_streamr_eth.csv
+RENAME? data_gauge.rbn.eth.csv → data_gauge_rbn_eth.csv
+RENAME? data_gasdao.eth.csv → data_gasdao_eth.csv
+RENAME? data_h_barnbridge.eth.csv → data_h_barnbridge_eth.csv
+RENAME? data_club.eth.csv → data_club_eth.csv
+RENAME? data_genesisblocks.eth.csv → data_genesisblocks_eth.csv
+RENAME? data_h_0xgov.eth.csv → data_h_0xgov_eth.csv
+RENAME? data_origingov.eth.csv → data_origingov_eth.csv
+RENAME? data_level-finance.eth.csv → data_level_finance_eth.csv
+RENAME? data_h_instadapp-gov.eth.csv → data_h_instadapp_gov_eth.csv
+RENAME? data_h_jpeg’d.eth.csv → data_h_jpegd_eth.csv
+RENAME? data_jadeprotocol.eth.csv → data_jadeprotocol_eth.csv
+RENAME? data_thelanddaoprop.eth.csv → data_thelanddaoprop_eth.csv
+RENAME? data_fei.eth.csv → data_fei_eth.csv
+RENAME? data_pooltogether.eth.csv → data_pooltogether_eth.csv
+RENAME? data_h_rook.eth.csv → data_h_rook_eth.csv
+RENAME? data_h_swiveldao.eth.csv → data_h_swiveldao_eth.csv
+RENAME? data_swiveldao.eth.csv → data_swiveldao_eth.csv
+RENAME? data_h_theopendao.eth.csv → data_h_theopendao_eth.csv
+RENAME? data_copernicusbeer.eth.csv → data_copernicusbeer_eth.csv
+RENAME? data_h_meritcircle.eth.csv → data_h_meritcircle_eth.csv
+RENAME? data_h_origingov.eth.csv → data_h_origingov_eth.csv
+RENAME? data_thegurudao.eth.csv → data_thegurudao_eth.csv
+RENAME? data_h_ffdao.eth.csv → data_h_ffdao_eth.csv
+RENAME? data_dydxgov.eth.csv → data_dydxgov_eth.csv
+RENAME? data_primerating.eth.csv → data_primerating_eth.csv
+RENAME? data_polygonpenguins.eth.csv → data_polygonpenguins_eth.csv
+RENAME? data_h_varen.eth.csv → data_h_varen_eth.csv
+RENAME? data_h_ilvgov.eth.csv → data_h_ilvgov_eth.csv
+RENAME? data_h_pooltogether.eth.csv → data_h_pooltogether_eth.csv
+RENAME? data_h_jadeprotocol.eth.csv → data_h_jadeprotocol_eth.csv
+RENAME? data_hbot-prp.eth.csv → data_hbot_prp_eth.csv
+RENAME? data_h_lgcryptounicorns.eth.csv → data_h_lgcryptounicorns_eth.csv
+RENAME? data_h_dea.eth.csv → data_h_dea_eth.csv
+RENAME? data_h_curve.eth.csv → data_h_curve_eth.csv
+RENAME? data_h_balancer.eth.csv → data_h_balancer_eth.csv
+RENAME? data_dorg.eth.csv → data_dorg_eth.csv
+RENAME? data_h_shapeshiftdao.eth.csv → data_h_shapeshiftdao_eth.csv
+RENAME? data_h_beanstalkdao.eth.csv → data_h_beanstalkdao_eth.csv
+RENAME? data_h_shellprotocol.eth.csv → data_h_shellprotocol_eth.csv
+RENAME? data_gnosis.eth.csv → data_gnosis_eth.csv
+RENAME? data_h_mocana.eth.csv → data_h_mocana_eth.csv
+RENAME? data_tokenlon.eth.csv → data_tokenlon_eth.csv
+RENAME? data_colony.eth.csv → data_colony_eth.csv
+RENAME? data_goodmorningnews.eth.csv → data_goodmorningnews_eth.csv
+RENAME? data_ampleforthorg.eth.csv → data_ampleforthorg_eth.csv
+RENAME? data_h_apwine.eth.csv → data_h_apwine_eth.csv
+RENAME? data_ybaby.eth.csv → data_ybaby_eth.csv
+RENAME? data_idlefinance.eth.csv → data_idlefinance_eth.csv
+RENAME? data_beanstalkdao.eth.csv → data_beanstalkdao_eth.csv
+RENAME? data_h_elyfi-bsc.eth.csv → data_h_elyfi_bsc_eth.csv
+RENAME? data_magicappstore.eth.csv → data_magicappstore_eth.csv
+RENAME? data_abracadabrabymerlinthemagician.eth.csv → data_abracadabrabymerlinthemagician_eth.csv
+RENAME? data_h_tetu.eth.csv → data_h_tetu_eth.csv
+RENAME? data_h_silofinance.eth.csv → data_h_silofinance_eth.csv
+RENAME? data_elyfi-bsc.eth.csv → data_elyfi_bsc_eth.csv
+RENAME? data_hop.eth.csv → data_hop_eth.csv
+RENAME? data_community.nexusmutual.eth.csv → data_community_nexusmutual_eth.csv
+RENAME? data_paraswap-dao.eth.csv → data_paraswap_dao_eth.csv
+RENAME? data_index-coop.eth.csv → data_index_coop_eth.csv
+RENAME? data_h_unlock-protocol.eth.csv → data_h_unlock_protocol_eth.csv
+RENAME? data_h_copernicusbeer.eth.csv → data_h_copernicusbeer_eth.csv
+RENAME? data_synapseprotocol.eth.csv → data_synapseprotocol_eth.csv
+RENAME? data_h_doodles.eth.csv → data_h_doodles_eth.csv
+RENAME? data_blackpoolhq.eth.csv → data_blackpoolhq_eth.csv
+RENAME? data_gov.radicle.eth.csv → data_gov_radicle_eth.csv
+RENAME? data_assangedao.eth.csv → data_assangedao_eth.csv
+RENAME? data_h_thelanddaoprop.eth.csv → data_h_thelanddaoprop_eth.csv
+RENAME? data_h_gnars.eth.csv → data_h_gnars_eth.csv
+RENAME? data_astardegens.eth.csv → data_astardegens_eth.csv
+RENAME? data_h_morpho.eth.csv → data_h_morpho_eth.csv
+RENAME? data_h_liberofinancial.eth.csv → data_h_liberofinancial_eth.csv
+RENAME? data_tigervc-dao.eth.csv → data_tigervc_dao_eth.csv
+RENAME? data_h_diadao.eth.csv → data_h_diadao_eth.csv
+RENAME? data_safe.eth.csv → data_safe_eth.csv
+RENAME? data_lido-snapshot.eth.csv → data_lido_snapshot_eth.csv
+RENAME? data_ousdgov.eth.csv → data_ousdgov_eth.csv
+RENAME? data_h_olympusdao.eth.csv → data_h_olympusdao_eth.csv
+RENAME? data_h_rbn.eth.csv → data_h_rbn_eth.csv
+RENAME? data_beanstalkbugbounty.eth.csv → data_beanstalkbugbounty_eth.csv
+RENAME? data_h_squiggledaotreasurysquad.eth.csv → data_h_squiggledaotreasurysquad_eth.csv
+RENAME? data_h_paraswap-dao.eth.csv → data_h_paraswap_dao_eth.csv
+RENAME? data_bitdao.eth.csv → data_bitdao_eth.csv
+RENAME? data_specialresolution.nexusmutual.eth.csv → data_specialresolution_nexusmutual_eth.csv
+RENAME? data_globalcoinresearch.eth.csv → data_globalcoinresearch_eth.csv
+RENAME? data_aavegotchi.eth.csv → data_aavegotchi_eth.csv
+RENAME? data_h_arbitrumfoundation.eth.csv → data_h_arbitrumfoundation_eth.csv
+RENAME? data_joegovernance.eth.csv → data_joegovernance_eth.csv
+RENAME? data_evmaverick.eth.csv → data_evmaverick_eth.csv
+RENAME? data_h_primexyz.eth.csv → data_h_primexyz_eth.csv
+RENAME? data_h_fingerprints.eth.csv → data_h_fingerprints_eth.csv
+RENAME? data_hectordao.eth.csv → data_hectordao_eth.csv
+RENAME? data_h_mantra-dao.eth.csv → data_h_mantra_dao_eth.csv
+RENAME? data_h_wearebeansprout.eth.csv → data_h_wearebeansprout_eth.csv
+RENAME? data_h_safe.eth.csv → data_h_safe_eth.csv
+RENAME? data_h_hectordao.eth.csv → data_h_hectordao_eth.csv
+RENAME? data_poktdao.eth.csv → data_poktdao_eth.csv
+RENAME? data_h_staking.idlefinance.eth.csv → data_h_staking_idlefinance_eth.csv
+RENAME? data_tracer.eth.csv → data_tracer_eth.csv
+RENAME? data_loot-dao.eth.csv → data_loot_dao_eth.csv
+RENAME? data_h_redactedcartel.eth.csv → data_h_redactedcartel_eth.csv
+RENAME? data_poolpool.pooltogether.eth.csv → data_poolpool_pooltogether_eth.csv
+RENAME? data_h_biswap-org.eth.csv → data_h_biswap_org_eth.csv
+RENAME? data_h_sushigov.eth.csv → data_h_sushigov_eth.csv
+RENAME? data_h_apecoin.eth.csv → data_h_apecoin_eth.csv
+RENAME? data_songadao.eth.csv → data_songadao_eth.csv
+RENAME? data_beanft.eth.csv → data_beanft_eth.csv
+RENAME? data_panda-dao.eth.csv → data_panda_dao_eth.csv
+RENAME? data_stgdao.eth.csv → data_stgdao_eth.csv
+RENAME? data_h_1inch.eth.csv → data_h_1inch_eth.csv
+RENAME? data_qidao.eth.csv → data_qidao_eth.csv
+RENAME? data_uberhaus.eth.csv → data_uberhaus_eth.csv
+RENAME? data_h_livelabs.eth.csv → data_h_livelabs_eth.csv
+RENAME? data_fingerprints.eth.csv → data_fingerprints_eth.csv
+RENAME? data_notional.eth.csv → data_notional_eth.csv
+RENAME? data_h_metafactory.eth.csv → data_h_metafactory_eth.csv
+RENAME? data_h_panda-dao.eth.csv → data_h_panda_dao_eth.csv
+RENAME? data_gitcoindao.eth.csv → data_gitcoindao_eth.csv
+RENAME? data_h_glmrapes.eth.csv → data_h_glmrapes_eth.csv
+RENAME? data_basenamedao.eth.csv → data_basenamedao_eth.csv
+RENAME? data_grants.safe.eth.csv → data_grants_safe_eth.csv
+RENAME? data_raidparty.eth.csv → data_raidparty_eth.csv
+RENAME? data_h_unipilot.eth.csv → data_h_unipilot_eth.csv
+RENAME? data_h_vote.vitadao.eth.csv → data_h_vote_vitadao_eth.csv
+RENAME? data_h_raidparty.eth.csv → data_h_raidparty_eth.csv
+RENAME? data_h_cream-finance.eth.csv → data_h_cream_finance_eth.csv
+RENAME? data_h_klimadao.eth.csv → data_h_klimadao_eth.csv
+RENAME? data_aurafinance.eth.csv → data_aurafinance_eth.csv
+RENAME? data_h_decentralgames.eth.csv → data_h_decentralgames_eth.csv
+RENAME? data_h_alluo.eth.csv → data_h_alluo_eth.csv
+RENAME? data_freerossdao.eth.csv → data_freerossdao_eth.csv
+RENAME? data_tetu.eth.csv → data_tetu_eth.csv
+RENAME? data_h_mutantsdao.eth.csv → data_h_mutantsdao_eth.csv
+RENAME? data_h_dorg.eth.csv → data_h_dorg_eth.csv
+RENAME? data_h_bestfork.eth.csv → data_h_bestfork_eth.csv
+RENAME? data_brightmoments.eth.csv → data_brightmoments_eth.csv
+RENAME? data_radiantcapital.eth.csv → data_radiantcapital_eth.csv
+RENAME? data_cultivatordao.eth.csv → data_cultivatordao_eth.csv
+RENAME? data_h_friendswithbenefits.eth.csv → data_h_friendswithbenefits_eth.csv
+RENAME? data_h_moonbeam-foundation.eth.csv → data_h_moonbeam_foundation_eth.csv
+RENAME? data_h_10b57e6da0.eth.csv → data_h_10b57e6da0_eth.csv
+RENAME? data_phonon.eth.csv → data_phonon_eth.csv
+RENAME? data_krausehouse.eth.csv → data_krausehouse_eth.csv
+RENAME? data_vote.vitadao.eth.csv → data_vote_vitadao_eth.csv
+RENAME? data_h_orbapp.eth.csv → data_h_orbapp_eth.csv
+RENAME? data_h_rarible.eth.csv → data_h_rarible_eth.csv
+RENAME? data_gro.xyz.csv → data_gro_xyz.csv
+RENAME? data_h_cre8r.eth.csv → data_h_cre8r_eth.csv
+RENAME? data_h_yieldguild.eth.csv → data_h_yieldguild_eth.csv
+RENAME? data_alchemixstakers.eth.csv → data_alchemixstakers_eth.csv
+RENAME? data_younghwang.eth.csv → data_younghwang_eth.csv
+RENAME? data_zechubdao.eth.csv → data_zechubdao_eth.csv
+RENAME? data_redactedcartel.eth.csv → data_redactedcartel_eth.csv
+RENAME? data_officialoceandao.eth.csv → data_officialoceandao_eth.csv
+RENAME? data_metabrands.eth.csv → data_metabrands_eth.csv
+RENAME? data_h_gmdao.eth.csv → data_h_gmdao_eth.csv
+RENAME? data_beanstalkfarmsbudget.eth.csv → data_beanstalkfarmsbudget_eth.csv
+RENAME? data_gov.dhedge.eth.csv → data_gov_dhedge_eth.csv
+RENAME? data_crowncapital.eth.csv → data_crowncapital_eth.csv
+RENAME? data_h_fatcatsdao.eth.csv → data_h_fatcatsdao_eth.csv
+RENAME? data_h_undw3.eth.csv → data_h_undw3_eth.csv
+RENAME? data_dopedao.eth.csv → data_dopedao_eth.csv
+RENAME? data_synthetix-stakers-poll.eth.csv → data_synthetix_stakers_poll_eth.csv
+RENAME? data_h_zechubdao.eth.csv → data_h_zechubdao_eth.csv
+RENAME? data_h_graphprotocol.eth.csv → data_h_graphprotocol_eth.csv
+RENAME? data_cakevote.eth.csv → data_cakevote_eth.csv
+RENAME? data_h_crowncapital.eth.csv → data_h_crowncapital_eth.csv
+RENAME? data_h_synthetix-stakers-poll.eth.csv → data_h_synthetix_stakers_poll_eth.csv
+RENAME? data_ilv.eth.csv → data_ilv_eth.csv
+RENAME? data_h_luchadores.eth.csv → data_h_luchadores_eth.csv
+RENAME? data_daocity.eth.csv → data_daocity_eth.csv
+RENAME? data_h_poh.eth.csv → data_h_poh_eth.csv
+RENAME? data_rook.eth.csv → data_rook_eth.csv
+RENAME? data_jennydao.eth.csv → data_jennydao_eth.csv
+RENAME? data_squiggledaotreasurysquad.eth.csv → data_squiggledaotreasurysquad_eth.csv
+RENAME? data_h_adidas.eth.csv → data_h_adidas_eth.csv
+RENAME? data_h_pangolindex.eth.csv → data_h_pangolindex_eth.csv
+RENAME? data_h_starknet.eth.csv → data_h_starknet_eth.csv
+RENAME? data_h_spookyswap.eth.csv → data_h_spookyswap_eth.csv
+RENAME? data_h_bancornetwork.eth.csv → data_h_bancornetwork_eth.csv
+RENAME? data_cryptexdao.eth.csv → data_cryptexdao_eth.csv
+RENAME? data_h_club.eth.csv → data_h_club_eth.csv
+RENAME? data_opcollective.eth.csv → data_opcollective_eth.csv
+RENAME? data_eulerdao.eth.csv → data_eulerdao_eth.csv
+RENAME? data_decentralgames.eth.csv → data_decentralgames_eth.csv
+RENAME? data_daomstr.eth.csv → data_daomstr_eth.csv
+RENAME? data_defigeek.eth.csv → data_defigeek_eth.csv
+RENAME? data_hypergptdao.eth.csv → data_hypergptdao_eth.csv
+RENAME? data_grailers.eth.csv → data_grailers_eth.csv
+RENAME? data_pickle.eth.csv → data_pickle_eth.csv
+RENAME? data_ens.eth.csv → data_ens_eth.csv
+RENAME? data_cvx.eth.csv → data_cvx_eth.csv
+RENAME? data_cabindao.eth.csv → data_cabindao_eth.csv
+RENAME? data_devdao.eth.csv → data_devdao_eth.csv
+RENAME? data_h_beefydao.eth.csv → data_h_beefydao_eth.csv
+RENAME? data_aave.eth.csv → data_aave_eth.csv
+RENAME? data_h_beanstalkfarmsbudget.eth.csv → data_h_beanstalkfarmsbudget_eth.csv
+RENAME? data_sismo.eth.csv → data_sismo_eth.csv
+RENAME? data_botto.eth.csv → data_botto_eth.csv
+RENAME? data_h_radiantcapital.eth.csv → data_h_radiantcapital_eth.csv
+RENAME? data_gal.eth.csv → data_gal_eth.csv
+RENAME? data_h_alpacafinance.eth.csv → data_h_alpacafinance_eth.csv
+RENAME? data_yam.eth.csv → data_yam_eth.csv
+RENAME? data_masknetwork.eth.csv → data_masknetwork_eth.csv
+RENAME? data_h_specialresolution.nexusmutual.eth.csv → data_h_specialresolution_nexusmutual_eth.csv
+RENAME? data_kogecoin.eth.csv → data_kogecoin_eth.csv
+RENAME? data_otterclam.eth.csv → data_otterclam_eth.csv
+RENAME? data_pangolindex.eth.csv → data_pangolindex_eth.csv
+RENAME? data_h_goodmorningnews.eth.csv → data_h_goodmorningnews_eth.csv
+RENAME? data_10b57e6da0.eth.csv → data_10b57e6da0_eth.csv
+RENAME? data_mutantsdao.eth.csv → data_mutantsdao_eth.csv
+RENAME? data_arbitrumfoundation.eth.csv → data_arbitrumfoundation_eth.csv
+RENAME? data_h_conic-dao.eth.csv → data_h_conic_dao_eth.csv
+RENAME? data_curve.eth.csv → data_curve_eth.csv
+RENAME? data_h_globalcoinresearch.eth.csv → data_h_globalcoinresearch_eth.csv
+RENAME? data_lgcryptounicorns.eth.csv → data_lgcryptounicorns_eth.csv
+RENAME? data_conic-dao.eth.csv → data_conic_dao_eth.csv
+RENAME? data_yieldguild.eth.csv → data_yieldguild_eth.csv
+RENAME? data_h_hypergptdao.eth.csv → data_h_hypergptdao_eth.csv
+RENAME? data_zora.eth.csv → data_zora_eth.csv
+RENAME? data_h_dcip.eth.csv → data_h_dcip_eth.csv
+RENAME? data_h_otterclam.eth.csv → data_h_otterclam_eth.csv
+RENAME? data_h_beanstalkfarms.eth.csv → data_h_beanstalkfarms_eth.csv
+RENAME? data_h_lido-snapshot.eth.csv → data_h_lido_snapshot_eth.csv
+RENAME? data_apecoin.eth.csv → data_apecoin_eth.csv
+RENAME? data_h_poolpool.pooltogether.eth.csv → data_h_poolpool_pooltogether_eth.csv
+RENAME? data_h_poktdao.eth.csv → data_h_poktdao_eth.csv
+RENAME? data_h_ybaby.eth.csv → data_h_ybaby_eth.csv
+RENAME? data_h_jennydao.eth.csv → data_h_jennydao_eth.csv
+RENAME? data_h_masknetwork.eth.csv → data_h_masknetwork_eth.csv
+RENAME? data_h_fei.eth.csv → data_h_fei_eth.csv
+RENAME? data_h_eulerdao.eth.csv → data_h_eulerdao_eth.csv
+RENAME? data_liberofinancial.eth.csv → data_liberofinancial_eth.csv
+RENAME? data_rarible.eth.csv → data_rarible_eth.csv
+RENAME? data_seizerdao.eth.csv → data_seizerdao_eth.csv
+RENAME? data_starknet.eth.csv → data_starknet_eth.csv
+RENAME? data_h_seizerdao.eth.csv → data_h_seizerdao_eth.csv
+RENAME? data_h_gitcoindao.eth.csv → data_h_gitcoindao_eth.csv
+RENAME? data_h_synapseprotocol.eth.csv → data_h_synapseprotocol_eth.csv
+RENAME? data_gnars.eth.csv → data_gnars_eth.csv
+RENAME? data_h_devdao.eth.csv → data_h_devdao_eth.csv
+RENAME? data_h_expansiondao.eth.csv → data_h_expansiondao_eth.csv
+RENAME? data_h_grailers.eth.csv → data_h_grailers_eth.csv
+RENAME? data_unlock-protocol.eth.csv → data_unlock_protocol_eth.csv
+RENAME? data_h_defigeek.eth.csv → data_h_defigeek_eth.csv
+RENAME? data_cow.eth.csv → data_cow_eth.csv
+RENAME? data_expansiondao.eth.csv → data_expansiondao_eth.csv
+RENAME? data_beefydao.eth.csv → data_beefydao_eth.csv
+RENAME? data_h_evmaverick.eth.csv → data_h_evmaverick_eth.csv
+RENAME? data_h_pickle.eth.csv → data_h_pickle_eth.csv
+RENAME? data_shapeshiftdao.eth.csv → data_shapeshiftdao_eth.csv
+RENAME? data_gdao.eth.csv → data_gdao_eth.csv
+RENAME? data_shellprotocol.eth.csv → data_shellprotocol_eth.csv
+RENAME? data_tomoondao.eth.csv → data_tomoondao_eth.csv
+RENAME? data_frax.eth.csv → data_frax_eth.csv
+RENAME? data_h_cabindao.eth.csv → data_h_cabindao_eth.csv
+RENAME? data_h_aavegotchi.eth.csv → data_h_aavegotchi_eth.csv
+RENAME? data_h_ampleforthorg.eth.csv → data_h_ampleforthorg_eth.csv
+RENAME? data_biswap-org.eth.csv → data_biswap_org_eth.csv
+RENAME? data_adidas.eth.csv → data_adidas_eth.csv
+RENAME? data_h_kogecoin.eth.csv → data_h_kogecoin_eth.csv
+RENAME? data_mantra-dao.eth.csv → data_mantra_dao_eth.csv
+RENAME? data_h_popcorn-snapshot.eth.csv → data_h_popcorn_snapshot_eth.csv
+RENAME? data_h_tomoondao.eth.csv → data_h_tomoondao_eth.csv
+RENAME? data_h_superraredao.eth.csv → data_h_superraredao_eth.csv
+RENAME? data_primexyz.eth.csv → data_primexyz_eth.csv
+RENAME? data_h_basenamedao.eth.csv → data_h_basenamedao_eth.csv
+RENAME? data_beanstalkfarms.eth.csv → data_beanstalkfarms_eth.csv
+RENAME? data_h_grants.safe.eth.csv → data_h_grants_safe_eth.csv
+RENAME? data_h_daocity.eth.csv → data_h_daocity_eth.csv
+RENAME? data_h_jbdao.eth.csv → data_h_jbdao_eth.csv
+RENAME? data_rbn.eth.csv → data_rbn_eth.csv
+RENAME? data_h_snapshot.dcl.eth.csv → data_h_snapshot_dcl_eth.csv
+RENAME? data_h_loot-dao.eth.csv → data_h_loot_dao_eth.csv
+RENAME? data_h_aurafinance.eth.csv → data_h_aurafinance_eth.csv
+RENAME? data_h_freerossdao.eth.csv → data_h_freerossdao_eth.csv
+RENAME? data_sushigov.eth.csv → data_sushigov_eth.csv
+RENAME? data_h_beanft.eth.csv → data_h_beanft_eth.csv
+RENAME? data_h_treschain.eth.csv → data_h_treschain_eth.csv
+RENAME? data_h_cryptexdao.eth.csv → data_h_cryptexdao_eth.csv
+RENAME? data_h_uberhaus.eth.csv → data_h_uberhaus_eth.csv
+RENAME? data_moonbeam-foundation.eth.csv → data_moonbeam_foundation_eth.csv
+RENAME? data_friendswithbenefits.eth.csv → data_friendswithbenefits_eth.csv
+RENAME? data_h_songadao.eth.csv → data_h_songadao_eth.csv
+RENAME? data_spookyswap.eth.csv → data_spookyswap_eth.csv
+RENAME? data_h_dopedao.eth.csv → data_h_dopedao_eth.csv
+RENAME? data_h_tracer.eth.csv → data_h_tracer_eth.csv
+RENAME? data_h_bullsontheblock.eth.csv → data_h_bullsontheblock_eth.csv
+RENAME? data_h_hop.eth.csv → data_h_hop_eth.csv
+RENAME? data_h_notional.eth.csv → data_h_notional_eth.csv
+RENAME? data_snapshot.dcl.eth.csv → data_snapshot_dcl_eth.csv
+RENAME? data_h_krausehouse.eth.csv → data_h_krausehouse_eth.csv
+RENAME? data_glmrapes.eth.csv → data_glmrapes_eth.csv
+RENAME? data_h_level-finance.eth.csv → data_h_level_finance_eth.csv
+RENAME? data_instadapp-gov.eth.csv → data_instadapp_gov_eth.csv
+RENAME? data_treschain.eth.csv → data_treschain_eth.csv
+RENAME? data_superraredao.eth.csv → data_superraredao_eth.csv
+RENAME? data_beets.eth.csv → data_beets_eth.csv
+RENAME? data_livelabs.eth.csv → data_livelabs_eth.csv
+RENAME? data_orbapp.eth.csv → data_orbapp_eth.csv
+RENAME? data_unipilot.eth.csv → data_unipilot_eth.csv
+RENAME? data_xdaistake.eth.csv → data_xdaistake_eth.csv
+RENAME? data_0xgov.eth.csv → data_0xgov_eth.csv
+RENAME? data_h_genesisblocks.eth.csv → data_h_genesisblocks_eth.csv
+RENAME? data_h_xdaistake.eth.csv → data_h_xdaistake_eth.csv
+RENAME? data_ffdao.eth.csv → data_ffdao_eth.csv
+RENAME? data_staking.idlefinance.eth.csv → data_staking_idlefinance_eth.csv
+RENAME? data_luchadores.eth.csv → data_luchadores_eth.csv
+RENAME? data_klimadao.eth.csv → data_klimadao_eth.csv
+RENAME? data_h_phonon.eth.csv → data_h_phonon_eth.csv
+RENAME? data_h_opiumprotocol.eth.csv → data_h_opiumprotocol_eth.csv
+RENAME? data_decrypt-media.eth.csv → data_decrypt_media_eth.csv
+RENAME? data_h_younghwang.eth.csv → data_h_younghwang_eth.csv
+RENAME? data_h_daomstr.eth.csv → data_h_daomstr_eth.csv
+RENAME? data_h_metabrands.eth.csv → data_h_metabrands_eth.csv
+RENAME? data_bestfork.eth.csv → data_bestfork_eth.csv
+RENAME? data_dea.eth.csv → data_dea_eth.csv
+RENAME? data_h_polygonpenguins.eth.csv → data_h_polygonpenguins_eth.csv
+RENAME? data_metafactory.eth.csv → data_metafactory_eth.csv
+RENAME? data_h_gov.dhedge.eth.csv → data_h_gov_dhedge_eth.csv
+RENAME? data_varen.eth.csv → data_varen_eth.csv
+RENAME? data_fatcatsdao.eth.csv → data_fatcatsdao_eth.csv
+RENAME? data_h_banklessvault.eth.csv → data_h_banklessvault_eth.csv
+RENAME? data_gmdao.eth.csv → data_gmdao_eth.csv
+RENAME? data_balancer.eth.csv → data_balancer_eth.csv
+RENAME? data_h_gro.xyz.csv → data_h_gro_xyz.csv
+RENAME? data_h_streamr.eth.csv → data_h_streamr_eth.csv
+RENAME? data_alpacafinance.eth.csv → data_alpacafinance_eth.csv
+RENAME? data_gearbox.eth.csv → data_gearbox_eth.csv
+RENAME? data_h_tokenlon.eth.csv → data_h_tokenlon_eth.csv
+RENAME? data_h_gov.radicle.eth.csv → data_h_gov_radicle_eth.csv
+RENAME? data_h_blackpoolhq.eth.csv → data_h_blackpoolhq_eth.csv
+RENAME? data_h_abracadabrabymerlinthemagician.eth.csv → data_h_abracadabrabymerlinthemagician_eth.csv
+RENAME? data_h_pushdao.eth.csv → data_h_pushdao_eth.csv
+RENAME? data_undw3.eth.csv → data_undw3_eth.csv
+RENAME? data_h_tigervc-dao.eth.csv → data_h_tigervc_dao_eth.csv
+RENAME? data_h_astardegens.eth.csv → data_h_astardegens_eth.csv
+RENAME? data_tempusgov.eth.csv → data_tempusgov_eth.csv
+RENAME? data_apwine.eth.csv → data_apwine_eth.csv
+RENAME? data_h_seedifyhodlers.eth.csv → data_h_seedifyhodlers_eth.csv
+RENAME? data_h_colony.eth.csv → data_h_colony_eth.csv
+RENAME? data_h_gnosis.eth.csv → data_h_gnosis_eth.csv
+RENAME? data_mocana.eth.csv → data_mocana_eth.csv
+RENAME? data_theopendao.eth.csv → data_theopendao_eth.csv
+RENAME? data_h_thegurudao.eth.csv → data_h_thegurudao_eth.csv
+RENAME? data_bancornetwork.eth.csv → data_bancornetwork_eth.csv
+RENAME? data_h_tempusgov.eth.csv → data_h_tempusgov_eth.csv
+RENAME? data_h_pancakebunny.eth.csv → data_h_pancakebunny_eth.csv
+RENAME? data_h_turbovote.eth.csv → data_h_turbovote_eth.csv
+RENAME? data_h_bitdao.eth.csv → data_h_bitdao_eth.csv
+RENAME? data_graphprotocol.eth.csv → data_graphprotocol_eth.csv
+RENAME? data_barnbridge.eth.csv → data_barnbridge_eth.csv
+RENAME? data_diadao.eth.csv → data_diadao_eth.csv
+RENAME? data_h_dydxgov.eth.csv → data_h_dydxgov_eth.csv
+RENAME? data_turbovote.eth.csv → data_turbovote_eth.csv
+RENAME? data_h_sismo.eth.csv → data_h_sismo_eth.csv
+RENAME? data_h_idlefinance.eth.csv → data_h_idlefinance_eth.csv
+RENAME? data_morpho.eth.csv → data_morpho_eth.csv
+RENAME? data_h_people-dao.eth.csv → data_h_people_dao_eth.csv
+RENAME? data_silofinance.eth.csv → data_silofinance_eth.csv
+RENAME? data_h_mstablegovernance.eth.csv → data_h_mstablegovernance_eth.csv
+RENAME? data_meebitsdao.eth.csv → data_meebitsdao_eth.csv
+RENAME? data_h_botto.eth.csv → data_h_botto_eth.csv
+RENAME? data_pancakebunny.eth.csv → data_pancakebunny_eth.csv
+RENAME? data_h_gal.eth.csv → data_h_gal_eth.csv
+RENAME? data_sharkdao.eth.csv → data_sharkdao_eth.csv
+RENAME? data_h_gasdao.eth.csv → data_h_gasdao_eth.csv
+RENAME? data_h_yam.eth.csv → data_h_yam_eth.csv
+RENAME? data_dlytoken.eth.csv → data_dlytoken_eth.csv
+RENAME? data_wearebeansprout.eth.csv → data_wearebeansprout_eth.csv
+RENAME? data_badgerdao.eth.csv → data_badgerdao_eth.csv
+RENAME? data_h_gdao.eth.csv → data_h_gdao_eth.csv
+RENAME? data_h_brightmoments.eth.csv → data_h_brightmoments_eth.csv
+RENAME? data_h_badgerdao.eth.csv → data_h_badgerdao_eth.csv
+RENAME? data_meritcircle.eth.csv → data_meritcircle_eth.csv
+RENAME? data_h_cultivatordao.eth.csv → data_h_cultivatordao_eth.csv
+RENAME? data_dodobird.eth.csv → data_dodobird_eth.csv
+RENAME? data_olympusdao.eth.csv → data_olympusdao_eth.csv
+RENAME? data_h_rallygov.eth.csv → data_h_rallygov_eth.csv
+RENAME? data_h_frax.eth.csv → data_h_frax_eth.csv
+RENAME? data_h_wagdie.eth.csv → data_h_wagdie_eth.csv
+RENAME? data_h_qidao.eth.csv → data_h_qidao_eth.csv
+RENAME? data_cream-finance.eth.csv → data_cream_finance_eth.csv
+RENAME? data_h_stakedao.eth.csv → data_h_stakedao_eth.csv
+RENAME? data_h_futera.eth.csv → data_h_futera_eth.csv
+RENAME? data_h_primerating.eth.csv → data_h_primerating_eth.csv
+RENAME? data_1inch.eth.csv → data_1inch_eth.csv
+RENAME? data_h_index-coop.eth.csv → data_h_index_coop_eth.csv
+RENAME? data_h_golflinks.eth.csv → data_h_golflinks_eth.csv
+RENAME? data_h_cvx.eth.csv → data_h_cvx_eth.csv
+RENAME? data_h_ens.eth.csv → data_h_ens_eth.csv
+RENAME? data_vote-perp.eth.csv → data_vote_perp_eth.csv
+RENAME? data_golflinks.eth.csv → data_golflinks_eth.csv
+RENAME? data_seedifyhodlers.eth.csv → data_seedifyhodlers_eth.csv
+RENAME? data_h_vote-perp.eth.csv → data_h_vote_perp_eth.csv
+RENAME? data_h_assangedao.eth.csv → data_h_assangedao_eth.csv
+RENAME? data_h_piedao.eth.csv → data_h_piedao_eth.csv
+RENAME? data_poh.eth.csv → data_poh_eth.csv
+RENAME? data_ilvgov.eth.csv → data_ilvgov_eth.csv
+RENAME? data_truefigov.eth.csv → data_truefigov_eth.csv
+RENAME? data_h_ousdgov.eth.csv → data_h_ousdgov_eth.csv
+RENAME? data_h_truefigov.eth.csv → data_h_truefigov_eth.csv
+RENAME? data_alluo.eth.csv → data_alluo_eth.csv
+RENAME? data_h_ilv.eth.csv → data_h_ilv_eth.csv
+RENAME? data_mstablegovernance.eth.csv → data_mstablegovernance_eth.csv
+RENAME? data_h_alchemixstakers.eth.csv → data_h_alchemixstakers_eth.csv
+RENAME? data_dcip.eth.csv → data_dcip_eth.csv
+RENAME? data_h_zora.eth.csv → data_h_zora_eth.csv
+RENAME? data_h_leaguedao.eth.csv → data_h_leaguedao_eth.csv
+RENAME? data_h_hbot-prp.eth.csv → data_h_hbot_prp_eth.csv
+RENAME? data_h_beanstalkbugbounty.eth.csv → data_h_beanstalkbugbounty_eth.csv
+RENAME? data_doodles.eth.csv → data_doodles_eth.csv
+RENAME? data_metislayer2.eth.csv → data_metislayer2_eth.csv
+RENAME? data_leaguedao.eth.csv → data_leaguedao_eth.csv
+RENAME? data_h_officialoceandao.eth.csv → data_h_officialoceandao_eth.csv
+RENAME? data_h_joegovernance.eth.csv → data_h_joegovernance_eth.csv
+RENAME? data_cre8r.eth.csv → data_cre8r_eth.csv
+RENAME? data_jpeg’d.eth.csv → data_jpegd_eth.csv
+RENAME? data_h_community.nexusmutual.eth.csv → data_h_community_nexusmutual_eth.csv
+RENAME? .DS_Store → ds_store
+RENAME? Descriptives Template.xlsx → descriptives_template.xlsx
+RENAME? .DS_Store → ds_store
+RENAME? a_part_.rtf → a_part.rtf
+RENAME? subsample copy.rtf → subsample_copy.rtf
+RENAME? a_main_.rtf → a_main.rtf
+RENAME? main_.rtf → main.rtf
+RENAME? csdid_main_results_event_0.9.rtf → csdid_main_results_event_0_9.rtf
+RENAME? csdid_main_results_calendar_0.5_rand_voter.rtf → csdid_main_results_calendar_0_5_rand_voter.rtf
+RENAME? csdid_main_results_calendar_0.2_rand_voter.rtf.rtf → csdid_main_results_calendar_0_2_rand_voter_rtf.rtf
+RENAME? csdid_main_results_group_0.9.rtf → csdid_main_results_group_0_9.rtf
+RENAME? csdid_main_results_event_0.96.rtf → csdid_main_results_event_0_96.rtf
+RENAME? .DS_Store → ds_store
+RENAME? csdid_main_results_group_0.96.rtf → csdid_main_results_group_0_96.rtf
+RENAME? csdid_main_results_simple_0.9a.rtf → csdid_main_results_simple_0_9a.rtf
+RENAME? csdid_main_results_group_0.9a.rtf → csdid_main_results_group_0_9a.rtf
+RENAME? csdid_main_results_simple_0.96.rtf → csdid_main_results_simple_0_96.rtf
+RENAME? csdid_main_results_event_0.9a.rtf → csdid_main_results_event_0_9a.rtf
+RENAME? csdid_main_results_event_0.01_rand_voter.rtf → csdid_main_results_event_0_01_rand_voter.rtf
+RENAME? csdid_main_results_event_0.95.rtf → csdid_main_results_event_0_95.rtf
+RENAME? csdid_main_results_group_0.5_rand_voter.rtf → csdid_main_results_group_0_5_rand_voter.rtf
+RENAME? csdid_main_results_group_0.95.rtf → csdid_main_results_group_0_95.rtf
+RENAME? csdid_main_results_simple_0.95.rtf → csdid_main_results_simple_0_95.rtf
+RENAME? csdid_main_results_calendar_0.2_rand_dao.rtf → csdid_main_results_calendar_0_2_rand_dao.rtf
+RENAME? csdid_main_results_calendar_0.01_rand_voter.rtf → csdid_main_results_calendar_0_01_rand_voter.rtf
+RENAME? csdid_main_results_simple_0.9.rtf → csdid_main_results_simple_0_9.rtf
+RENAME? csdid_main_results_calendar_0.3_rand_dao.rtf → csdid_main_results_calendar_0_3_rand_dao.rtf
+RENAME? csdid_main_results_group_0.5test.rtf → csdid_main_results_group_0_5test.rtf
+RENAME? csdid_main_results_calendar_0.7.rtf → csdid_main_results_calendar_0_7.rtf
+RENAME? csdid_main_results_calendar_0.95.rtf → csdid_main_results_calendar_0_95.rtf
+RENAME? csdid_main_results_group_0.2_rand_dao.rtf → csdid_main_results_group_0_2_rand_dao.rtf
+RENAME? csdid_main_results_calendar_0.9a.rtf → csdid_main_results_calendar_0_9a.rtf
+RENAME? csdid_main_results_calendar_0.5.rtf → csdid_main_results_calendar_0_5.rtf
+RENAME? csdid_main_results_calendar_0.4.rtf → csdid_main_results_calendar_0_4.rtf
+RENAME? csdid_main_results_calendar_0.96.rtf → csdid_main_results_calendar_0_96.rtf
+RENAME? csdid_main_results_event_0.3_rand_dao.rtf → csdid_main_results_event_0_3_rand_dao.rtf
+RENAME? csdid_main_results_simple_0.5.rtf → csdid_main_results_simple_0_5.rtf
+RENAME? csdid_main_results_group_0.3_rand_dao.rtf → csdid_main_results_group_0_3_rand_dao.rtf
+RENAME? csdid_main_results_simple_0.4.rtf → csdid_main_results_simple_0_4.rtf
+RENAME? csdid_main_results_event_0.2_rand_dao.rtf → csdid_main_results_event_0_2_rand_dao.rtf
+RENAME? csdid_main_results_simple_0.7.rtf → csdid_main_results_simple_0_7.rtf
+RENAME? csdid_main_results_event_0.2_rand_voter.rtf.rtf → csdid_main_results_event_0_2_rand_voter_rtf.rtf
+RENAME? csdid_main_results_simple_0.5_rand_voter.rtf → csdid_main_results_simple_0_5_rand_voter.rtf
+RENAME? csdid_main_results_event_0.5test.rtf → csdid_main_results_event_0_5test.rtf
+RENAME? csdid_main_results_simple_0.2_rand_dao.rtf → csdid_main_results_simple_0_2_rand_dao.rtf
+RENAME? csdid_main_results_event_0.5_rand_voter.rtf → csdid_main_results_event_0_5_rand_voter.rtf
+RENAME? csdid_main_results_simple_0.5test.rtf → csdid_main_results_simple_0_5test.rtf
+RENAME? csdid_main_results_group_0.7.rtf → csdid_main_results_group_0_7.rtf
+RENAME? csdid_main_results_group_0.01_rand_voter.rtf → csdid_main_results_group_0_01_rand_voter.rtf
+RENAME? csdid_main_results_calendar_0.5test.rtf → csdid_main_results_calendar_0_5test.rtf
+RENAME? csdid_main_results_event_0.7.rtf → csdid_main_results_event_0_7.rtf
+RENAME? csdid_main_results_simple_0.3_rand_dao.rtf → csdid_main_results_simple_0_3_rand_dao.rtf
+RENAME? csdid_main_results_event_0.5.rtf → csdid_main_results_event_0_5.rtf
+RENAME? csdid_main_results_group_0.4.rtf → csdid_main_results_group_0_4.rtf
+RENAME? csdid_main_results_group_0.5.rtf → csdid_main_results_group_0_5.rtf
+RENAME? csdid_main_results_event_0.4.rtf → csdid_main_results_event_0_4.rtf
+RENAME? csdid_main_results_simple_0.01_rand_voter.rtf → csdid_main_results_simple_0_01_rand_voter.rtf
+RENAME? .DS_Store → ds_store
+RENAME? .DS_Store → ds_store
+RENAME? .DS_Store → ds_store
+RENAME? .DS_Store → ds_store
+RENAME? .DS_Store → ds_store
+RENAME? csdid_type_quadratic_simple_0.5.rtf → csdid_type_quadratic_simple_0_5.rtf
+RENAME? csdid_type_quadratic_calendar_0.5.rtf → csdid_type_quadratic_calendar_0_5.rtf
+RENAME? csdid_type_quadratic_event_0.5.rtf → csdid_type_quadratic_event_0_5.rtf
+RENAME? csdid_type_quadratic_group_0.5.rtf → csdid_type_quadratic_group_0_5.rtf
+RENAME? csdid_type_basic_group_0.5.rtf → csdid_type_basic_group_0_5.rtf
+RENAME? csdid_type_basic_calendar_0.5.rtf → csdid_type_basic_calendar_0_5.rtf
+RENAME? csdid_type_basic_event_0.5.rtf → csdid_type_basic_event_0_5.rtf
+RENAME? csdid_type_basic_simple_0.5.rtf → csdid_type_basic_simple_0_5.rtf
+RENAME? csdid_type_approval_calendar_0.5.rtf → csdid_type_approval_calendar_0_5.rtf
+RENAME? csdid_type_approval_simple_0.5.rtf → csdid_type_approval_simple_0_5.rtf
+RENAME? csdid_type_approval_event_0.5.rtf → csdid_type_approval_event_0_5.rtf
+RENAME? csdid_type_approval_group_0.5.rtf → csdid_type_approval_group_0_5.rtf
+RENAME? csdid_type_weighted_calendar_0.9.rtf → csdid_type_weighted_calendar_0_9.rtf
+RENAME? csdid_type_weighted_group_0.9.rtf → csdid_type_weighted_group_0_9.rtf
+RENAME? csdid_type_weighted_event_0.9.rtf → csdid_type_weighted_event_0_9.rtf
+RENAME? csdid_type_weighted_simple_0.9.rtf → csdid_type_weighted_simple_0_9.rtf
+RENAME? csdid_type_weighted_simple_0.7.rtf → csdid_type_weighted_simple_0_7.rtf
+RENAME? csdid_type_weighted_event_0.7.rtf → csdid_type_weighted_event_0_7.rtf
+RENAME? csdid_type_weighted_group_0.7.rtf → csdid_type_weighted_group_0_7.rtf
+RENAME? csdid_type_weighted_calendar_0.7.rtf → csdid_type_weighted_calendar_0_7.rtf
+RENAME? csdid__calendar_.rtf → csdid_calendar.rtf
+RENAME? csdid__simple_.rtf → csdid_simple.rtf
+RENAME? csdid__event_.rtf → csdid_event.rtf
+RENAME? csdid__group_.rtf → csdid_group.rtf
+RENAME? csdid_type_ranked_choice_calendar_0.96.rtf → csdid_type_ranked_choice_calendar_0_96.rtf
+RENAME? csdid_type_ranked_choice_event_0.96.rtf → csdid_type_ranked_choice_event_0_96.rtf
+RENAME? csdid_type_ranked_choice_group_0.96.rtf → csdid_type_ranked_choice_group_0_96.rtf
+RENAME? csdid_type_ranked_choice_simple_0.96.rtf → csdid_type_ranked_choice_simple_0_96.rtf
+RENAME? csdid_type_approval_calendar_0.96.rtf → csdid_type_approval_calendar_0_96.rtf
+RENAME? csdid_type_approval_group_0.96.rtf → csdid_type_approval_group_0_96.rtf
+RENAME? csdid_type_approval_event_0.96.rtf → csdid_type_approval_event_0_96.rtf
+RENAME? csdid_type_approval_simple_0.96.rtf → csdid_type_approval_simple_0_96.rtf
+RENAME? csdid_type_basic_group_0.5.rtf → csdid_type_basic_group_0_5.rtf
+RENAME? csdid_type_basic_calendar_0.5.rtf → csdid_type_basic_calendar_0_5.rtf
+RENAME? csdid_type_basic_event_0.5.rtf → csdid_type_basic_event_0_5.rtf
+RENAME? csdid_type_basic_simple_0.5.rtf → csdid_type_basic_simple_0_5.rtf
+RENAME? csdid_type_ranked_choice_calendar_0.5.rtf → csdid_type_ranked_choice_calendar_0_5.rtf
+RENAME? csdid_type_ranked_choice_group_0.5.rtf → csdid_type_ranked_choice_group_0_5.rtf
+RENAME? csdid_type_ranked_choice_event_0.5.rtf → csdid_type_ranked_choice_event_0_5.rtf
+RENAME? csdid_type_ranked_choice_simple_0.5.rtf → csdid_type_ranked_choice_simple_0_5.rtf
+RENAME? csdid_type_ranked_choice_calendar_0.5.rtf → csdid_type_ranked_choice_calendar_0_5.rtf
+RENAME? csdid_type_ranked_choice_group_0.5.rtf → csdid_type_ranked_choice_group_0_5.rtf
+RENAME? csdid_type_ranked_choice_event_0.5.rtf → csdid_type_ranked_choice_event_0_5.rtf
+RENAME? csdid_type_ranked_choice_simple_0.5.rtf → csdid_type_ranked_choice_simple_0_5.rtf
+RENAME? csdid_type_weighted_simple_0.5.rtf → csdid_type_weighted_simple_0_5.rtf
+RENAME? csdid_type_weighted_group_0.5.rtf → csdid_type_weighted_group_0_5.rtf
+RENAME? csdid_type_weighted_event_0.5.rtf → csdid_type_weighted_event_0_5.rtf
+RENAME? csdid_type_weighted_calendar_0.5.rtf → csdid_type_weighted_calendar_0_5.rtf
+RENAME? .DS_Store → ds_store
+RENAME? csdid_type_weighted_simple_0.5.rtf → csdid_type_weighted_simple_0_5.rtf
+RENAME? csdid_type_weighted_group_0.5.rtf → csdid_type_weighted_group_0_5.rtf
+RENAME? csdid_type_weighted_event_0.5.rtf → csdid_type_weighted_event_0_5.rtf
+RENAME? csdid_type_weighted_calendar_0.5.rtf → csdid_type_weighted_calendar_0_5.rtf
+RENAME? .DS_Store → ds_store
+RENAME? csdid_type_basic_event_0.7.rtf → csdid_type_basic_event_0_7.rtf
+RENAME? csdid_type_basic_calendar_0.7.rtf → csdid_type_basic_calendar_0_7.rtf
+RENAME? csdid_type_basic_group_0.7.rtf → csdid_type_basic_group_0_7.rtf
+RENAME? csdid_type_basic_simple_0.7.rtf → csdid_type_basic_simple_0_7.rtf
+RENAME? csdid_type_weighted_simple_0.5.rtf → csdid_type_weighted_simple_0_5.rtf
+RENAME? csdid_type_weighted_group_0.5.rtf → csdid_type_weighted_group_0_5.rtf
+RENAME? csdid_type_weighted_event_0.5.rtf → csdid_type_weighted_event_0_5.rtf
+RENAME? csdid_type_weighted_calendar_0.5.rtf → csdid_type_weighted_calendar_0_5.rtf
+RENAME? csdid_type_weighted_calendar_0.01.rtf → csdid_type_weighted_calendar_0_01.rtf
+RENAME? csdid_type_weighted_group_0.01.rtf → csdid_type_weighted_group_0_01.rtf
+RENAME? csdid_type_weighted_event_0.01.rtf → csdid_type_weighted_event_0_01.rtf
+RENAME? csdid_type_weighted_simple_0.01.rtf → csdid_type_weighted_simple_0_01.rtf
+RENAME? csdid_type_weighted_calendar_0.05.rtf → csdid_type_weighted_calendar_0_05.rtf
+RENAME? csdid_type_weighted_event_0.05.rtf → csdid_type_weighted_event_0_05.rtf
+RENAME? csdid_type_weighted_group_0.05.rtf → csdid_type_weighted_group_0_05.rtf
+RENAME? csdid_type_weighted_simple_0.05.rtf → csdid_type_weighted_simple_0_05.rtf
+RENAME? csdid_type_weighted_simple_0.96.rtf → csdid_type_weighted_simple_0_96.rtf
+RENAME? csdid_type_weighted_calendar_0.96.rtf → csdid_type_weighted_calendar_0_96.rtf
+RENAME? csdid_type_weighted_event_0.96.rtf → csdid_type_weighted_event_0_96.rtf
+RENAME? csdid_type_weighted_group_0.96.rtf → csdid_type_weighted_group_0_96.rtf
+RENAME? csdid_type_weighted_simple_0.5.rtf → csdid_type_weighted_simple_0_5.rtf
+RENAME? csdid_type_weighted_group_0.5.rtf → csdid_type_weighted_group_0_5.rtf
+RENAME? csdid_type_weighted_event_0.5.rtf → csdid_type_weighted_event_0_5.rtf
+RENAME? csdid_type_weighted_calendar_0.5.rtf → csdid_type_weighted_calendar_0_5.rtf
+RENAME? csdid_type_weighted_simple_0.3.rtf → csdid_type_weighted_simple_0_3.rtf
+RENAME? csdid_type_weighted_group_0.3.rtf → csdid_type_weighted_group_0_3.rtf
+RENAME? csdid_type_weighted_event_0.3.rtf → csdid_type_weighted_event_0_3.rtf
+RENAME? csdid_type_weighted_calendar_0.3.rtf → csdid_type_weighted_calendar_0_3.rtf
+RENAME? csdid_type_approval_calendar_0.5.rtf → csdid_type_approval_calendar_0_5.rtf
+RENAME? csdid_type_approval_simple_0.5.rtf → csdid_type_approval_simple_0_5.rtf
+RENAME? csdid_type_approval_event_0.5.rtf → csdid_type_approval_event_0_5.rtf
+RENAME? csdid_type_approval_group_0.5.rtf → csdid_type_approval_group_0_5.rtf
+RENAME? csdid_type_basic_group_0.5.rtf → csdid_type_basic_group_0_5.rtf
+RENAME? csdid_type_basic_calendar_0.5.rtf → csdid_type_basic_calendar_0_5.rtf
+RENAME? csdid_type_basic_event_0.5.rtf → csdid_type_basic_event_0_5.rtf
+RENAME? csdid_type_basic_simple_0.5.rtf → csdid_type_basic_simple_0_5.rtf
+RENAME? csdid_type_quadratic_simple_0.5.rtf → csdid_type_quadratic_simple_0_5.rtf
+RENAME? csdid_type_quadratic_calendar_0.5.rtf → csdid_type_quadratic_calendar_0_5.rtf
+RENAME? csdid_type_quadratic_event_0.5.rtf → csdid_type_quadratic_event_0_5.rtf
+RENAME? csdid_type_quadratic_group_0.5.rtf → csdid_type_quadratic_group_0_5.rtf
+RENAME? csdid_type_weighted_simple_0.5.rtf → csdid_type_weighted_simple_0_5.rtf
+RENAME? csdid_type_weighted_group_0.5.rtf → csdid_type_weighted_group_0_5.rtf
+RENAME? csdid_type_weighted_event_0.5.rtf → csdid_type_weighted_event_0_5.rtf
+RENAME? csdid_type_weighted_calendar_0.5.rtf → csdid_type_weighted_calendar_0_5.rtf
+RENAME? csdid_type_basic_group_0.96.rtf → csdid_type_basic_group_0_96.rtf
+RENAME? csdid_type_basic_event_0.96.rtf → csdid_type_basic_event_0_96.rtf
+RENAME? csdid_type_basic_simple_0.96.rtf → csdid_type_basic_simple_0_96.rtf
+RENAME? csdid_type_basic_calendar_0.96.rtf → csdid_type_basic_calendar_0_96.rtf
+RENAME? csdid__calendar_.rtf → csdid_calendar.rtf
+RENAME? csdid__simple_.rtf → csdid_simple.rtf
+RENAME? csdid__event_.rtf → csdid_event.rtf
+RENAME? csdid__group_.rtf → csdid_group.rtf
+RENAME? csdid_type_basic_group_0.90.rtf → csdid_type_basic_group_0_90.rtf
+RENAME? csdid_type_basic_event_0.90.rtf → csdid_type_basic_event_0_90.rtf
+RENAME? csdid_type_basic_simple_0.90.rtf → csdid_type_basic_simple_0_90.rtf
+RENAME? csdid_type_basic_calendar_0.90.rtf → csdid_type_basic_calendar_0_90.rtf
+RENAME? csdid_type_ranked_choice_simple_0.9.rtf → csdid_type_ranked_choice_simple_0_9.rtf
+RENAME? csdid_type_ranked_choice_group_0.9.rtf → csdid_type_ranked_choice_group_0_9.rtf
+RENAME? csdid_type_ranked_choice_event_0.9.rtf → csdid_type_ranked_choice_event_0_9.rtf
+RENAME? csdid_type_ranked_choice_calendar_0.9.rtf → csdid_type_ranked_choice_calendar_0_9.rtf
+RENAME? .DS_Store → ds_store
+RENAME? csdid_type_weighted_simple_0.5.rtf → csdid_type_weighted_simple_0_5.rtf
+RENAME? csdid_type_weighted_group_0.5.rtf → csdid_type_weighted_group_0_5.rtf
+RENAME? csdid_type_weighted_event_0.5.rtf → csdid_type_weighted_event_0_5.rtf
+RENAME? csdid_type_weighted_calendar_0.5.rtf → csdid_type_weighted_calendar_0_5.rtf
+RENAME? csdid_type_weighted_simple_0.5.rtf → csdid_type_weighted_simple_0_5.rtf
+RENAME? csdid_type_weighted_group_0.5.rtf → csdid_type_weighted_group_0_5.rtf
+RENAME? csdid_type_weighted_event_0.5.rtf → csdid_type_weighted_event_0_5.rtf
+RENAME? csdid_type_weighted_calendar_0.5.rtf → csdid_type_weighted_calendar_0_5.rtf
+RENAME? csdid_type_weighted_calendar_0.01.rtf → csdid_type_weighted_calendar_0_01.rtf
+RENAME? csdid_type_weighted_group_0.01.rtf → csdid_type_weighted_group_0_01.rtf
+RENAME? csdid_type_weighted_event_0.01.rtf → csdid_type_weighted_event_0_01.rtf
+RENAME? csdid_type_weighted_simple_0.01.rtf → csdid_type_weighted_simple_0_01.rtf
+RENAME? csdid_type_basic_group_0.5.rtf → csdid_type_basic_group_0_5.rtf
+RENAME? csdid_type_basic_calendar_0.5.rtf → csdid_type_basic_calendar_0_5.rtf
+RENAME? csdid_type_basic_event_0.5.rtf → csdid_type_basic_event_0_5.rtf
+RENAME? csdid_type_basic_simple_0.5.rtf → csdid_type_basic_simple_0_5.rtf
+RENAME? csdid_type_basic_group_0.5.rtf → csdid_type_basic_group_0_5.rtf
+RENAME? csdid_type_basic_calendar_0.5.rtf → csdid_type_basic_calendar_0_5.rtf
+RENAME? csdid_type_basic_event_0.5.rtf → csdid_type_basic_event_0_5.rtf
+RENAME? csdid_type_basic_simple_0.5.rtf → csdid_type_basic_simple_0_5.rtf
+RENAME?  scatter voting_3m own_margin.png → scatter_voting_3m_own_margin.png
+RENAME? own_margin dens.png → own_margin_dens.png
+RENAME? binscatter voting_3m own_margin if own_margin > -1 & own_margin < 0.98 & own_margin !=0.png → binscatter_voting_3m_own_margin_if_own_margin_1_own_margin_0_98_own_margin_0.png
+RENAME? .DS_Store → ds_store
+RENAME? own_margin dens his.png → own_margin_dens_his.png
+RENAME? own_margin his.png → own_margin_his.png
+RENAME? binscatter voting_3m own_margin if own_margin > -0.98 & own_margin < 0.98.png → binscatter_voting_3m_own_margin_if_own_margin_0_98_own_margin_0_98.png
+RENAME? .DS_Store → ds_store
+RENAME? .DS_Store → ds_store
+RENAME? __000001_mean_mis_basic_coef.csv → 000001_mean_mis_basic_coef.csv
+RENAME? .DS_Store → ds_store
+RENAME? __000000_mean_mis_q_coef.csv → 000000_mean_mis_q_coef.csv
+RENAME? __000001_mean_mis_q_coef.csv → 000001_mean_mis_q_coef.csv
+RENAME? __000000_mean_mis_app_coef.csv → 000000_mean_mis_app_coef.csv
+RENAME? __000000_mean_mis_w_coef.csv → 000000_mean_mis_w_coef.csv
+RENAME? __000001_mean_mis_w_coef.csv → 000001_mean_mis_w_coef.csv
+RENAME? __000000_mean_mis_rc_coef.csv → 000000_mean_mis_rc_coef.csv
+RENAME? __000001_mean_mis_app_coef.csv → 000001_mean_mis_app_coef.csv
+RENAME? __000001_mean_voted_coef.csv → 000001_mean_voted_coef.csv
+RENAME? __000000_mean_voted_coef.csv → 000000_mean_voted_coef.csv
+RENAME? __000000_mean_mis_basic_coef.csv → 000000_mean_mis_basic_coef.csv
+RENAME? __000001_mean_mis_coef.csv → 000001_mean_mis_coef.csv
+RENAME? __000000_mean_mis_coef.csv → 000000_mean_mis_coef.csv
+RENAME? __000001_mean_mis_rc_coef.csv → 000001_mean_mis_rc_coef.csv
+RENAME? 2024-08-23-13-25-19_data_prep_iter.smcl → 2024_08_23_13_25_19_data_prep_iter.smcl
+RENAME? 2024-08-23-10-01-10_data_prep_iter.smcl → 2024_08_23_10_01_10_data_prep_iter.smcl
+RENAME? 2024-10-21-17-31-20_data_prep_iter.log → 2024_10_21_17_31_20_data_prep_iter.log
+RENAME? 2024-10-19-16-30-11_data_prep_iter.smcl → 2024_10_19_16_30_11_data_prep_iter.smcl
+RENAME? 2024-10-21-17-30-55_data_prep_iter.smcl → 2024_10_21_17_30_55_data_prep_iter.smcl
+RENAME? 2024-08-30-09-52-49_data_prep_iter.smcl → 2024_08_30_09_52_49_data_prep_iter.smcl
+RENAME? 2024-08-26-12-47-18_data_prep_iter.smcl → 2024_08_26_12_47_18_data_prep_iter.smcl
+RENAME? 2024-10-22-10-42-57_data_prep_iter.smcl → 2024_10_22_10_42_57_data_prep_iter.smcl
+RENAME? 2024-08-23-10-27-29_data_prep_iter.smcl → 2024_08_23_10_27_29_data_prep_iter.smcl
+RENAME? 2024-08-23-13-34-37_data_prep_iter.smcl → 2024_08_23_13_34_37_data_prep_iter.smcl
+RENAME? 2024-10-29-22-23-18_data_prep_iter.smcl → 2024_10_29_22_23_18_data_prep_iter.smcl
+RENAME? 2024-09-04-15-24-13_data_prep_iter.smcl → 2024_09_04_15_24_13_data_prep_iter.smcl
+RENAME? 2024-09-05-12-45-04_data_prep_iter.log → 2024_09_05_12_45_04_data_prep_iter.log
+RENAME? 2024-08-23-10-47-19_data_prep_iter.smcl → 2024_08_23_10_47_19_data_prep_iter.smcl
+RENAME? 2024-08-23-16-04-35_data_prep_iter.smcl → 2024_08_23_16_04_35_data_prep_iter.smcl
+RENAME? 2024-08-23-10-52-32_data_prep_iter.smcl → 2024_08_23_10_52_32_data_prep_iter.smcl
+RENAME? 2024-11-07-10-31-22_data_prep_iter.log → 2024_11_07_10_31_22_data_prep_iter.log
+RENAME? 2024-11-19-10-10-26_data_prep_iter.smcl → 2024_11_19_10_10_26_data_prep_iter.smcl
+RENAME? 2024-09-04-10-52-29_data_prep_iter.log → 2024_09_04_10_52_29_data_prep_iter.log
+RENAME? 2024-08-23-13-25-03_data_prep_iter.smcl → 2024_08_23_13_25_03_data_prep_iter.smcl
+RENAME? 2024-11-07-00-06-45_data_prep_iter.smcl → 2024_11_07_00_06_45_data_prep_iter.smcl
+RENAME? 2024-09-05-09-48-31_data_prep_iter.smcl → 2024_09_05_09_48_31_data_prep_iter.smcl
+RENAME? 2024-08-23-13-59-02_data_prep_iter.smcl → 2024_08_23_13_59_02_data_prep_iter.smcl
+RENAME? 2024-10-10-15-27-32_data_prep_iter.smcl → 2024_10_10_15_27_32_data_prep_iter.smcl
+RENAME? 2024-10-21-17-30-01_data_prep_iter.smcl → 2024_10_21_17_30_01_data_prep_iter.smcl
+RENAME? 2024-08-23-14-42-32_data_prep_iter.smcl → 2024_08_23_14_42_32_data_prep_iter.smcl
+RENAME? 2024-10-29-22-14-59_data_prep_iter.smcl → 2024_10_29_22_14_59_data_prep_iter.smcl
+RENAME? 2024-08-23-11-07-46_data_prep_iter.log → 2024_08_23_11_07_46_data_prep_iter.log
+RENAME? .DS_Store → ds_store
+RENAME? 2024-10-10-15-32-51_data_prep_iter.smcl → 2024_10_10_15_32_51_data_prep_iter.smcl
+RENAME? 2024-08-26-12-37-45_data_prep_iter.smcl → 2024_08_26_12_37_45_data_prep_iter.smcl
+RENAME? 2024-08-23-16-12-07_data_prep_iter.smcl → 2024_08_23_16_12_07_data_prep_iter.smcl
+RENAME? 2024-08-26-09-06-38_data_prep_iter.smcl → 2024_08_26_09_06_38_data_prep_iter.smcl
+RENAME? 2024-10-22-10-38-12_data_prep_iter.smcl → 2024_10_22_10_38_12_data_prep_iter.smcl
+RENAME? 2024-09-10-10-03-11_data_prep_iter.log → 2024_09_10_10_03_11_data_prep_iter.log
+RENAME? 2024-09-12-15-47-56_data_prep_iter.log → 2024_09_12_15_47_56_data_prep_iter.log
+RENAME? 2024-08-23-13-24-41_data_prep_iter.smcl → 2024_08_23_13_24_41_data_prep_iter.smcl
+RENAME? 2024-09-04-10-41-28_data_prep_iter.log → 2024_09_04_10_41_28_data_prep_iter.log
+RENAME? 2024-08-27-10-40-14_data_prep_iter.log → 2024_08_27_10_40_14_data_prep_iter.log
+RENAME? 2024-10-10-15-24-37_data_prep_iter.smcl → 2024_10_10_15_24_37_data_prep_iter.smcl
+RENAME? 2024-11-06-17-57-49_data_prep_iter.smcl → 2024_11_06_17_57_49_data_prep_iter.smcl
+RENAME? 2024-08-23-10-45-47_data_prep_iter.smcl → 2024_08_23_10_45_47_data_prep_iter.smcl
+RENAME? 2024-09-10-10-15-21_data_prep_iter.log → 2024_09_10_10_15_21_data_prep_iter.log
+RENAME? 2024-09-16-14-16-05_data_prep_iter.smcl → 2024_09_16_14_16_05_data_prep_iter.smcl
+RENAME? 2024-09-12-15-47-24_data_prep_iter.smcl → 2024_09_12_15_47_24_data_prep_iter.smcl
+RENAME? 2024-11-18-14-11-38_data_prep_iter.smcl → 2024_11_18_14_11_38_data_prep_iter.smcl
+RENAME? 2024-09-04-12-35-27_data_prep_iter.smcl → 2024_09_04_12_35_27_data_prep_iter.smcl
+RENAME? 2024-09-05-12-45-04_data_prep_iter.smcl → 2024_09_05_12_45_04_data_prep_iter.smcl
+RENAME? 2024-08-23-10-18-33_data_prep_iter.smcl → 2024_08_23_10_18_33_data_prep_iter.smcl
+RENAME? 2024-10-17-16-53-37_data_prep_iter.smcl → 2024_10_17_16_53_37_data_prep_iter.smcl
+RENAME? 2024-08-23-16-06-36_data_prep_iter.smcl → 2024_08_23_16_06_36_data_prep_iter.smcl
+RENAME? 2024-08-23-16-09-01_data_prep_iter.log → 2024_08_23_16_09_01_data_prep_iter.log
+RENAME? 2024-09-12-15-58-39_data_prep_iter.log → 2024_09_12_15_58_39_data_prep_iter.log
+RENAME? 2024-08-23-15-49-01_data_prep_iter.smcl → 2024_08_23_15_49_01_data_prep_iter.smcl
+RENAME? 2024-08-30-09-31-27_data_prep_iter.smcl → 2024_08_30_09_31_27_data_prep_iter.smcl
+RENAME? 2024-08-26-09-42-36_data_prep_iter.smcl → 2024_08_26_09_42_36_data_prep_iter.smcl
+RENAME? 2024-11-07-00-05-53_data_prep_iter.smcl → 2024_11_07_00_05_53_data_prep_iter.smcl
+RENAME? 2024-08-23-10-48-48_data_prep_iter.smcl → 2024_08_23_10_48_48_data_prep_iter.smcl
+RENAME? 2024-08-23-13-24-07_data_prep_iter.smcl → 2024_08_23_13_24_07_data_prep_iter.smcl
+RENAME? 2024-08-23-18-32-58_data_prep_iter.smcl → 2024_08_23_18_32_58_data_prep_iter.smcl
+RENAME? 2024-08-30-09-33-04_data_prep_iter.log → 2024_08_30_09_33_04_data_prep_iter.log
+RENAME? 2024-10-22-10-38-05_data_prep_iter.smcl → 2024_10_22_10_38_05_data_prep_iter.smcl
+RENAME? 2024-09-04-12-34-26_data_prep_iter.smcl → 2024_09_04_12_34_26_data_prep_iter.smcl
+RENAME? 2024-08-23-13-27-51_data_prep_iter.smcl → 2024_08_23_13_27_51_data_prep_iter.smcl
+RENAME? 2024-09-10-10-03-11_data_prep_iter.smcl → 2024_09_10_10_03_11_data_prep_iter.smcl
+RENAME? 2024-08-23-10-10-51_data_prep_iter.log → 2024_08_23_10_10_51_data_prep_iter.log
+RENAME? 2024-10-09-19-24-58_data_prep_iter.log → 2024_10_09_19_24_58_data_prep_iter.log
+RENAME? 2024-11-07-09-51-12_data_prep_iter.smcl → 2024_11_07_09_51_12_data_prep_iter.smcl
+RENAME? 2024-10-10-15-39-19_data_prep_iter.smcl → 2024_10_10_15_39_19_data_prep_iter.smcl
+RENAME? 2024-10-22-10-37-46_data_prep_iter.smcl → 2024_10_22_10_37_46_data_prep_iter.smcl
+RENAME? 2024-08-26-16-03-34_data_prep_iter.smcl → 2024_08_26_16_03_34_data_prep_iter.smcl
+RENAME? 2024-11-22-18-06-23_data_prep_iter.smcl → 2024_11_22_18_06_23_data_prep_iter.smcl
+RENAME? 2024-10-21-12-42-03_data_prep_iter.smcl → 2024_10_21_12_42_03_data_prep_iter.smcl
+RENAME? 2024-09-19-11-40-39_data_prep_iter.log → 2024_09_19_11_40_39_data_prep_iter.log
+RENAME? 2024-08-23-12-46-44_data_prep_iter.smcl → 2024_08_23_12_46_44_data_prep_iter.smcl
+RENAME? 2024-10-10-15-21-29_data_prep_iter.smcl → 2024_10_10_15_21_29_data_prep_iter.smcl
+RENAME? 2024-10-22-10-44-00_data_prep_iter.smcl → 2024_10_22_10_44_00_data_prep_iter.smcl
+RENAME? 2024-10-29-22-11-14_data_prep_iter.smcl → 2024_10_29_22_11_14_data_prep_iter.smcl
+RENAME? 2024-08-23-13-59-10_data_prep_iter.smcl → 2024_08_23_13_59_10_data_prep_iter.smcl
+RENAME? 2024-08-23-16-05-34_data_prep_iter.smcl → 2024_08_23_16_05_34_data_prep_iter.smcl
+RENAME? 2024-08-23-11-52-16_data_prep_iter.smcl → 2024_08_23_11_52_16_data_prep_iter.smcl
+RENAME? 2024-10-10-14-36-26_data_prep_iter.smcl → 2024_10_10_14_36_26_data_prep_iter.smcl
+RENAME? 2024-11-07-10-26-40_data_prep_iter.log → 2024_11_07_10_26_40_data_prep_iter.log
+RENAME? 2024-09-04-15-32-41_data_prep_iter.log → 2024_09_04_15_32_41_data_prep_iter.log
+RENAME? 2024-08-23-17-28-31_data_prep_iter.smcl → 2024_08_23_17_28_31_data_prep_iter.smcl
+RENAME? 2024-09-10-10-15-21_data_prep_iter.smcl → 2024_09_10_10_15_21_data_prep_iter.smcl
+RENAME? 2024-08-23-16-14-48_data_prep_iter.log → 2024_08_23_16_14_48_data_prep_iter.log
+RENAME? 2024-08-23-19-57-56_data_prep_iter.log → 2024_08_23_19_57_56_data_prep_iter.log
+RENAME? 2024-10-29-21-47-51_data_prep_iter.smcl → 2024_10_29_21_47_51_data_prep_iter.smcl
+RENAME? 2024-10-21-17-30-12_data_prep_iter.smcl → 2024_10_21_17_30_12_data_prep_iter.smcl
+RENAME? 2024-10-10-15-25-32_data_prep_iter.smcl → 2024_10_10_15_25_32_data_prep_iter.smcl
+RENAME? 2024-08-23-16-08-37_data_prep_iter.smcl → 2024_08_23_16_08_37_data_prep_iter.smcl
+RENAME? 2024-08-30-09-53-52_data_prep_iter.smcl → 2024_08_30_09_53_52_data_prep_iter.smcl
+RENAME? 2024-09-04-10-41-28_data_prep_iter.smcl → 2024_09_04_10_41_28_data_prep_iter.smcl
+RENAME? 2024-09-04-12-33-21_data_prep_iter.smcl → 2024_09_04_12_33_21_data_prep_iter.smcl
+RENAME? 2024-09-04-10-51-13_data_prep_iter.smcl → 2024_09_04_10_51_13_data_prep_iter.smcl
+RENAME? 2024-08-26-16-04-00_data_prep_iter.log → 2024_08_26_16_04_00_data_prep_iter.log
+RENAME? 2024-08-23-19-57-56_data_prep_iter.smcl → 2024_08_23_19_57_56_data_prep_iter.smcl
+RENAME? 2024-08-23-12-05-43_data_prep_iter.smcl → 2024_08_23_12_05_43_data_prep_iter.smcl
+RENAME? 2024-08-23-16-14-48_data_prep_iter.smcl → 2024_08_23_16_14_48_data_prep_iter.smcl
+RENAME? 2024-09-04-15-23-57_data_prep_iter.smcl → 2024_09_04_15_23_57_data_prep_iter.smcl
+RENAME? 2024-10-16-12-44-57_data_prep_iter.smcl → 2024_10_16_12_44_57_data_prep_iter.smcl
+RENAME? 2024-08-30-09-53-52_data_prep_iter.log → 2024_08_30_09_53_52_data_prep_iter.log
+RENAME? 2024-10-11-10-26-41_data_prep_iter.smcl → 2024_10_11_10_26_41_data_prep_iter.smcl
+RENAME? 2024-08-28-10-45-20_data_prep_iter.log → 2024_08_28_10_45_20_data_prep_iter.log
+RENAME? 2024-08-23-18-32-16_data_prep_iter.smcl → 2024_08_23_18_32_16_data_prep_iter.smcl
+RENAME? 2024-08-23-14-28-08_data_prep_iter.smcl → 2024_08_23_14_28_08_data_prep_iter.smcl
+RENAME? 2024-09-16-14-28-34_data_prep_iter.log → 2024_09_16_14_28_34_data_prep_iter.log
+RENAME? 2024-10-29-22-00-27_data_prep_iter.smcl → 2024_10_29_22_00_27_data_prep_iter.smcl
+RENAME? 2024-08-23-10-20-27_data_prep_iter.smcl → 2024_08_23_10_20_27_data_prep_iter.smcl
+RENAME? 2024-09-04-11-08-51_data_prep_iter.smcl → 2024_09_04_11_08_51_data_prep_iter.smcl
+RENAME? 2024-10-22-10-38-02_data_prep_iter.smcl → 2024_10_22_10_38_02_data_prep_iter.smcl
+RENAME? 2024-09-04-11-12-22_data_prep_iter.smcl → 2024_09_04_11_12_22_data_prep_iter.smcl
+RENAME? 2024-09-17-15-45-34_data_prep_iter.smcl → 2024_09_17_15_45_34_data_prep_iter.smcl
+RENAME? 2024-10-22-10-41-45_data_prep_iter.smcl → 2024_10_22_10_41_45_data_prep_iter.smcl
+RENAME? 2024-09-04-12-35-27_data_prep_iter.log → 2024_09_04_12_35_27_data_prep_iter.log
+RENAME? 2024-08-23-10-53-28_data_prep_iter.smcl → 2024_08_23_10_53_28_data_prep_iter.smcl
+RENAME? 2024-09-10-09-26-16_data_prep_iter.smcl → 2024_09_10_09_26_16_data_prep_iter.smcl
+RENAME? 2024-08-23-17-27-42_data_prep_iter.smcl → 2024_08_23_17_27_42_data_prep_iter.smcl
+RENAME? 2024-08-30-14-00-55_data_prep_iter.log → 2024_08_30_14_00_55_data_prep_iter.log
+RENAME? 2024-09-04-10-49-11_data_prep_iter.smcl → 2024_09_04_10_49_11_data_prep_iter.smcl
+RENAME? 2024-09-12-15-47-56_data_prep_iter.smcl → 2024_09_12_15_47_56_data_prep_iter.smcl
+RENAME? 2024-09-04-11-12-13_data_prep_iter.smcl → 2024_09_04_11_12_13_data_prep_iter.smcl
+RENAME? 2024-08-23-18-38-26_data_prep_iter.smcl → 2024_08_23_18_38_26_data_prep_iter.smcl
+RENAME? 2024-10-22-10-44-00_data_prep_iter.log → 2024_10_22_10_44_00_data_prep_iter.log
+RENAME? 2024-10-21-17-22-58_data_prep_iter.smcl → 2024_10_21_17_22_58_data_prep_iter.smcl
+RENAME? 2024-08-23-10-18-10_data_prep_iter.smcl → 2024_08_23_10_18_10_data_prep_iter.smcl
+RENAME? 2024-10-22-10-39-27_data_prep_iter.smcl → 2024_10_22_10_39_27_data_prep_iter.smcl
+RENAME? 2024-09-04-12-31-49_data_prep_iter.smcl → 2024_09_04_12_31_49_data_prep_iter.smcl
+RENAME? 2024-10-17-21-40-52_data_prep_iter.smcl → 2024_10_17_21_40_52_data_prep_iter.smcl
+RENAME? 2024-09-17-15-48-00_data_prep_iter.log → 2024_09_17_15_48_00_data_prep_iter.log
+RENAME? 2024-09-04-12-34-42_data_prep_iter.smcl → 2024_09_04_12_34_42_data_prep_iter.smcl
+RENAME? 2024-11-07-10-26-40_data_prep_iter.smcl → 2024_11_07_10_26_40_data_prep_iter.smcl
+RENAME? 2024-08-23-10-21-01_data_prep_iter.smcl → 2024_08_23_10_21_01_data_prep_iter.smcl
+RENAME? 2024-08-26-16-04-00_data_prep_iter.smcl → 2024_08_26_16_04_00_data_prep_iter.smcl
+RENAME? 2024-08-23-10-10-51_data_prep_iter.smcl → 2024_08_23_10_10_51_data_prep_iter.smcl
+RENAME? 2024-09-04-12-33-58_data_prep_iter.smcl → 2024_09_04_12_33_58_data_prep_iter.smcl
+RENAME? 2024-09-16-14-28-34_data_prep_iter.smcl → 2024_09_16_14_28_34_data_prep_iter.smcl
+RENAME? 2024-08-23-17-52-58_data_prep_iter.smcl → 2024_08_23_17_52_58_data_prep_iter.smcl
+RENAME? 2024-08-23-18-32-58_data_prep_iter.log → 2024_08_23_18_32_58_data_prep_iter.log
+RENAME? 2024-11-07-10-03-36_data_prep_iter.smcl → 2024_11_07_10_03_36_data_prep_iter.smcl
+RENAME? 2024-10-10-15-20-43_data_prep_iter.smcl → 2024_10_10_15_20_43_data_prep_iter.smcl
+RENAME? 2024-08-23-10-18-10_data_prep_iter.log → 2024_08_23_10_18_10_data_prep_iter.log
+RENAME? 2024-10-29-21-56-57_data_prep_iter.smcl → 2024_10_29_21_56_57_data_prep_iter.smcl
+RENAME? 2024-08-23-17-29-42_data_prep_iter.smcl → 2024_08_23_17_29_42_data_prep_iter.smcl
+RENAME? 2024-08-23-11-48-53_data_prep_iter.smcl → 2024_08_23_11_48_53_data_prep_iter.smcl
+RENAME? 2024-10-22-10-39-23_data_prep_iter.smcl → 2024_10_22_10_39_23_data_prep_iter.smcl
+RENAME? 2024-08-23-16-04-16_data_prep_iter.smcl → 2024_08_23_16_04_16_data_prep_iter.smcl
+RENAME? 2024-10-29-21-53-59_data_prep_iter.smcl → 2024_10_29_21_53_59_data_prep_iter.smcl
+RENAME? 2024-08-23-16-04-47_data_prep_iter.smcl → 2024_08_23_16_04_47_data_prep_iter.smcl
+RENAME? 2024-08-23-11-07-46_data_prep_iter.smcl → 2024_08_23_11_07_46_data_prep_iter.smcl
+RENAME? 2024-10-17-16-52-40_data_prep_iter.smcl → 2024_10_17_16_52_40_data_prep_iter.smcl
+RENAME? 2024-11-06-17-57-49_data_prep_iter.log → 2024_11_06_17_57_49_data_prep_iter.log
+RENAME? 2024-10-17-19-12-12_data_prep_iter.smcl → 2024_10_17_19_12_12_data_prep_iter.smcl
+RENAME? 2024-11-07-10-03-36_data_prep_iter.log → 2024_11_07_10_03_36_data_prep_iter.log
+RENAME? 2024-10-22-10-41-39_data_prep_iter.smcl → 2024_10_22_10_41_39_data_prep_iter.smcl
+RENAME? 2024-08-28-10-45-20_data_prep_iter.smcl → 2024_08_28_10_45_20_data_prep_iter.smcl
+RENAME? 2024-10-22-10-39-38_data_prep_iter.smcl → 2024_10_22_10_39_38_data_prep_iter.smcl
+RENAME? 2024-10-17-17-00-17_data_prep_iter.smcl → 2024_10_17_17_00_17_data_prep_iter.smcl
+RENAME? 2024-11-18-14-18-03_data_prep_iter.smcl → 2024_11_18_14_18_03_data_prep_iter.smcl
+RENAME? 2024-08-23-11-54-23_data_prep_iter.log → 2024_08_23_11_54_23_data_prep_iter.log
+RENAME? 2024-10-11-09-11-16_data_prep_iter.smcl → 2024_10_11_09_11_16_data_prep_iter.smcl
+RENAME? 2024-08-23-12-05-25_data_prep_iter.smcl → 2024_08_23_12_05_25_data_prep_iter.smcl
+RENAME? 2024-08-26-12-47-18_data_prep_iter.log → 2024_08_26_12_47_18_data_prep_iter.log
+RENAME? 2024-09-10-09-26-16_data_prep_iter.log → 2024_09_10_09_26_16_data_prep_iter.log
+RENAME? 2024-08-23-11-49-15_data_prep_iter.smcl → 2024_08_23_11_49_15_data_prep_iter.smcl
+RENAME? 2024-08-23-17-28-04_data_prep_iter.smcl → 2024_08_23_17_28_04_data_prep_iter.smcl
+RENAME? 2024-08-30-09-33-04_data_prep_iter.smcl → 2024_08_30_09_33_04_data_prep_iter.smcl
+RENAME? 2024-09-17-15-48-00_data_prep_iter.smcl → 2024_09_17_15_48_00_data_prep_iter.smcl
+RENAME? 2024-08-23-14-48-50_data_prep_iter.smcl → 2024_08_23_14_48_50_data_prep_iter.smcl
+RENAME? 2024-08-23-16-08-17_data_prep_iter.smcl → 2024_08_23_16_08_17_data_prep_iter.smcl
+RENAME? 2024-09-05-11-00-03_data_prep_iter.smcl → 2024_09_05_11_00_03_data_prep_iter.smcl
+RENAME? 2024-08-23-18-54-08_data_prep_iter.smcl → 2024_08_23_18_54_08_data_prep_iter.smcl
+RENAME? 2024-10-29-22-15-37_data_prep_iter.smcl → 2024_10_29_22_15_37_data_prep_iter.smcl
+RENAME? 2024-08-27-10-40-14_data_prep_iter.smcl → 2024_08_27_10_40_14_data_prep_iter.smcl
+RENAME? 2024-08-23-11-54-23_data_prep_iter.smcl → 2024_08_23_11_54_23_data_prep_iter.smcl
+RENAME? 2024-08-23-10-20-07_data_prep_iter.smcl → 2024_08_23_10_20_07_data_prep_iter.smcl
+RENAME? 2024-08-23-16-09-01_data_prep_iter.smcl → 2024_08_23_16_09_01_data_prep_iter.smcl
+RENAME? 2024-09-16-14-16-05_data_prep_iter.log → 2024_09_16_14_16_05_data_prep_iter.log
+RENAME? 2024-10-21-09-07-06_data_prep_iter.smcl → 2024_10_21_09_07_06_data_prep_iter.smcl
+RENAME? 2024-11-07-10-31-22_data_prep_iter.smcl → 2024_11_07_10_31_22_data_prep_iter.smcl
+RENAME? 2024-08-23-18-53-08_data_prep_iter.smcl → 2024_08_23_18_53_08_data_prep_iter.smcl
+RENAME? 2024-10-19-16-29-18_data_prep_iter.smcl → 2024_10_19_16_29_18_data_prep_iter.smcl
+RENAME? 2024-09-04-15-32-41_data_prep_iter.smcl → 2024_09_04_15_32_41_data_prep_iter.smcl
+RENAME? 2024-08-23-13-24-21_data_prep_iter.smcl → 2024_08_23_13_24_21_data_prep_iter.smcl
+RENAME? 2024-09-05-11-00-03_data_prep_iter.log → 2024_09_05_11_00_03_data_prep_iter.log
+RENAME? 2024-10-22-10-37-32_data_prep_iter.smcl → 2024_10_22_10_37_32_data_prep_iter.smcl
+RENAME? 2024-09-19-11-40-39_data_prep_iter.smcl → 2024_09_19_11_40_39_data_prep_iter.smcl
+RENAME? 2024-08-23-16-12-07_data_prep_iter.log → 2024_08_23_16_12_07_data_prep_iter.log
+RENAME? 2024-09-16-15-30-21_data_prep_iter.smcl → 2024_09_16_15_30_21_data_prep_iter.smcl
+RENAME? 2024-11-22-18-07-14_data_prep_iter.log → 2024_11_22_18_07_14_data_prep_iter.log
+RENAME? 2024-08-23-14-48-50_data_prep_iter.log → 2024_08_23_14_48_50_data_prep_iter.log
+RENAME? 2024-09-04-11-13-59_data_prep_iter.smcl → 2024_09_04_11_13_59_data_prep_iter.smcl
+RENAME? 2024-08-23-09-44-41_data_prep_iter.smcl → 2024_08_23_09_44_41_data_prep_iter.smcl
+RENAME? 2024-11-19-10-10-26_data_prep_iter.log → 2024_11_19_10_10_26_data_prep_iter.log
+RENAME? 2024-08-23-16-07-53_data_prep_iter.smcl → 2024_08_23_16_07_53_data_prep_iter.smcl
+RENAME? 2024-08-23-10-27-29_data_prep_iter.log → 2024_08_23_10_27_29_data_prep_iter.log
+RENAME? 2024-08-30-14-00-55_data_prep_iter.smcl → 2024_08_30_14_00_55_data_prep_iter.smcl
+RENAME? 2024-11-22-18-07-14_data_prep_iter.smcl → 2024_11_22_18_07_14_data_prep_iter.smcl
+RENAME? 2024-08-23-16-21-23_data_prep_iter.smcl → 2024_08_23_16_21_23_data_prep_iter.smcl
+RENAME? 2024-09-04-10-52-29_data_prep_iter.smcl → 2024_09_04_10_52_29_data_prep_iter.smcl
+RENAME? 2024-08-23-17-28-46_data_prep_iter.smcl → 2024_08_23_17_28_46_data_prep_iter.smcl
+RENAME? 2024-10-29-22-00-02_data_prep_iter.smcl → 2024_10_29_22_00_02_data_prep_iter.smcl
+RENAME? 2024-10-29-21-52-44_data_prep_iter.smcl → 2024_10_29_21_52_44_data_prep_iter.smcl
+RENAME? 2024-09-12-15-58-39_data_prep_iter.smcl → 2024_09_12_15_58_39_data_prep_iter.smcl
+RENAME? 2024-09-04-11-13-59_data_prep_iter.log → 2024_09_04_11_13_59_data_prep_iter.log
+RENAME? 2024-08-23-13-41-07_data_prep_iter.smcl → 2024_08_23_13_41_07_data_prep_iter.smcl
+RENAME? 2024-10-21-12-40-30_data_prep_iter.smcl → 2024_10_21_12_40_30_data_prep_iter.smcl
+RENAME? 2024-10-09-19-24-58_data_prep_iter.smcl → 2024_10_09_19_24_58_data_prep_iter.smcl
+RENAME? 2024-08-23-13-48-49_data_prep_iter.smcl → 2024_08_23_13_48_49_data_prep_iter.smcl
+RENAME? 2024-08-23-09-22-11_data_prep_iter.log → 2024_08_23_09_22_11_data_prep_iter.log
+RENAME? 2024-09-04-12-30-19_data_prep_iter.smcl → 2024_09_04_12_30_19_data_prep_iter.smcl
+RENAME? 2024-08-23-14-00-10_data_prep_iter.smcl → 2024_08_23_14_00_10_data_prep_iter.smcl
+RENAME? 2024-10-21-17-31-20_data_prep_iter.smcl → 2024_10_21_17_31_20_data_prep_iter.smcl
+RENAME? 2024-10-21-17-29-08_data_prep_iter.smcl → 2024_10_21_17_29_08_data_prep_iter.smcl
+RENAME? .DS_Store → ds_store
+RENAME? .DS_Store → ds_store
+RENAME? panel_h_gnars.eth.dta → panel_h_gnars_eth.dta
+RENAME? panel_kogecoin.eth.dta → panel_kogecoin_eth.dta
+RENAME? panel_community.nexusmutual.eth.dta → panel_community_nexusmutual_eth.dta
+RENAME? panel_xdaistake.eth.dta → panel_xdaistake_eth.dta
+RENAME? panel_vote.airswap.eth.dta → panel_vote_airswap_eth.dta
+RENAME? panel_pickle.eth.dta → panel_pickle_eth.dta
+RENAME? panel_sismo.eth.dta → panel_sismo_eth.dta
+RENAME? panel_h_snapshot.dcl.eth.dta → panel_h_snapshot_dcl_eth.dta
+RENAME? panel_botto.eth.dta → panel_botto_eth.dta
+RENAME? panel_h_club.eth.dta → panel_h_club_eth.dta
+RENAME? panel_h_starknet.eth.dta → panel_h_starknet_eth.dta
+RENAME? panel_beanstalkfarms.eth.dta → panel_beanstalkfarms_eth.dta
+RENAME? panel_cabindao.eth.dta → panel_cabindao_eth.dta
+RENAME? panel_h_superraredao.eth.dta → panel_h_superraredao_eth.dta
+RENAME? panel_cryptexdao.eth.dta → panel_cryptexdao_eth.dta
+RENAME? panel_h_barnbridge.eth.dta → panel_h_barnbridge_eth.dta
+RENAME? panel_h_daomstr.eth.dta → panel_h_daomstr_eth.dta
+RENAME? panel_poh.eth.dta → panel_poh_eth.dta
+RENAME? panel_idlefinance.eth.dta → panel_idlefinance_eth.dta
+RENAME? panel_h_cultivatordao.eth.dta → panel_h_cultivatordao_eth.dta
+RENAME? panel_grailers.eth.dta → panel_grailers_eth.dta
+RENAME? panel_h_brightmoments.eth.dta → panel_h_brightmoments_eth.dta
+RENAME? panel_h_elyfi-bsc.eth.dta → panel_h_elyfi_bsc_eth.dta
+RENAME? panel_defigeek.eth.dta → panel_defigeek_eth.dta
+RENAME? panel_dcip.eth.dta → panel_dcip_eth.dta
+RENAME? panel_h_meebitsdao.eth.dta → panel_h_meebitsdao_eth.dta
+RENAME? panel_h_specialresolution.nexusmutual.eth.dta → panel_h_specialresolution_nexusmutual_eth.dta
+RENAME? panel_wearebeansprout.eth.dta → panel_wearebeansprout_eth.dta
+RENAME? panel_eulerdao.eth.dta → panel_eulerdao_eth.dta
+RENAME? panel_devdao.eth.dta → panel_devdao_eth.dta
+RENAME? panel_ousdgov.eth.dta → panel_ousdgov_eth.dta
+RENAME? panel_shellprotocol.eth.dta → panel_shellprotocol_eth.dta
+RENAME? panel_shapeshiftdao.eth.dta → panel_shapeshiftdao_eth.dta
+RENAME? panel_h_beefydao.eth.dta → panel_h_beefydao_eth.dta
+RENAME? panel_h_adidas.eth.dta → panel_h_adidas_eth.dta
+RENAME? panel_jennydao.eth.dta → panel_jennydao_eth.dta
+RENAME? panel_h_lgcryptounicorns.eth.dta → panel_h_lgcryptounicorns_eth.dta
+RENAME? panel_gov.dhedge.eth.dta → panel_gov_dhedge_eth.dta
+RENAME? panel_h_daocity.eth.dta → panel_h_daocity_eth.dta
+RENAME? panel_h_joegovernance.eth.dta → panel_h_joegovernance_eth.dta
+RENAME? panel_h_copernicusbeer.eth.dta → panel_h_copernicusbeer_eth.dta
+RENAME? panel_h_hypergptdao.eth.dta → panel_h_hypergptdao_eth.dta
+RENAME? panel_gov.radicle.eth.dta → panel_gov_radicle_eth.dta
+RENAME? panel_metabrands.eth.dta → panel_metabrands_eth.dta
+RENAME? panel_h_curve.eth.dta → panel_h_curve_eth.dta
+RENAME? panel_blackpoolhq.eth.dta → panel_blackpoolhq_eth.dta
+RENAME? panel_h_thelanddaoprop.eth.dta → panel_h_thelanddaoprop_eth.dta
+RENAME? panel_younghwang.eth.dta → panel_younghwang_eth.dta
+RENAME? panel_h_poh.eth.dta → panel_h_poh_eth.dta
+RENAME? panel_cakevote.eth.dta → panel_cakevote_eth.dta
+RENAME? panel_astardegens.eth.dta → panel_astardegens_eth.dta
+RENAME? panel_tigervc-dao.eth.dta → panel_tigervc_dao_eth.dta
+RENAME? panel_h_masknetwork.eth.dta → panel_h_masknetwork_eth.dta
+RENAME? panel_h_dopedao.eth.dta → panel_h_dopedao_eth.dta
+RENAME? panel_jadeprotocol.eth.dta → panel_jadeprotocol_eth.dta
+RENAME? panel_pooltogether.eth.dta → panel_pooltogether_eth.dta
+RENAME? panel_treschain.eth.dta → panel_treschain_eth.dta
+RENAME? panel_h_theopendao.eth.dta → panel_h_theopendao_eth.dta
+RENAME? panel_decrypt-media.eth.dta → panel_decrypt_media_eth.dta
+RENAME? panel_h_klimadao.eth.dta → panel_h_klimadao_eth.dta
+RENAME? panel_seizerdao.eth.dta → panel_seizerdao_eth.dta
+RENAME? panel_h_layer2dao.org.dta → panel_h_layer2dao_org.dta
+RENAME? panel_beanstalkdao.eth.dta → panel_beanstalkdao_eth.dta
+RENAME? panel_h_ffdao.eth.dta → panel_h_ffdao_eth.dta
+RENAME? panel_h_orbapp.eth.dta → panel_h_orbapp_eth.dta
+RENAME? panel_staking.idlefinance.eth.dta → panel_staking_idlefinance_eth.dta
+RENAME? panel_popcorn-snapshot.eth.dta → panel_popcorn_snapshot_eth.dta
+RENAME? panel_h_harvestfi.eth.dta → panel_h_harvestfi_eth.dta
+RENAME? panel_h_0xgov.eth.dta → panel_h_0xgov_eth.dta
+RENAME? .DS_Store → ds_store
+RENAME? panel_h_unipilot.eth.dta → panel_h_unipilot_eth.dta
+RENAME? panel_h_varen.eth.dta → panel_h_varen_eth.dta
+RENAME? panel_h_gauge.rbn.eth.dta → panel_h_gauge_rbn_eth.dta
+RENAME? panel_tomoondao.eth.dta → panel_tomoondao_eth.dta
+RENAME? panel_dydxgov.eth.dta → panel_dydxgov_eth.dta
+RENAME? panel_phonon.eth.dta → panel_phonon_eth.dta
+RENAME? panel_h_bestfork.eth.dta → panel_h_bestfork_eth.dta
+RENAME? panel_h_dorg.eth.dta → panel_h_dorg_eth.dta
+RENAME? panel_h_expansiondao.eth.dta → panel_h_expansiondao_eth.dta
+RENAME? panel_beanstalkbugbounty.eth.dta → panel_beanstalkbugbounty_eth.dta
+RENAME? panel_tracer.eth.dta → panel_tracer_eth.dta
+RENAME? panel_notional.eth.dta → panel_notional_eth.dta
+RENAME? panel_h_sushigov.eth.dta → panel_h_sushigov_eth.dta
+RENAME? panel_h_safe.eth.dta → panel_h_safe_eth.dta
+RENAME? panel_h_freerossdao.eth.dta → panel_h_freerossdao_eth.dta
+RENAME? panel_otterclam.eth.dta → panel_otterclam_eth.dta
+RENAME? panel_h_aurafinance.eth.dta → panel_h_aurafinance_eth.dta
+RENAME? panel_qidao.eth.dta → panel_qidao_eth.dta
+RENAME? panel_h_swiveldao.eth.dta → panel_h_swiveldao_eth.dta
+RENAME? panel_aavegotchi.eth.dta → panel_aavegotchi_eth.dta
+RENAME? panel_uberhaus.eth.dta → panel_uberhaus_eth.dta
+RENAME? panel_h_olympusdao.eth.dta → panel_h_olympusdao_eth.dta
+RENAME? panel_h_grants.safe.eth.dta → panel_h_grants_safe_eth.dta
+RENAME? panel_evmaverick.eth.dta → panel_evmaverick_eth.dta
+RENAME? panel_h_primexyz.eth.dta → panel_h_primexyz_eth.dta
+RENAME? panel_h_origingov.eth.dta → panel_h_origingov_eth.dta
+RENAME? panel_h_basenamedao.eth.dta → panel_h_basenamedao_eth.dta
+RENAME? panel_songadao.eth.dta → panel_songadao_eth.dta
+RENAME? panel_conic-dao.eth.dta → panel_conic_dao_eth.dta
+RENAME? panel_h_wearebeansprout.eth.dta → panel_h_wearebeansprout_eth.dta
+RENAME? panel_paraswap-dao.eth.dta → panel_paraswap_dao_eth.dta
+RENAME? panel_h_livelabs.eth.dta → panel_h_livelabs_eth.dta
+RENAME? panel_h_beets.eth.dta → panel_h_beets_eth.dta
+RENAME? panel_loot-dao.eth.dta → panel_loot_dao_eth.dta
+RENAME? panel_h_poktdao.eth.dta → panel_h_poktdao_eth.dta
+RENAME? panel_primerating.eth.dta → panel_primerating_eth.dta
+RENAME? panel_instadapp-gov.eth.dta → panel_instadapp_gov_eth.dta
+RENAME? panel_h_glmrapes.eth.dta → panel_h_glmrapes_eth.dta
+RENAME? panel_gitcoindao.eth.dta → panel_gitcoindao_eth.dta
+RENAME? panel_specialresolution.nexusmutual.eth.dta → panel_specialresolution_nexusmutual_eth.dta
+RENAME? panel_h_krausehouse.eth.dta → panel_h_krausehouse_eth.dta
+RENAME? panel_streamr.eth.dta → panel_streamr_eth.dta
+RENAME? panel_stgdao.eth.dta → panel_stgdao_eth.dta
+RENAME? panel_moonbeam-foundation.eth.dta → panel_moonbeam_foundation_eth.dta
+RENAME? panel_friendswithbenefits.eth.dta → panel_friendswithbenefits_eth.dta
+RENAME? panel_beanft.eth.dta → panel_beanft_eth.dta
+RENAME? panel_pushdao.eth.dta → panel_pushdao_eth.dta
+RENAME? panel_h_arbitrumfoundation.eth.dta → panel_h_arbitrumfoundation_eth.dta
+RENAME? panel_daomstr.eth.dta → panel_daomstr_eth.dta
+RENAME? panel_assangedao.eth.dta → panel_assangedao_eth.dta
+RENAME? panel_truefigov.eth.dta → panel_truefigov_eth.dta
+RENAME? panel_officialoceandao.eth.dta → panel_officialoceandao_eth.dta
+RENAME? panel_h_level-finance.eth.dta → panel_h_level_finance_eth.dta
+RENAME? panel_h_unlock-protocol.eth.dta → panel_h_unlock_protocol_eth.dta
+RENAME? panel_graphprotocol.eth.dta → panel_graphprotocol_eth.dta
+RENAME? panel_h_liberofinancial.eth.dta → panel_h_liberofinancial_eth.dta
+RENAME? panel_index-coop.eth.dta → panel_index_coop_eth.dta
+RENAME? panel_fingerprints.eth.dta → panel_fingerprints_eth.dta
+RENAME? panel_dea.eth.dta → panel_dea_eth.dta
+RENAME? panel_h_zechubdao.eth.dta → panel_h_zechubdao_eth.dta
+RENAME? panel_h_ousdgov.eth.dta → panel_h_ousdgov_eth.dta
+RENAME? panel_h_diadao.eth.dta → panel_h_diadao_eth.dta
+RENAME? panel_h_rbn.eth.dta → panel_h_rbn_eth.dta
+RENAME? panel_h_morpho.eth.dta → panel_h_morpho_eth.dta
+RENAME? panel_bitdao.eth.dta → panel_bitdao_eth.dta
+RENAME? panel_seedifyhodlers.eth.dta → panel_seedifyhodlers_eth.dta
+RENAME? panel_h_mstablegovernance.eth.dta → panel_h_mstablegovernance_eth.dta
+RENAME? panel_h_mantra-dao.eth.dta → panel_h_mantra_dao_eth.dta
+RENAME? panel_h_idlefinance.eth.dta → panel_h_idlefinance_eth.dta
+RENAME? panel_leaguedao.eth.dta → panel_leaguedao_eth.dta
+RENAME? panel_h_biswap-org.eth.dta → panel_h_biswap_org_eth.dta
+RENAME? panel_globalcoinresearch.eth.dta → panel_globalcoinresearch_eth.dta
+RENAME? panel_h_astardegens.eth.dta → panel_h_astardegens_eth.dta
+RENAME? panel_h_banklessvault.eth.dta → panel_h_banklessvault_eth.dta
+RENAME? panel_dopedao.eth.dta → panel_dopedao_eth.dta
+RENAME? panel_ybaby.eth.dta → panel_ybaby_eth.dta
+RENAME? panel_h_undw3.eth.dta → panel_h_undw3_eth.dta
+RENAME? panel_badgerdao.eth.dta → panel_badgerdao_eth.dta
+RENAME? panel_h_mutantsdao.eth.dta → panel_h_mutantsdao_eth.dta
+RENAME? panel_h_tigervc-dao.eth.dta → panel_h_tigervc_dao_eth.dta
+RENAME? panel_gnosis.eth.dta → panel_gnosis_eth.dta
+RENAME? panel_colony.eth.dta → panel_colony_eth.dta
+RENAME? panel_h_blackpoolhq.eth.dta → panel_h_blackpoolhq_eth.dta
+RENAME? panel_h_gov.radicle.eth.dta → panel_h_gov_radicle_eth.dta
+RENAME? panel_h_10b57e6da0.eth.dta → panel_h_10b57e6da0_eth.dta
+RENAME? panel_vote.vitadao.eth.dta → panel_vote_vitadao_eth.dta
+RENAME? panel_hypergptdao.eth.dta → panel_hypergptdao_eth.dta
+RENAME? panel_alpacafinance.eth.dta → panel_alpacafinance_eth.dta
+RENAME? panel_h_gmdao.eth.dta → panel_h_gmdao_eth.dta
+RENAME? panel_h_balancer.eth.dta → panel_h_balancer_eth.dta
+RENAME? panel_h_yieldguild.eth.dta → panel_h_yieldguild_eth.dta
+RENAME? panel_h_apwine.eth.dta → panel_h_apwine_eth.dta
+RENAME? panel_h_dea.eth.dta → panel_h_dea_eth.dta
+RENAME? panel_daocity.eth.dta → panel_daocity_eth.dta
+RENAME? panel_vote-perp.eth.dta → panel_vote_perp_eth.dta
+RENAME? panel_tokenlon.eth.dta → panel_tokenlon_eth.dta
+RENAME? panel_h_opiumprotocol.eth.dta → panel_h_opiumprotocol_eth.dta
+RENAME? panel_h_mocana.eth.dta → panel_h_mocana_eth.dta
+RENAME? panel_bancornetwork.eth.dta → panel_bancornetwork_eth.dta
+RENAME? panel_rbn.eth.dta → panel_rbn_eth.dta
+RENAME? panel_h_genesisblocks.eth.dta → panel_h_genesisblocks_eth.dta
+RENAME? panel_h_tetu.eth.dta → panel_h_tetu_eth.dta
+RENAME? panel_h_radiantcapital.eth.dta → panel_h_radiantcapital_eth.dta
+RENAME? panel_masknetwork.eth.dta → panel_masknetwork_eth.dta
+RENAME? panel_golflinks.eth.dta → panel_golflinks_eth.dta
+RENAME? panel_h_alluo.eth.dta → panel_h_alluo_eth.dta
+RENAME? panel_hbot-prp.eth.dta → panel_hbot_prp_eth.dta
+RENAME? panel_thegurudao.eth.dta → panel_thegurudao_eth.dta
+RENAME? panel_beanstalkfarmsbudget.eth.dta → panel_beanstalkfarmsbudget_eth.dta
+RENAME? panel_h_ilvgov.eth.dta → panel_h_ilvgov_eth.dta
+RENAME? panel_turbovote.eth.dta → panel_turbovote_eth.dta
+RENAME? panel_h_rook.eth.dta → panel_h_rook_eth.dta
+RENAME? panel_h_luchadores.eth.dta → panel_h_luchadores_eth.dta
+RENAME? panel_h_hectordao.eth.dta → panel_h_hectordao_eth.dta
+RENAME? panel_h_dydxgov.eth.dta → panel_h_dydxgov_eth.dta
+RENAME? panel_h_beanstalkfarmsbudget.eth.dta → panel_h_beanstalkfarmsbudget_eth.dta
+RENAME? panel_h_redactedcartel.eth.dta → panel_h_redactedcartel_eth.dta
+RENAME? panel_h_cre8r.eth.dta → panel_h_cre8r_eth.dta
+RENAME? panel_h_lido-snapshot.eth.dta → panel_h_lido_snapshot_eth.dta
+RENAME? panel_h_friendswithbenefits.eth.dta → panel_h_friendswithbenefits_eth.dta
+RENAME? panel_h_moonbeam-foundation.eth.dta → panel_h_moonbeam_foundation_eth.dta
+RENAME? panel_frax.eth.dta → panel_frax_eth.dta
+RENAME? panel_h_fatcatsdao.eth.dta → panel_h_fatcatsdao_eth.dta
+RENAME? panel_crowncapital.eth.dta → panel_crowncapital_eth.dta
+RENAME? panel_h_jpeg’d.eth.dta → panel_h_jpegd_eth.dta
+RENAME? panel_gdao.eth.dta → panel_gdao_eth.dta
+RENAME? panel_cow.eth.dta → panel_cow_eth.dta
+RENAME? panel_h_panda-dao.eth.dta → panel_h_panda_dao_eth.dta
+RENAME? panel_abracadabrabymerlinthemagician.eth.dta → panel_abracadabrabymerlinthemagician_eth.dta
+RENAME? panel_basenamedao.eth.dta → panel_basenamedao_eth.dta
+RENAME? panel_poktdao.eth.dta → panel_poktdao_eth.dta
+RENAME? panel_zora.eth.dta → panel_zora_eth.dta
+RENAME? panel_h_dodobird.eth.dta → panel_h_dodobird_eth.dta
+RENAME? panel_grants.safe.eth.dta → panel_grants_safe_eth.dta
+RENAME? panel_futera.eth.dta → panel_futera_eth.dta
+RENAME? panel_h_streamr.eth.dta → panel_h_streamr_eth.dta
+RENAME? panel_wagdie.eth.dta → panel_wagdie_eth.dta
+RENAME? panel_h_cow.eth.dta → panel_h_cow_eth.dta
+RENAME? panel_h_raidparty.eth.dta → panel_h_raidparty_eth.dta
+RENAME? panel_h_ampleforthorg.eth.dta → panel_h_ampleforthorg_eth.dta
+RENAME? panel_people-dao.eth.dta → panel_people_dao_eth.dta
+RENAME? panel_h_decentralgames.eth.dta → panel_h_decentralgames_eth.dta
+RENAME? panel_aurafinance.eth.dta → panel_aurafinance_eth.dta
+RENAME? panel_h_dlytoken.eth.dta → panel_h_dlytoken_eth.dta
+RENAME? panel_piedao.eth.dta → panel_piedao_eth.dta
+RENAME? panel_h_sharkdao.eth.dta → panel_h_sharkdao_eth.dta
+RENAME? panel_freerossdao.eth.dta → panel_freerossdao_eth.dta
+RENAME? panel_stakedao.eth.dta → panel_stakedao_eth.dta
+RENAME? panel_poolpool.pooltogether.eth.dta → panel_poolpool_pooltogether_eth.dta
+RENAME? panel_h_pushdao.eth.dta → panel_h_pushdao_eth.dta
+RENAME? panel_h_staking.idlefinance.eth.dta → panel_h_staking_idlefinance_eth.dta
+RENAME? panel_h_pancakebunny.eth.dta → panel_h_pancakebunny_eth.dta
+RENAME? panel_unlock-protocol.eth.dta → panel_unlock_protocol_eth.dta
+RENAME? panel_gasdao.eth.dta → panel_gasdao_eth.dta
+RENAME? panel_h_spookyswap.eth.dta → panel_h_spookyswap_eth.dta
+RENAME? panel_jbdao.eth.dta → panel_jbdao_eth.dta
+RENAME? panel_rallygov.eth.dta → panel_rallygov_eth.dta
+RENAME? panel_opcollective.eth.dta → panel_opcollective_eth.dta
+RENAME? panel_synthetix-stakers-poll.eth.dta → panel_synthetix_stakers_poll_eth.dta
+RENAME? panel_tempusgov.eth.dta → panel_tempusgov_eth.dta
+RENAME? panel_krausehouse.eth.dta → panel_krausehouse_eth.dta
+RENAME? panel_h_primerating.eth.dta → panel_h_primerating_eth.dta
+RENAME? panel_liberofinancial.eth.dta → panel_liberofinancial_eth.dta
+RENAME? panel_h_1inch.eth.dta → panel_h_1inch_eth.dta
+RENAME? panel_cream-finance.eth.dta → panel_cream_finance_eth.dta
+RENAME? panel_h_doodles.eth.dta → panel_h_doodles_eth.dta
+RENAME? panel_h_meritcircle.eth.dta → panel_h_meritcircle_eth.dta
+RENAME? panel_h_globalcoinresearch.eth.dta → panel_h_globalcoinresearch_eth.dta
+RENAME? panel_h_beanstalkdao.eth.dta → panel_h_beanstalkdao_eth.dta
+RENAME? panel_gal.eth.dta → panel_gal_eth.dta
+RENAME? panel_mstablegovernance.eth.dta → panel_mstablegovernance_eth.dta
+RENAME? panel_cre8r.eth.dta → panel_cre8r_eth.dta
+RENAME? panel_level-finance.eth.dta → panel_level_finance_eth.dta
+RENAME? panel_ilvgov.eth.dta → panel_ilvgov_eth.dta
+RENAME? panel_h_graphprotocol.eth.dta → panel_h_graphprotocol_eth.dta
+RENAME? panel_yam.eth.dta → panel_yam_eth.dta
+RENAME? panel_h_treschain.eth.dta → panel_h_treschain_eth.dta
+RENAME? panel_jpeg’d.eth.dta → panel_jpegd_eth.dta
+RENAME? panel_h_hbot-prp.eth.dta → panel_h_hbot_prp_eth.dta
+RENAME? panel_h_alchemixstakers.eth.dta → panel_h_alchemixstakers_eth.dta
+RENAME? panel_h_zora.eth.dta → panel_h_zora_eth.dta
+RENAME? panel_aave.eth.dta → panel_aave_eth.dta
+RENAME? panel_arbitrumfoundation.eth.dta → panel_arbitrumfoundation_eth.dta
+RENAME? panel_alluo.eth.dta → panel_alluo_eth.dta
+RENAME? panel_cvx.eth.dta → panel_cvx_eth.dta
+RENAME? panel_h_ilv.eth.dta → panel_h_ilv_eth.dta
+RENAME? panel_ens.eth.dta → panel_ens_eth.dta
+RENAME? panel_expansiondao.eth.dta → panel_expansiondao_eth.dta
+RENAME? panel_h_frax.eth.dta → panel_h_frax_eth.dta
+RENAME? panel_h_piedao.eth.dta → panel_h_piedao_eth.dta
+RENAME? panel_h_evmaverick.eth.dta → panel_h_evmaverick_eth.dta
+RENAME? panel_h_popcorn-snapshot.eth.dta → panel_h_popcorn_snapshot_eth.dta
+RENAME? panel_1inch.eth.dta → panel_1inch_eth.dta
+RENAME? panel_h_alpacafinance.eth.dta → panel_h_alpacafinance_eth.dta
+RENAME? panel_h_ens.eth.dta → panel_h_ens_eth.dta
+RENAME? panel_ilv.eth.dta → panel_ilv_eth.dta
+RENAME? panel_h_cvx.eth.dta → panel_h_cvx_eth.dta
+RENAME? panel_h_rallygov.eth.dta → panel_h_rallygov_eth.dta
+RENAME? panel_olympusdao.eth.dta → panel_olympusdao_eth.dta
+RENAME? panel_h_gdao.eth.dta → panel_h_gdao_eth.dta
+RENAME? panel_h_aavegotchi.eth.dta → panel_h_aavegotchi_eth.dta
+RENAME? panel_h_xdaistake.eth.dta → panel_h_xdaistake_eth.dta
+RENAME? panel_banklessvault.eth.dta → panel_banklessvault_eth.dta
+RENAME? panel_h_jbdao.eth.dta → panel_h_jbdao_eth.dta
+RENAME? panel_h_futera.eth.dta → panel_h_futera_eth.dta
+RENAME? panel_h_wagdie.eth.dta → panel_h_wagdie_eth.dta
+RENAME? panel_genesisblocks.eth.dta → panel_genesisblocks_eth.dta
+RENAME? panel_h_paraswap-dao.eth.dta → panel_h_paraswap_dao_eth.dta
+RENAME? panel_dodobird.eth.dta → panel_dodobird_eth.dta
+RENAME? panel_h_gal.eth.dta → panel_h_gal_eth.dta
+RENAME? panel_rook.eth.dta → panel_rook_eth.dta
+RENAME? panel_h_metislayer2.eth.dta → panel_h_metislayer2_eth.dta
+RENAME? panel_h_yam.eth.dta → panel_h_yam_eth.dta
+RENAME? panel_opiumprotocol.eth.dta → panel_opiumprotocol_eth.dta
+RENAME? panel_h_stakedao.eth.dta → panel_h_stakedao_eth.dta
+RENAME? panel_h_gitcoindao.eth.dta → panel_h_gitcoindao_eth.dta
+RENAME? panel_h_bancornetwork.eth.dta → panel_h_bancornetwork_eth.dta
+RENAME? panel_sharkdao.eth.dta → panel_sharkdao_eth.dta
+RENAME? panel_h_gasdao.eth.dta → panel_h_gasdao_eth.dta
+RENAME? panel_dlytoken.eth.dta → panel_dlytoken_eth.dta
+RENAME? panel_metafactory.eth.dta → panel_metafactory_eth.dta
+RENAME? panel_elyfi-bsc.eth.dta → panel_elyfi_bsc_eth.dta
+RENAME? panel_barnbridge.eth.dta → panel_barnbridge_eth.dta
+RENAME? panel_h_cryptexdao.eth.dta → panel_h_cryptexdao_eth.dta
+RENAME? panel_pangolindex.eth.dta → panel_pangolindex_eth.dta
+RENAME? panel_tetu.eth.dta → panel_tetu_eth.dta
+RENAME? panel_h_conic-dao.eth.dta → panel_h_conic_dao_eth.dta
+RENAME? panel_origingov.eth.dta → panel_origingov_eth.dta
+RENAME? panel_diadao.eth.dta → panel_diadao_eth.dta
+RENAME? panel_h_vote.airswap.eth.dta → panel_h_vote_airswap_eth.dta
+RENAME? panel_lgcryptounicorns.eth.dta → panel_lgcryptounicorns_eth.dta
+RENAME? panel_gro.xyz.dta → panel_gro_xyz.dta
+RENAME? panel_snapshot.dcl.eth.dta → panel_snapshot_dcl_eth.dta
+RENAME? panel_h_otterclam.eth.dta → panel_h_otterclam_eth.dta
+RENAME? panel_h_beanstalkfarms.eth.dta → panel_h_beanstalkfarms_eth.dta
+RENAME? panel_swiveldao.eth.dta → panel_swiveldao_eth.dta
+RENAME? panel_superraredao.eth.dta → panel_superraredao_eth.dta
+RENAME? panel_rarible.eth.dta → panel_rarible_eth.dta
+RENAME? panel_squiggledaotreasurysquad.eth.dta → panel_squiggledaotreasurysquad_eth.dta
+RENAME? panel_meebitsdao.eth.dta → panel_meebitsdao_eth.dta
+RENAME? panel_lido-snapshot.eth.dta → panel_lido_snapshot_eth.dta
+RENAME? panel_morpho.eth.dta → panel_morpho_eth.dta
+RENAME? panel_h_bitdao.eth.dta → panel_h_bitdao_eth.dta
+RENAME? panel_h_synthetix-stakers-poll.eth.dta → panel_h_synthetix_stakers_poll_eth.dta
+RENAME? panel_ampleforthorg.eth.dta → panel_ampleforthorg_eth.dta
+RENAME? panel_alchemixstakers.eth.dta → panel_alchemixstakers_eth.dta
+RENAME? panel_harvestfi.eth.dta → panel_harvestfi_eth.dta
+RENAME? panel_copernicusbeer.eth.dta → panel_copernicusbeer_eth.dta
+RENAME? panel_h_tokenlon.eth.dta → panel_h_tokenlon_eth.dta
+RENAME? panel_h_younghwang.eth.dta → panel_h_younghwang_eth.dta
+RENAME? panel_apecoin.eth.dta → panel_apecoin_eth.dta
+RENAME? panel_h_metabrands.eth.dta → panel_h_metabrands_eth.dta
+RENAME? panel_h_poolpool.pooltogether.eth.dta → panel_h_poolpool_pooltogether_eth.dta
+RENAME? panel_h_gnosis.eth.dta → panel_h_gnosis_eth.dta
+RENAME? panel_layer2dao.org.dta → panel_layer2dao_org.dta
+RENAME? panel_h_seizerdao.eth.dta → panel_h_seizerdao_eth.dta
+RENAME? panel_h_colony.eth.dta → panel_h_colony_eth.dta
+RENAME? panel_thelanddaoprop.eth.dta → panel_thelanddaoprop_eth.dta
+RENAME? panel_h_gov.dhedge.eth.dta → panel_h_gov_dhedge_eth.dta
+RENAME? panel_gmdao.eth.dta → panel_gmdao_eth.dta
+RENAME? panel_theopendao.eth.dta → panel_theopendao_eth.dta
+RENAME? panel_h_gro.xyz.dta → panel_h_gro_xyz.dta
+RENAME? panel_h_jadeprotocol.eth.dta → panel_h_jadeprotocol_eth.dta
+RENAME? panel_h_cream-finance.eth.dta → panel_h_cream_finance_eth.dta
+RENAME? panel_h_pooltogether.eth.dta → panel_h_pooltogether_eth.dta
+RENAME? panel_h_silofinance.eth.dta → panel_h_silofinance_eth.dta
+RENAME? panel_gauge.rbn.eth.dta → panel_gauge_rbn_eth.dta
+RENAME? panel_mocana.eth.dta → panel_mocana_eth.dta
+RENAME? panel_magicappstore.eth.dta → panel_magicappstore_eth.dta
+RENAME? panel_apwine.eth.dta → panel_apwine_eth.dta
+RENAME? panel_h_ybaby.eth.dta → panel_h_ybaby_eth.dta
+RENAME? panel_undw3.eth.dta → panel_undw3_eth.dta
+RENAME? panel_balancer.eth.dta → panel_balancer_eth.dta
+RENAME? panel_h_gearbox.eth.dta → panel_h_gearbox_eth.dta
+RENAME? panel_h_tomoondao.eth.dta → panel_h_tomoondao_eth.dta
+RENAME? panel_h_squiggledaotreasurysquad.eth.dta → panel_h_squiggledaotreasurysquad_eth.dta
+RENAME? panel_luchadores.eth.dta → panel_luchadores_eth.dta
+RENAME? panel_bestfork.eth.dta → panel_bestfork_eth.dta
+RENAME? panel_h_community.nexusmutual.eth.dta → panel_h_community_nexusmutual_eth.dta
+RENAME? panel_h_thegurudao.eth.dta → panel_h_thegurudao_eth.dta
+RENAME? panel_bestfork.eth (Magnus van Haaren's conflicted copy 2024-11-07).dta → panel_bestfork_eth_magnus_van_haaren_s_conflicted_copy_2024_11_07.dta
+RENAME? panel_h_badgerdao.eth.dta → panel_h_badgerdao_eth.dta
+RENAME? panel_meritcircle.eth.dta → panel_meritcircle_eth.dta
+RENAME? panel_redactedcartel.eth.dta → panel_redactedcartel_eth.dta
+RENAME? panel_orbapp.eth.dta → panel_orbapp_eth.dta
+RENAME? panel_varen.eth.dta → panel_varen_eth.dta
+RENAME? panel_doodles.eth.dta → panel_doodles_eth.dta
+RENAME? panel_goodmorningnews.eth.dta → panel_goodmorningnews_eth.dta
+RENAME? panel_klimadao.eth.dta → panel_klimadao_eth.dta
+RENAME? panel_hop.eth.dta → panel_hop_eth.dta
+RENAME? panel_h_phonon.eth.dta → panel_h_phonon_eth.dta
+RENAME? panel_fatcatsdao.eth.dta → panel_fatcatsdao_eth.dta
+RENAME? panel_h_shellprotocol.eth.dta → panel_h_shellprotocol_eth.dta
+RENAME? panel_h_golflinks.eth.dta → panel_h_golflinks_eth.dta
+RENAME? panel_h_shapeshiftdao.eth.dta → panel_h_shapeshiftdao_eth.dta
+RENAME? panel_0xgov.eth.dta → panel_0xgov_eth.dta
+RENAME? panel_ffdao.eth.dta → panel_ffdao_eth.dta
+RENAME? panel_h_crowncapital.eth.dta → panel_h_crowncapital_eth.dta
+RENAME? panel_cultivatordao.eth.dta → panel_cultivatordao_eth.dta
+RENAME? panel_h_vote-perp.eth.dta → panel_h_vote_perp_eth.dta
+RENAME? panel_brightmoments.eth.dta → panel_brightmoments_eth.dta
+RENAME? panel_unipilot.eth.dta → panel_unipilot_eth.dta
+RENAME? panel_safe.eth.dta → panel_safe_eth.dta
+RENAME? panel_h_polygonpenguins.eth.dta → panel_h_polygonpenguins_eth.dta
+RENAME? panel_livelabs.eth.dta → panel_livelabs_eth.dta
+RENAME? panel_h_loot-dao.eth.dta → panel_h_loot_dao_eth.dta
+RENAME? panel_glmrapes.eth.dta → panel_glmrapes_eth.dta
+RENAME? panel_h_people-dao.eth.dta → panel_h_people_dao_eth.dta
+RENAME? panel_dorg.eth.dta → panel_dorg_eth.dta
+RENAME? panel_zechubdao.eth.dta → panel_zechubdao_eth.dta
+RENAME? panel_h_tracer.eth.dta → panel_h_tracer_eth.dta
+RENAME? panel_h_hop.eth.dta → panel_h_hop_eth.dta
+RENAME? panel_h_truefigov.eth.dta → panel_h_truefigov_eth.dta
+RENAME? panel_decentralgames.eth.dta → panel_decentralgames_eth.dta
+RENAME? panel_joegovernance.eth.dta → panel_joegovernance_eth.dta
+RENAME? panel_beets.eth.dta → panel_beets_eth.dta
+RENAME? panel_pancakebunny.eth.dta → panel_pancakebunny_eth.dta
+RENAME? panel_h_metafactory.eth.dta → panel_h_metafactory_eth.dta
+RENAME? panel_h_notional.eth.dta → panel_h_notional_eth.dta
+RENAME? panel_sushigov.eth.dta → panel_sushigov_eth.dta
+RENAME? panel_h_beanft.eth.dta → panel_h_beanft_eth.dta
+RENAME? panel_h_leaguedao.eth.dta → panel_h_leaguedao_eth.dta
+RENAME? panel_h_uberhaus.eth.dta → panel_h_uberhaus_eth.dta
+RENAME? panel_synapseprotocol.eth.dta → panel_synapseprotocol_eth.dta
+RENAME? panel_metislayer2.eth.dta → panel_metislayer2_eth.dta
+RENAME? panel_h_qidao.eth.dta → panel_h_qidao_eth.dta
+RENAME? panel_h_bullsontheblock.eth.dta → panel_h_bullsontheblock_eth.dta
+RENAME? panel_spookyswap.eth.dta → panel_spookyswap_eth.dta
+RENAME? panel_h_songadao.eth.dta → panel_h_songadao_eth.dta
+RENAME? panel_primexyz.eth.dta → panel_primexyz_eth.dta
+RENAME? panel_raidparty.eth.dta → panel_raidparty_eth.dta
+RENAME? panel_h_defigeek.eth.dta → panel_h_defigeek_eth.dta
+RENAME? panel_h_index-coop.eth.dta → panel_h_index_coop_eth.dta
+RENAME? panel_h_grailers.eth.dta → panel_h_grailers_eth.dta
+RENAME? panel_h_decrypt-media.eth.dta → panel_h_decrypt_media_eth.dta
+RENAME? panel_h_eulerdao.eth.dta → panel_h_eulerdao_eth.dta
+RENAME? panel_bullsontheblock.eth.dta → panel_bullsontheblock_eth.dta
+RENAME? panel_h_fingerprints.eth.dta → panel_h_fingerprints_eth.dta
+RENAME? panel_h_synapseprotocol.eth.dta → panel_h_synapseprotocol_eth.dta
+RENAME? panel_h_assangedao.eth.dta → panel_h_assangedao_eth.dta
+RENAME? panel_beefydao.eth.dta → panel_beefydao_eth.dta
+RENAME? panel_h_pangolindex.eth.dta → panel_h_pangolindex_eth.dta
+RENAME? panel_h_pickle.eth.dta → panel_h_pickle_eth.dta
+RENAME? panel_h_kogecoin.eth.dta → panel_h_kogecoin_eth.dta
+RENAME? panel_h_devdao.eth.dta → panel_h_devdao_eth.dta
+RENAME? panel_biswap-org.eth.dta → panel_biswap_org_eth.dta
+RENAME? panel_fei.eth.dta → panel_fei_eth.dta
+RENAME? panel_h_botto.eth.dta → panel_h_botto_eth.dta
+RENAME? panel_adidas.eth.dta → panel_adidas_eth.dta
+RENAME? panel_h_seedifyhodlers.eth.dta → panel_h_seedifyhodlers_eth.dta
+RENAME? panel_mantra-dao.eth.dta → panel_mantra_dao_eth.dta
+RENAME? panel_h_sismo.eth.dta → panel_h_sismo_eth.dta
+RENAME? panel_starknet.eth.dta → panel_starknet_eth.dta
+RENAME? panel_h_tempusgov.eth.dta → panel_h_tempusgov_eth.dta
+RENAME? panel_h_rarible.eth.dta → panel_h_rarible_eth.dta
+RENAME? panel_gnars.eth.dta → panel_gnars_eth.dta
+RENAME? panel_h_cabindao.eth.dta → panel_h_cabindao_eth.dta
+RENAME? panel_hectordao.eth.dta → panel_hectordao_eth.dta
+RENAME? panel_yieldguild.eth.dta → panel_yieldguild_eth.dta
+RENAME? panel_h_dcip.eth.dta → panel_h_dcip_eth.dta
+RENAME? panel_h_turbovote.eth.dta → panel_h_turbovote_eth.dta
+RENAME? panel_h_officialoceandao.eth.dta → panel_h_officialoceandao_eth.dta
+RENAME? panel_h_goodmorningnews.eth.dta → panel_h_goodmorningnews_eth.dta
+RENAME? panel_h_vote.vitadao.eth.dta → panel_h_vote_vitadao_eth.dta
+RENAME? panel_10b57e6da0.eth.dta → panel_10b57e6da0_eth.dta
+RENAME? panel_polygonpenguins.eth.dta → panel_polygonpenguins_eth.dta
+RENAME? panel_gearbox.eth.dta → panel_gearbox_eth.dta
+RENAME? panel_h_fei.eth.dta → panel_h_fei_eth.dta
+RENAME? panel_mutantsdao.eth.dta → panel_mutantsdao_eth.dta
+RENAME? panel_h_jennydao.eth.dta → panel_h_jennydao_eth.dta
+RENAME? panel_club.eth.dta → panel_club_eth.dta
+RENAME? panel_panda-dao.eth.dta → panel_panda_dao_eth.dta
+RENAME? panel_curve.eth.dta → panel_curve_eth.dta
+RENAME? panel_h_abracadabrabymerlinthemagician.eth.dta → panel_h_abracadabrabymerlinthemagician_eth.dta
+RENAME? panel_h_apecoin.eth.dta → panel_h_apecoin_eth.dta
+RENAME? panel_silofinance.eth.dta → panel_silofinance_eth.dta
+RENAME? panel_radiantcapital.eth.dta → panel_radiantcapital_eth.dta
+RENAME? panel_h_beanstalkbugbounty.eth.dta → panel_h_beanstalkbugbounty_eth.dta
+RENAME? panel_h_instadapp-gov.eth.dta → panel_h_instadapp_gov_eth.dta
+RENAME? __000000.dta → 000000.dta
+RENAME? agg_panel_apwine.eth.dta → agg_panel_apwine_eth.dta
+RENAME? agg_panel_dea.eth.dta → agg_panel_dea_eth.dta
+RENAME? agg_panel_mocana.eth.dta → agg_panel_mocana_eth.dta
+RENAME? agg_panel_theopendao.eth.dta → agg_panel_theopendao_eth.dta
+RENAME? agg_panel_silofinance.eth.dta → agg_panel_silofinance_eth.dta
+RENAME? agg_panel_alluo.eth.dta → agg_panel_alluo_eth.dta
+RENAME? agg_panel_elyfi-bsc.eth.dta → agg_panel_elyfi_bsc_eth.dta
+RENAME? agg_panel_joegovernance.eth.dta → agg_panel_joegovernance_eth.dta
+RENAME? agg_panel_dlytoken.eth.dta → agg_panel_dlytoken_eth.dta
+RENAME? agg_panel_sharkdao.eth.dta → agg_panel_sharkdao_eth.dta
+RENAME? agg_panel_seedifyhodlers.eth.dta → agg_panel_seedifyhodlers_eth.dta
+RENAME? agg_panel_dodobird.eth.dta → agg_panel_dodobird_eth.dta
+RENAME? agg_panel_cre8r.eth.dta → agg_panel_cre8r_eth.dta
+RENAME? agg_panel_apecoin.eth.dta → agg_panel_apecoin_eth.dta
+RENAME? agg_panel_morpho.eth.dta → agg_panel_morpho_eth.dta
+RENAME? agg_panel_meebitsdao.eth.dta → agg_panel_meebitsdao_eth.dta
+RENAME? agg_panel_cultivatordao.eth.dta → agg_panel_cultivatordao_eth.dta
+RENAME? agg_panel_brightmoments.eth.dta → agg_panel_brightmoments_eth.dta
+RENAME? agg_panel_arbitrumfoundation.eth.dta → agg_panel_arbitrumfoundation_eth.dta
+RENAME? agg_panel_1inch.eth.dta → agg_panel_1inch_eth.dta
+RENAME? agg_panel_barnbridge.eth.dta → agg_panel_barnbridge_eth.dta
+RENAME? agg_panel_rarible.eth.dta → agg_panel_rarible_eth.dta
+RENAME? agg_panel_club.eth.dta → agg_panel_club_eth.dta
+RENAME? agg_panel_rbn.eth.dta → agg_panel_rbn_eth.dta
+RENAME? agg_panel_diadao.eth.dta → agg_panel_diadao_eth.dta
+RENAME? agg_panel_layer2dao.org.dta → agg_panel_layer2dao_org.dta
+RENAME? agg_panel_abracadabrabymerlinthemagician.eth.dta → agg_panel_abracadabrabymerlinthemagician_eth.dta
+RENAME? agg_panel_metislayer2.eth.dta → agg_panel_metislayer2_eth.dta
+RENAME? agg_panel_harvestfi.eth.dta → agg_panel_harvestfi_eth.dta
+RENAME? agg_panel_safe.eth.dta → agg_panel_safe_eth.dta
+RENAME? agg_panel_olympusdao.eth.dta → agg_panel_olympusdao_eth.dta
+RENAME? agg_panel_balancer.eth.dta → agg_panel_balancer_eth.dta
+RENAME? agg_panel_unlock-protocol.eth.dta → agg_panel_unlock_protocol_eth.dta
+RENAME? agg_panel_gauge.rbn.eth.dta → agg_panel_gauge_rbn_eth.dta
+RENAME? agg_panel_cow.eth.dta → agg_panel_cow_eth.dta
+RENAME? agg_panel_liberofinancial.eth.dta → agg_panel_liberofinancial_eth.dta
+RENAME? agg_panel_swiveldao.eth.dta → agg_panel_swiveldao_eth.dta
+RENAME? agg_panel_poolpool.pooltogether.eth.dta → agg_panel_poolpool_pooltogether_eth.dta
+RENAME? agg_panel_gmdao.eth.dta → agg_panel_gmdao_eth.dta
+RENAME? agg_panel_pancakebunny.eth.dta → agg_panel_pancakebunny_eth.dta
+RENAME? agg_panel_dorg.eth.dta → agg_panel_dorg_eth.dta
+RENAME? agg_panel_origingov.eth.dta → agg_panel_origingov_eth.dta
+RENAME? agg_panel_jpeg’d.eth.dta → agg_panel_jpegd_eth.dta
+RENAME? agg_panel_undw3.eth.dta → agg_panel_undw3_eth.dta
+RENAME? agg_panel_lgcryptounicorns.eth.dta → agg_panel_lgcryptounicorns_eth.dta
+RENAME? agg_panel_ilvgov.eth.dta → agg_panel_ilvgov_eth.dta
+RENAME? agg_panel_meritcircle.eth.dta → agg_panel_meritcircle_eth.dta
+RENAME? agg_panel_snapshot.dcl.eth.dta → agg_panel_snapshot_dcl_eth.dta
+RENAME? agg_panel_beanstalkfarms.eth.dta → agg_panel_beanstalkfarms_eth.dta
+RENAME? agg_panel_opiumprotocol.eth.dta → agg_panel_opiumprotocol_eth.dta
+RENAME? agg_panel_0xgov.eth.dta → agg_panel_0xgov_eth.dta
+RENAME? agg_panel_superraredao.eth.dta → agg_panel_superraredao_eth.dta
+RENAME? agg_panel_genesisblocks.eth.dta → agg_panel_genesisblocks_eth.dta
+RENAME? agg_panel_zechubdao.eth.dta → agg_panel_zechubdao_eth.dta
+RENAME? agg_panel_ffdao.eth.dta → agg_panel_ffdao_eth.dta
+RENAME? agg_panel_glmrapes.eth.dta → agg_panel_glmrapes_eth.dta
+RENAME? agg_panel_tetu.eth.dta → agg_panel_tetu_eth.dta
+RENAME? agg_panel_community.nexusmutual.eth.dta → agg_panel_community_nexusmutual_eth.dta
+RENAME? agg_panel_livelabs.eth.dta → agg_panel_livelabs_eth.dta
+RENAME? agg_panel_primexyz.eth.dta → agg_panel_primexyz_eth.dta
+RENAME? agg_panel_banklessvault.eth.dta → agg_panel_banklessvault_eth.dta
+RENAME? agg_panel_staking.idlefinance.eth.dta → agg_panel_staking_idlefinance_eth.dta
+RENAME? agg_panel_yieldguild.eth.dta → agg_panel_yieldguild_eth.dta
+RENAME? agg_panel_gearbox.eth.dta → agg_panel_gearbox_eth.dta
+RENAME? agg_panel_sushigov.eth.dta → agg_panel_sushigov_eth.dta
+RENAME? agg_panel_mutantsdao.eth.dta → agg_panel_mutantsdao_eth.dta
+RENAME? agg_panel_poh.eth.dta → agg_panel_poh_eth.dta
+RENAME? agg_panel_varen.eth.dta → agg_panel_varen_eth.dta
+RENAME? agg_panel_10b57e6da0.eth.dta → agg_panel_10b57e6da0_eth.dta
+RENAME? agg_panel_mantra-dao.eth.dta → agg_panel_mantra_dao_eth.dta
+RENAME? agg_panel_biswap-org.eth.dta → agg_panel_biswap_org_eth.dta
+RENAME? agg_panel_bestfork.eth.dta → agg_panel_bestfork_eth.dta
+RENAME? agg_panel_friendswithbenefits.eth.dta → agg_panel_friendswithbenefits_eth.dta
+RENAME? agg_panel_moonbeam-foundation.eth.dta → agg_panel_moonbeam_foundation_eth.dta
+RENAME? agg_panel_adidas.eth.dta → agg_panel_adidas_eth.dta
+RENAME? agg_panel_unipilot.eth.dta → agg_panel_unipilot_eth.dta
+RENAME? agg_panel_level-finance.eth.dta → agg_panel_level_finance_eth.dta
+RENAME? agg_panel_pangolindex.eth.dta → agg_panel_pangolindex_eth.dta
+RENAME? agg_panel_beets.eth.dta → agg_panel_beets_eth.dta
+RENAME? agg_panel_klimadao.eth.dta → agg_panel_klimadao_eth.dta
+RENAME? agg_panel_wearebeansprout.eth.dta → agg_panel_wearebeansprout_eth.dta
+RENAME? agg_panel_magicappstore.eth.dta → agg_panel_magicappstore_eth.dta
+RENAME? agg_panel_metafactory.eth.dta → agg_panel_metafactory_eth.dta
+RENAME? agg_panel_spookyswap.eth.dta → agg_panel_spookyswap_eth.dta
+RENAME? agg_panel_hectordao.eth.dta → agg_panel_hectordao_eth.dta
+RENAME? agg_panel_gnars.eth.dta → agg_panel_gnars_eth.dta
+RENAME? agg_panel_specialresolution.nexusmutual.eth.dta → agg_panel_specialresolution_nexusmutual_eth.dta
+RENAME? agg_panel_aave.eth.dta → agg_panel_aave_eth.dta
+RENAME? agg_panel_ampleforthorg.eth.dta → agg_panel_ampleforthorg_eth.dta
+RENAME? agg_panel_panda-dao.eth.dta → agg_panel_panda_dao_eth.dta
+RENAME? agg_panel_squiggledaotreasurysquad.eth.dta → agg_panel_squiggledaotreasurysquad_eth.dta
+RENAME? agg_panel_fatcatsdao.eth.dta → agg_panel_fatcatsdao_eth.dta
+RENAME? agg_panel_beefydao.eth.dta → agg_panel_beefydao_eth.dta
+RENAME? agg_panel_lido-snapshot.eth.dta → agg_panel_lido_snapshot_eth.dta
+RENAME? agg_panel_curve.eth.dta → agg_panel_curve_eth.dta
+RENAME? agg_panel_doodles.eth.dta → agg_panel_doodles_eth.dta
+RENAME? agg_panel_expansiondao.eth.dta → agg_panel_expansiondao_eth.dta
+RENAME? agg_panel_raidparty.eth.dta → agg_panel_raidparty_eth.dta
+RENAME? agg_panel_luchadores.eth.dta → agg_panel_luchadores_eth.dta
+RENAME? agg_panel_orbapp.eth.dta → agg_panel_orbapp_eth.dta
+RENAME? agg_panel_starknet.eth.dta → agg_panel_starknet_eth.dta
+RENAME? agg_panel_rook.eth.dta → agg_panel_rook_eth.dta
+RENAME? agg_panel_gitcoindao.eth.dta → agg_panel_gitcoindao_eth.dta
+RENAME? agg_panel_redactedcartel.eth.dta → agg_panel_redactedcartel_eth.dta
+RENAME? agg_panel_cakevote.eth.dta → agg_panel_cakevote_eth.dta
+RENAME? agg_panel_beanft.eth.dta → agg_panel_beanft_eth.dta
+RENAME? agg_panel_pushdao.eth.dta → agg_panel_pushdao_eth.dta
+RENAME? agg_panel_stgdao.eth.dta → agg_panel_stgdao_eth.dta
+RENAME? agg_panel_bancornetwork.eth.dta → agg_panel_bancornetwork_eth.dta
+RENAME? agg_panel_krausehouse.eth.dta → agg_panel_krausehouse_eth.dta
+RENAME? agg_panel_streamr.eth.dta → agg_panel_streamr_eth.dta
+RENAME? agg_panel_jennydao.eth.dta → agg_panel_jennydao_eth.dta
+RENAME? agg_panel_beanstalkfarmsbudget.eth.dta → agg_panel_beanstalkfarmsbudget_eth.dta
+RENAME? agg_panel_gdao.eth.dta → agg_panel_gdao_eth.dta
+RENAME? agg_panel_crowncapital.eth.dta → agg_panel_crowncapital_eth.dta
+RENAME? agg_panel_sismo.eth.dta → agg_panel_sismo_eth.dta
+RENAME? agg_panel_alpacafinance.eth.dta → agg_panel_alpacafinance_eth.dta
+RENAME? agg_panel_frax.eth.dta → agg_panel_frax_eth.dta
+RENAME? agg_panel_basenamedao.eth.dta → agg_panel_basenamedao_eth.dta
+RENAME? agg_panel_treschain.eth.dta → agg_panel_treschain_eth.dta
+RENAME? agg_panel_grants.safe.eth.dta → agg_panel_grants_safe_eth.dta
+RENAME? agg_panel_tracer.eth.dta → agg_panel_tracer_eth.dta
+RENAME? agg_panel_hop.eth.dta → agg_panel_hop_eth.dta
+RENAME? agg_panel_evmaverick.eth.dta → agg_panel_evmaverick_eth.dta
+RENAME? agg_panel_botto.eth.dta → agg_panel_botto_eth.dta
+RENAME? agg_panel_aavegotchi.eth.dta → agg_panel_aavegotchi_eth.dta
+RENAME? agg_panel_aurafinance.eth.dta → agg_panel_aurafinance_eth.dta
+RENAME? agg_panel_synapseprotocol.eth.dta → agg_panel_synapseprotocol_eth.dta
+RENAME? agg_panel_freerossdao.eth.dta → agg_panel_freerossdao_eth.dta
+RENAME? agg_panel_cabindao.eth.dta → agg_panel_cabindao_eth.dta
+RENAME? agg_panel_dydxgov.eth.dta → agg_panel_dydxgov_eth.dta
+RENAME? agg_panel_phonon.eth.dta → agg_panel_phonon_eth.dta
+RENAME? agg_panel_decentralgames.eth.dta → agg_panel_decentralgames_eth.dta
+RENAME? agg_panel_zora.eth.dta → agg_panel_zora_eth.dta
+RENAME? agg_panel_kogecoin.eth.dta → agg_panel_kogecoin_eth.dta
+RENAME? agg_panel_synthetix-stakers-poll.eth.dta → agg_panel_synthetix_stakers_poll_eth.dta
+RENAME? agg_panel_xdaistake.eth.dta → agg_panel_xdaistake_eth.dta
+RENAME? agg_panel_eulerdao.eth.dta → agg_panel_eulerdao_eth.dta
+RENAME? agg_panel_goodmorningnews.eth.dta → agg_panel_goodmorningnews_eth.dta
+RENAME? agg_panel_defigeek.eth.dta → agg_panel_defigeek_eth.dta
+RENAME? agg_panel_grailers.eth.dta → agg_panel_grailers_eth.dta
+RENAME? agg_panel_opcollective.eth.dta → agg_panel_opcollective_eth.dta
+RENAME? agg_panel_graphprotocol.eth.dta → agg_panel_graphprotocol_eth.dta
+RENAME? agg_panel_songadao.eth.dta → agg_panel_songadao_eth.dta
+RENAME? agg_panel_fingerprints.eth.dta → agg_panel_fingerprints_eth.dta
+RENAME? agg_panel_conic-dao.eth.dta → agg_panel_conic_dao_eth.dta
+RENAME? agg_panel_cream-finance.eth.dta → agg_panel_cream_finance_eth.dta
+RENAME? agg_panel_uberhaus.eth.dta → agg_panel_uberhaus_eth.dta
+RENAME? agg_panel_masknetwork.eth.dta → agg_panel_masknetwork_eth.dta
+RENAME? agg_panel_otterclam.eth.dta → agg_panel_otterclam_eth.dta
+RENAME? agg_panel_notional.eth.dta → agg_panel_notional_eth.dta
+RENAME? agg_panel_polygonpenguins.eth.dta → agg_panel_polygonpenguins_eth.dta
+RENAME? agg_panel_gov.dhedge.eth.dta → agg_panel_gov_dhedge_eth.dta
+RENAME? agg_panel_metabrands.eth.dta → agg_panel_metabrands_eth.dta
+RENAME? agg_panel_beanstalkbugbounty.eth.dta → agg_panel_beanstalkbugbounty_eth.dta
+RENAME? agg_panel_loot-dao.eth.dta → agg_panel_loot_dao_eth.dta
+RENAME? agg_panel_fei.eth.dta → agg_panel_fei_eth.dta
+RENAME? agg_panel_hypergptdao.eth.dta → agg_panel_hypergptdao_eth.dta
+RENAME? agg_panel_younghwang.eth.dta → agg_panel_younghwang_eth.dta
+RENAME? agg_panel_vote.vitadao.eth.dta → agg_panel_vote_vitadao_eth.dta
+RENAME? agg_panel_devdao.eth.dta → agg_panel_devdao_eth.dta
+RENAME? agg_panel_ousdgov.eth.dta → agg_panel_ousdgov_eth.dta
+RENAME? agg_panel_seizerdao.eth.dta → agg_panel_seizerdao_eth.dta
+RENAME? agg_panel_bullsontheblock.eth.dta → agg_panel_bullsontheblock_eth.dta
+RENAME? agg_panel_popcorn-snapshot.eth.dta → agg_panel_popcorn_snapshot_eth.dta
+RENAME? agg_panel_qidao.eth.dta → agg_panel_qidao_eth.dta
+RENAME? agg_panel_radiantcapital.eth.dta → agg_panel_radiantcapital_eth.dta
+RENAME? agg_panel_tomoondao.eth.dta → agg_panel_tomoondao_eth.dta
+RENAME? agg_panel_cryptexdao.eth.dta → agg_panel_cryptexdao_eth.dta
+RENAME? agg_panel_pickle.eth.dta → agg_panel_pickle_eth.dta
+RENAME? agg_panel_gal.eth.dta → agg_panel_gal_eth.dta
+RENAME? agg_panel_yam.eth.dta → agg_panel_yam_eth.dta
+RENAME? agg_panel_primerating.eth.dta → agg_panel_primerating_eth.dta
+RENAME? agg_panel_gasdao.eth.dta → agg_panel_gasdao_eth.dta
+RENAME? agg_panel_badgerdao.eth.dta → agg_panel_badgerdao_eth.dta
+RENAME? agg_panel_beanstalkdao.eth.dta → agg_panel_beanstalkdao_eth.dta
+RENAME? agg_panel_piedao.eth.dta → agg_panel_piedao_eth.dta
+RENAME? agg_panel_golflinks.eth.dta → agg_panel_golflinks_eth.dta
+RENAME? agg_panel_cvx.eth.dta → agg_panel_cvx_eth.dta
+RENAME? agg_panel_ens.eth.dta → agg_panel_ens_eth.dta
+RENAME? agg_panel_poktdao.eth.dta → agg_panel_poktdao_eth.dta
+RENAME? agg_panel_vote-perp.eth.dta → agg_panel_vote_perp_eth.dta
+RENAME? agg_panel_people-dao.eth.dta → agg_panel_people_dao_eth.dta
+RENAME? agg_panel_tokenlon.eth.dta → agg_panel_tokenlon_eth.dta
+RENAME? agg_panel_futera.eth.dta → agg_panel_futera_eth.dta
+RENAME? agg_panel_mstablegovernance.eth.dta → agg_panel_mstablegovernance_eth.dta
+RENAME? agg_panel_wagdie.eth.dta → agg_panel_wagdie_eth.dta
+RENAME? agg_panel_globalcoinresearch.eth.dta → agg_panel_globalcoinresearch_eth.dta
+RENAME? agg_panel_shellprotocol.eth.dta → agg_panel_shellprotocol_eth.dta
+RENAME? agg_panel_shapeshiftdao.eth.dta → agg_panel_shapeshiftdao_eth.dta
+RENAME? agg_panel_ilv.eth.dta → agg_panel_ilv_eth.dta
+RENAME? agg_panel_truefigov.eth.dta → agg_panel_truefigov_eth.dta
+RENAME? agg_panel_thegurudao.eth.dta → agg_panel_thegurudao_eth.dta
+RENAME? agg_panel_leaguedao.eth.dta → agg_panel_leaguedao_eth.dta
+RENAME? agg_panel_ybaby.eth.dta → agg_panel_ybaby_eth.dta
+RENAME? agg_panel_officialoceandao.eth.dta → agg_panel_officialoceandao_eth.dta
+RENAME? agg_panel_paraswap-dao.eth.dta → agg_panel_paraswap_dao_eth.dta
+RENAME? agg_panel_gro.xyz.dta → agg_panel_gro_xyz.dta
+RENAME? agg_panel_stakedao.eth.dta → agg_panel_stakedao_eth.dta
+RENAME? agg_panel_alchemixstakers.eth.dta → agg_panel_alchemixstakers_eth.dta
+RENAME? agg_panel_daocity.eth.dta → agg_panel_daocity_eth.dta
+RENAME? agg_panel_instadapp-gov.eth.dta → agg_panel_instadapp_gov_eth.dta
+RENAME? agg_panel_vote.airswap.eth.dta → agg_panel_vote_airswap_eth.dta
+RENAME? agg_panel_dcip.eth.dta → agg_panel_dcip_eth.dta
+RENAME? agg_panel_gnosis.eth.dta → agg_panel_gnosis_eth.dta
+RENAME? agg_panel_colony.eth.dta → agg_panel_colony_eth.dta
+RENAME? agg_panel_astardegens.eth.dta → agg_panel_astardegens_eth.dta
+RENAME? agg_panel_dopedao.eth.dta → agg_panel_dopedao_eth.dta
+RENAME? agg_panel_rallygov.eth.dta → agg_panel_rallygov_eth.dta
+RENAME? agg_panel_tempusgov.eth.dta → agg_panel_tempusgov_eth.dta
+RENAME? agg_panel_tigervc-dao.eth.dta → agg_panel_tigervc_dao_eth.dta
+RENAME? agg_panel_blackpoolhq.eth.dta → agg_panel_blackpoolhq_eth.dta
+RENAME? agg_panel_gov.radicle.eth.dta → agg_panel_gov_radicle_eth.dta
+RENAME? agg_panel_jbdao.eth.dta → agg_panel_jbdao_eth.dta
+RENAME? agg_panel_turbovote.eth.dta → agg_panel_turbovote_eth.dta
+RENAME? agg_panel_idlefinance.eth.dta → agg_panel_idlefinance_eth.dta
+RENAME? agg_panel_thelanddaoprop.eth.dta → agg_panel_thelanddaoprop_eth.dta
+RENAME? agg_panel_bitdao.eth.dta → agg_panel_bitdao_eth.dta
+RENAME? agg_panel_hbot-prp.eth.dta → agg_panel_hbot_prp_eth.dta
+RENAME? agg_panel_copernicusbeer.eth.dta → agg_panel_copernicusbeer_eth.dta
+RENAME? agg_panel_assangedao.eth.dta → agg_panel_assangedao_eth.dta
+RENAME? agg_panel_daomstr.eth.dta → agg_panel_daomstr_eth.dta
+RENAME? agg_panel_decrypt-media.eth.dta → agg_panel_decrypt_media_eth.dta
+RENAME? agg_panel_jadeprotocol.eth.dta → agg_panel_jadeprotocol_eth.dta
+RENAME? agg_panel_pooltogether.eth.dta → agg_panel_pooltogether_eth.dta
+RENAME? agg_panel_index-coop.eth.dta → agg_panel_index_coop_eth.dta
+RENAME? __000001_mean_mis_basic_coef.csv → 000001_mean_mis_basic_coef.csv
+RENAME? Positive_positive_mean_mis_app_coef.png → positive_positive_mean_mis_app_coef.png
+RENAME? .DS_Store → ds_store
+RENAME? Positive_positive_mean_mis_q_coef.png → positive_positive_mean_mis_q_coef.png
+RENAME? Negative_negative_mean_mis_rc_coef.png → negative_negative_mean_mis_rc_coef.png
+RENAME? __000000_mean_mis_q_coef.csv → 000000_mean_mis_q_coef.csv
+RENAME? __000001_mean_mis_q_coef.csv → 000001_mean_mis_q_coef.csv
+RENAME? __000000_mean_mis_app_coef.csv → 000000_mean_mis_app_coef.csv
+RENAME? Positive_positive_mean_mis_w_coef.png → positive_positive_mean_mis_w_coef.png
+RENAME? __000000_mean_mis_w_coef.csv → 000000_mean_mis_w_coef.csv
+RENAME? Negative_negative_mean_mis_q_coef.png → negative_negative_mean_mis_q_coef.png
+RENAME? Positive_positive_mean_mis_basic_coef.png → positive_positive_mean_mis_basic_coef.png
+RENAME? __000001_mean_mis_w_coef.csv → 000001_mean_mis_w_coef.csv
+RENAME? Positive_positive_mean_mis_rc_coef.png → positive_positive_mean_mis_rc_coef.png
+RENAME? Negative_negative_mean_mis_coef.png → negative_negative_mean_mis_coef.png
+RENAME? Negative_negative_mean_mis_app_coef.png → negative_negative_mean_mis_app_coef.png
+RENAME? __000000_mean_mis_rc_coef.csv → 000000_mean_mis_rc_coef.csv
+RENAME? __000001_mean_mis_app_coef.csv → 000001_mean_mis_app_coef.csv
+RENAME? Positive_positive_mean_voted_coef.png → positive_positive_mean_voted_coef.png
+RENAME? __000001_mean_voted_coef.csv → 000001_mean_voted_coef.csv
+RENAME? __000000_mean_voted_coef.csv → 000000_mean_voted_coef.csv
+RENAME? __000000_mean_mis_basic_coef.csv → 000000_mean_mis_basic_coef.csv
+RENAME? __000001_mean_mis_coef.csv → 000001_mean_mis_coef.csv
+RENAME? Negative_negative_mean_mis_basic_coef.png → negative_negative_mean_mis_basic_coef.png
+RENAME? Negative_negative_mean_voted_coef.png → negative_negative_mean_voted_coef.png
+RENAME? __000000_mean_mis_coef.csv → 000000_mean_mis_coef.csv
+RENAME? Positive_positive_mean_mis_coef.png → positive_positive_mean_mis_coef.png
+RENAME? __000001_mean_mis_w_coef.dta → 000001_mean_mis_w_coef.dta
+RENAME? __000001_mean_mis_rc_coef.csv → 000001_mean_mis_rc_coef.csv
+RENAME? ~merged_panel_sample_with_coefficients.do.stswp → merged_panel_sample_with_coefficients_do.stswp
+RENAME? ~regressions_in_chunks.do.stswp → regressions_in_chunks_do.stswp
+RENAME? data_preparation_aggregate iterate home.do → data_preparation_aggregate_iterate_home.do
+RENAME? data_preparation_aggregate iterate home2.do → data_preparation_aggregate_iterate_home2.do
+RENAME? .DS_Store → ds_store
+Hashing ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:01:00
+DUPLICATE? notebooks and secondary scripts/m3.png
+DUPLICATE? notebooks and secondary scripts/m6.png
+DUPLICATE? notebooks and secondary scripts/~3_multi_weighted.do.stswp
+DUPLICATE? notebooks and secondary scripts/regressions batches_mvh.do
+DUPLICATE? notebooks and secondary scripts/5a_import_votes_and_merge_helge.py
+DUPLICATE? notebooks and secondary scripts/~multi csdid.do.stswp
+DUPLICATE? notebooks and secondary scripts/test2.py
+DUPLICATE? notebooks and secondary scripts/~data_preparation_aggregate.do.stswp
+DUPLICATE? notebooks and secondary scripts/check_proposals.do
+DUPLICATE? notebooks and secondary scripts/single and multi csdid.do
+DUPLICATE? python/dataset.py
+DUPLICATE? python/Python.code-workspace
+DUPLICATE? python/.vscode/settings.json
+DUPLICATE? input/data_clean_helge.csv
+DUPLICATE? input/snapshot-hub-mainnet-2023-08-30-votes_0.csv
+DUPLICATE? input/data_clean.pkl
+DUPLICATE? input/data_clean_drop.csv
+DUPLICATE? input/data_clean.csv
+DUPLICATE? results/tables/main_40_v3.rtf
+DUPLICATE? results/tables/subsample_type_voted.rtf
+DUPLICATE? results/tables/main_120_v4.rtf
+DUPLICATE? results/tables/subsample.rtf
+DUPLICATE? results/tables/subsample_type.rtf
+DUPLICATE? results/tables/a_main_100.rtf
+DUPLICATE? results/tables/main_120_v2.rtf
+DUPLICATE? results/tables/main_120_v3.rtf
+DUPLICATE? results/tables/main_60_v4.rtf
+DUPLICATE? results/tables/main_100_v2.rtf
+DUPLICATE? results/tables/main_80_h.rtf
+DUPLICATE? results/tables/main_40_h.rtf
+DUPLICATE? results/tables/main_100_v3.rtf
+DUPLICATE? results/tables/main_60_h.rtf
+DUPLICATE? results/tables/subsample_type_3m_rd.rtf
+DUPLICATE? results/tables/main_60_v3a.rtf
+DUPLICATE? results/tables/main_60_v2.rtf
+DUPLICATE? results/tables/a_main_60.rtf
+DUPLICATE? results/tables/main_100_v4.rtf
+DUPLICATE? results/tables/descriptives_100.log
+DUPLICATE? results/tables/main_120.rtf
+DUPLICATE? results/tables/a_vot_types_120.rtf
+DUPLICATE? results/tables/subsample_type_1m.rtf
+DUPLICATE? results/tables/main_20.rtf
+DUPLICATE? results/tables/main_160_h.rtf
+DUPLICATE? results/tables/main_140_v3.rtf
+DUPLICATE? results/tables/main_140_v2.rtf
+DUPLICATE? results/tables/main_200_h.rtf
+DUPLICATE? results/tables/a_main_40.rtf
+DUPLICATE? results/tables/main_180_h.rtf
+DUPLICATE? results/tables/main_.rtf
+DUPLICATE? results/tables/main_140_h.rtf
+DUPLICATE? results/tables/a_main_230.rtf
+DUPLICATE? results/tables/main_80_v3a.rtf
+DUPLICATE? results/tables/main_100.rtf
+DUPLICATE? results/tables/a_main_80.rtf
+DUPLICATE? results/tables/descriptives_120.log
+DUPLICATE? results/tables/main_140_v4.rtf
+DUPLICATE? results/tables/main_80_v4.rtf
+DUPLICATE? results/tables/main_100_h.rtf
+DUPLICATE? results/tables/main_80.rtf
+DUPLICATE? results/tables/a_main_120.rtf
+DUPLICATE? results/tables/main_40_v3a.rtf
+DUPLICATE? results/tables/main_80_v2.rtf
+DUPLICATE? results/tables/descriptives_140.log
+DUPLICATE? results/tables/main_80_v3.rtf
+DUPLICATE? results/tables/a_vot_types_230.rtf
+DUPLICATE? results/tables/main_120_h.rtf
+DUPLICATE? results/tables/main_160_v2.rtf
+DUPLICATE? results/tables/christmas csdid presents/Approval/.DS_Store
+DUPLICATE? results/tables/3_csdid_multi/csdid_type_approval_1_none/csdid_type_approval_event_1.rtf
+DUPLICATE? results/tables/3_csdid_multi/csdid_inter_type_basic_1_none/.DS_Store
+DUPLICATE? results/tables/3_csdid_multi/csdid_inter_type_basic_1_none/csdid_type_basic_event_1.rtf
+DUPLICATE? results/tables/3_csdid_multi/csdid_inter_type_approval_1_none/csdid_type_approval_event_1.rtf
+DUPLICATE? results/tables/3_csdid_multi/csdid_inter_type_approval_1_none/.DS_Store
+DUPLICATE? results/tables/3_csdid_multi/csdid_type_weighted_1_none/csdid_type_weighted_event_1.rtf
+DUPLICATE? results/tables/3_csdid_multi/csdid_inter_type_weighted_1_none/.DS_Store
+DUPLICATE? results/tables/3_csdid_multi/csdid_inter_type_weighted_1_none/csdid_type_weighted_event_1.rtf
+DUPLICATE? results/tables/3_csdid_multi/csdid_type_basic_1_none/csdid_type_basic_event_1.rtf
+DUPLICATE? results/figures/marginsplot_int1_60_v3.png
+DUPLICATE? results/figures/marginsplot_int1_160_v2.png
+DUPLICATE? results/figures/marginsplot_int1_80.png
+DUPLICATE? results/figures/marginsplot_main_120.png
+DUPLICATE? results/figures/marginsplot_int1_60_v2.png
+DUPLICATE? results/figures/marginsplot_int2_120_v2.png
+DUPLICATE? results/figures/marginsplot_int2_120_v3.png
+DUPLICATE? results/figures/marginsplot_main_80_v2.png
+DUPLICATE? results/figures/marginsplot_main_120_v2.png
+DUPLICATE? results/figures/marginsplot_int1_120.png
+DUPLICATE? results/figures/marginsplot_main_120_v3.png
+DUPLICATE? results/figures/marginsplot_main_80_v3.png
+DUPLICATE? results/figures/marginsplot_int2_100_v2.png
+DUPLICATE? results/figures/marginsplot_int2_80_v3.png
+DUPLICATE? results/figures/marginsplot_int2_80_v2.png
+DUPLICATE? results/figures/marginsplot_int1_20.png
+DUPLICATE? results/figures/marginsplot_int2_100_v3.png
+DUPLICATE? results/figures/marginsplot_main_100_v2.png
+DUPLICATE? results/figures/marginsplot_main_100_v3.png
+DUPLICATE? results/figures/marginsplot_main_140.png
+DUPLICATE? results/figures/marginsplot_int1_140_v2.png
+DUPLICATE? results/figures/marginsplot_int1_140_v3.png
+DUPLICATE? results/figures/marginsplot_int2_120.png
+DUPLICATE? results/figures/marginsplot_main_180_v2.png
+DUPLICATE? results/figures/marginsplot_int2_140_v3.png
+DUPLICATE? results/figures/marginsplot_int1_80_v2.png
+DUPLICATE? results/figures/marginsplot_int1_80_v3.png
+DUPLICATE? results/figures/marginsplot_main_20.png
+DUPLICATE? results/figures/marginsplot_int2_140_v2.png
+DUPLICATE? results/figures/marginsplot_main_140_v3.png
+DUPLICATE? results/figures/marginsplot_main_140_v2.png
+DUPLICATE? results/figures/marginsplot_int2_100.png
+DUPLICATE? results/figures/marginsplot_int1_100_v3.png
+DUPLICATE? results/figures/marginsplot_int2_80.png
+DUPLICATE? results/figures/marginsplot_int1_100_v2.png
+DUPLICATE? results/figures/marginsplot_main_60_v3.png
+DUPLICATE? results/figures/marginsplot_main_60_v2.png
+DUPLICATE? results/figures/marginsplot_int2_60_v2.png
+DUPLICATE? results/figures/marginsplot_main_100.png
+DUPLICATE? results/figures/marginsplot_int1_120_v3.png
+DUPLICATE? results/figures/marginsplot_main_80.png
+DUPLICATE? results/figures/marginsplot_int1_120_v2.png
+DUPLICATE? results/figures/marginsplot_int2_60_v3.png
+DUPLICATE? results/figures/marginsplot_main_40.png
+DUPLICATE? results/figures/marginsplot_int2_20.png
+DUPLICATE? results/figures/marginsplot_int2_160_v2.png
+DUPLICATE? results/figures/marginsplot_main_160_v3.png
+DUPLICATE? results/figures/marginsplot_int1_100.png
+DUPLICATE? results/figures/marginsplot_main_160_v2.png
+DUPLICATE? results/figures/3_csdid_inter_multi/type_approval_event_1_none.png
+DUPLICATE? results/figures/3_csdid_inter_multi/.DS_Store
+DUPLICATE? results/figures/3_csdid_inter_multi/type_weighted_calendar_1_none.png
+DUPLICATE? results/figures/3_csdid_inter_multi/type_weighted_event_05_dao.png
+DUPLICATE? results/figures/3_csdid_inter_multi/type_basic_event_1_none.png
+DUPLICATE? results/figures/3_csdid_inter_multi/type_weighted_group_1_none.png
+DUPLICATE? results/figures/3_csdid_inter_multi/type_weighted_event_1_none.png
+DUPLICATE? results/figures/3_csdid_multi/type_approval_event_1_none.png
+DUPLICATE? results/figures/3_csdid_multi/.DS_Store
+DUPLICATE? results/figures/3_csdid_multi/type_weighted_calendar_1_none.png
+DUPLICATE? results/figures/3_csdid_multi/type_weighted_event_05_dao.png
+DUPLICATE? results/figures/3_csdid_multi/type_basic_event_1_none.png
+DUPLICATE? results/figures/3_csdid_multi/type_weighted_group_1_none.png
+DUPLICATE? results/figures/3_csdid_multi/type_weighted_event_1_none.png
+DUPLICATE? logs/2024-08-23-13-25-19_data_prep_iter.smcl
+DUPLICATE? logs/2024-10-21-17-31-20_data_prep_iter.log
+DUPLICATE? logs/2024-10-21-17-30-55_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-30-09-52-49_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-26-12-47-18_data_prep_iter.smcl
+DUPLICATE? logs/2024-10-22-10-42-57_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-10-27-29_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-13-34-37_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-04-15-24-13_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-05-12-45-04_data_prep_iter.log
+DUPLICATE? logs/2024-08-23-10-47-19_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-16-04-35_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-10-52-32_data_prep_iter.smcl
+DUPLICATE? logs/2024-11-07-10-31-22_data_prep_iter.log
+DUPLICATE? logs/2024-09-04-10-52-29_data_prep_iter.log
+DUPLICATE? logs/2024-08-23-13-25-03_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-05-09-48-31_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-13-59-02_data_prep_iter.smcl
+DUPLICATE? logs/2024-10-10-15-27-32_data_prep_iter.smcl
+DUPLICATE? logs/2024-10-21-17-30-01_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-14-42-32_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-11-07-46_data_prep_iter.log
+DUPLICATE? logs/2024-10-10-15-32-51_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-26-12-37-45_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-16-12-07_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-26-09-06-38_data_prep_iter.smcl
+DUPLICATE? logs/2024-10-22-10-38-12_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-10-10-03-11_data_prep_iter.log
+DUPLICATE? logs/2024-09-12-15-47-56_data_prep_iter.log
+DUPLICATE? logs/2024-08-23-13-24-41_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-27-10-40-14_data_prep_iter.log
+DUPLICATE? logs/2024-10-10-15-24-37_data_prep_iter.smcl
+DUPLICATE? logs/2024-11-06-17-57-49_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-10-45-47_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-10-10-15-21_data_prep_iter.log
+DUPLICATE? logs/2024-09-16-14-16-05_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-12-15-47-24_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-04-12-35-27_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-05-12-45-04_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-10-18-33_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-16-06-36_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-16-09-01_data_prep_iter.log
+DUPLICATE? logs/2024-09-12-15-58-39_data_prep_iter.log
+DUPLICATE? logs/2024-08-23-15-49-01_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-30-09-31-27_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-26-09-42-36_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-10-48-48_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-13-24-07_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-18-32-58_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-30-09-33-04_data_prep_iter.log
+DUPLICATE? logs/2024-10-22-10-38-05_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-04-12-34-26_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-13-27-51_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-10-10-03-11_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-10-10-51_data_prep_iter.log
+DUPLICATE? logs/2024-11-07-09-51-12_data_prep_iter.smcl
+DUPLICATE? logs/2024-10-22-10-37-46_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-26-16-03-34_data_prep_iter.smcl
+DUPLICATE? logs/2024-10-21-12-42-03_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-12-46-44_data_prep_iter.smcl
+DUPLICATE? logs/2024-10-10-15-21-29_data_prep_iter.smcl
+DUPLICATE? logs/2024-10-22-10-44-00_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-13-59-10_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-16-05-34_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-11-52-16_data_prep_iter.smcl
+DUPLICATE? logs/2024-11-07-10-26-40_data_prep_iter.log
+DUPLICATE? logs/2024-09-04-15-32-41_data_prep_iter.log
+DUPLICATE? logs/2024-08-23-17-28-31_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-10-10-15-21_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-16-14-48_data_prep_iter.log
+DUPLICATE? logs/2024-08-23-19-57-56_data_prep_iter.log
+DUPLICATE? logs/2024-10-21-17-30-12_data_prep_iter.smcl
+DUPLICATE? logs/2024-10-10-15-25-32_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-16-08-37_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-30-09-53-52_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-04-12-33-21_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-26-16-04-00_data_prep_iter.log
+DUPLICATE? logs/2024-08-23-19-57-56_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-12-05-43_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-16-14-48_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-04-15-23-57_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-30-09-53-52_data_prep_iter.log
+DUPLICATE? logs/2024-08-28-10-45-20_data_prep_iter.log
+DUPLICATE? logs/2024-08-23-18-32-16_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-14-28-08_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-16-14-28-34_data_prep_iter.log
+DUPLICATE? logs/2024-08-23-10-20-27_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-04-11-08-51_data_prep_iter.smcl
+DUPLICATE? logs/2024-10-22-10-38-02_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-04-11-12-22_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-17-15-45-34_data_prep_iter.smcl
+DUPLICATE? logs/2024-10-22-10-41-45_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-04-12-35-27_data_prep_iter.log
+DUPLICATE? logs/2024-08-23-10-53-28_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-10-09-26-16_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-17-27-42_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-30-14-00-55_data_prep_iter.log
+DUPLICATE? logs/2024-09-04-10-49-11_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-12-15-47-56_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-04-11-12-13_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-18-38-26_data_prep_iter.smcl
+DUPLICATE? logs/2024-10-22-10-44-00_data_prep_iter.log
+DUPLICATE? logs/2024-10-21-17-22-58_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-10-18-10_data_prep_iter.smcl
+DUPLICATE? logs/2024-10-22-10-39-27_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-04-12-31-49_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-17-15-48-00_data_prep_iter.log
+DUPLICATE? logs/2024-09-04-12-34-42_data_prep_iter.smcl
+DUPLICATE? logs/2024-11-07-10-26-40_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-10-21-01_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-26-16-04-00_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-10-10-51_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-04-12-33-58_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-16-14-28-34_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-17-52-58_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-18-32-58_data_prep_iter.log
+DUPLICATE? logs/2024-10-10-15-20-43_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-10-18-10_data_prep_iter.log
+DUPLICATE? logs/data_helge_panel.dta
+DUPLICATE? logs/2024-08-23-17-29-42_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-11-48-53_data_prep_iter.smcl
+DUPLICATE? logs/2024-10-22-10-39-23_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-16-04-16_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-16-04-47_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-11-07-46_data_prep_iter.smcl
+DUPLICATE? logs/2024-11-06-17-57-49_data_prep_iter.log
+DUPLICATE? logs/2024-10-22-10-41-39_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-28-10-45-20_data_prep_iter.smcl
+DUPLICATE? logs/2024-10-22-10-39-38_data_prep_iter.smcl
+DUPLICATE? logs/2024-10-11-09-11-16_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-26-12-47-18_data_prep_iter.log
+DUPLICATE? logs/2024-09-10-09-26-16_data_prep_iter.log
+DUPLICATE? logs/2024-08-23-11-49-15_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-17-28-04_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-30-09-33-04_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-17-15-48-00_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-14-48-50_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-16-08-17_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-05-11-00-03_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-18-54-08_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-27-10-40-14_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-11-54-23_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-10-20-07_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-16-09-01_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-16-14-16-05_data_prep_iter.log
+DUPLICATE? logs/2024-10-21-09-07-06_data_prep_iter.smcl
+DUPLICATE? logs/2024-11-07-10-31-22_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-18-53-08_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-04-15-32-41_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-05-11-00-03_data_prep_iter.log
+DUPLICATE? logs/2024-10-22-10-37-32_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-16-12-07_data_prep_iter.log
+DUPLICATE? logs/2024-09-16-15-30-21_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-14-48-50_data_prep_iter.log
+DUPLICATE? logs/2024-09-04-11-13-59_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-16-07-53_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-10-27-29_data_prep_iter.log
+DUPLICATE? logs/2024-08-30-14-00-55_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-16-21-23_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-04-10-52-29_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-17-28-46_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-12-15-58-39_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-04-11-13-59_data_prep_iter.log
+DUPLICATE? logs/2024-08-23-13-41-07_data_prep_iter.smcl
+DUPLICATE? logs/2024-10-21-12-40-30_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-13-48-49_data_prep_iter.smcl
+DUPLICATE? logs/2024-09-04-12-30-19_data_prep_iter.smcl
+DUPLICATE? logs/2024-08-23-14-00-10_data_prep_iter.smcl
+DUPLICATE? logs/2024-10-21-17-31-20_data_prep_iter.smcl
+DUPLICATE? logs/2024-10-21-17-29-08_data_prep_iter.smcl
+DUPLICATE? processed/proposals_final_helge.pkl
+DUPLICATE? processed/proposals.csv
+DUPLICATE? processed/data_helge_panel_agg.dta
+DUPLICATE? processed/panel_jeroene_full.dta
+DUPLICATE? processed/spaces_verified.pkl
+DUPLICATE? processed/users.csv
+DUPLICATE? processed/panel_full.dta
+DUPLICATE? processed/proposal_text.csv
+DUPLICATE? processed/magnus_export.dta
+DUPLICATE? processed/data_helge_panel_v2.dta
+DUPLICATE? processed/votes.csv
+DUPLICATE? processed/data_helge_panel.dta
+DUPLICATE? processed/panel_agg_full.dta
+DUPLICATE? processed/follows.csv
+DUPLICATE? processed/spaces.csv
+DUPLICATE? processed/panel_full_temp.dta
+DUPLICATE? processed/spaces_verified.csv
+DUPLICATE? processed/time_chunks/panel_6_chunk_6m.dta
+DUPLICATE? processed/time_chunks/panel_5_chunk_6m.dta
+DUPLICATE? processed/time_chunks/panel_4_chunk_6m.dta
+DUPLICATE? processed/time_chunks/panel_3_chunk_6m.dta
+DUPLICATE? processed/dao/panel_h_gnars.eth.dta
+DUPLICATE? processed/dao/panel_h_snapshot.dcl.eth.dta
+DUPLICATE? processed/dao/panel_h_club.eth.dta
+DUPLICATE? processed/dao/panel_h_starknet.eth.dta
+DUPLICATE? processed/dao/panel_h_superraredao.eth.dta
+DUPLICATE? processed/dao/panel_h_barnbridge.eth.dta
+DUPLICATE? processed/dao/panel_h_daomstr.eth.dta
+DUPLICATE? processed/dao/panel_h_cultivatordao.eth.dta
+DUPLICATE? processed/dao/panel_h_brightmoments.eth.dta
+DUPLICATE? processed/dao/panel_h_elyfi-bsc.eth.dta
+DUPLICATE? processed/dao/panel_h_meebitsdao.eth.dta
+DUPLICATE? processed/dao/panel_h_specialresolution.nexusmutual.eth.dta
+DUPLICATE? processed/dao/panel_h_uniswap.dta
+DUPLICATE? processed/dao/panel_h_beefydao.eth.dta
+DUPLICATE? processed/dao/panel_h_adidas.eth.dta
+DUPLICATE? processed/dao/panel_h_lgcryptounicorns.eth.dta
+DUPLICATE? processed/dao/panel_h_daocity.eth.dta
+DUPLICATE? processed/dao/panel_h_joegovernance.eth.dta
+DUPLICATE? processed/dao/panel_h_copernicusbeer.eth.dta
+DUPLICATE? processed/dao/panel_h_aragon.dta
+DUPLICATE? processed/dao/panel_h_hypergptdao.eth.dta
+DUPLICATE? processed/dao/panel_h_curve.eth.dta
+DUPLICATE? processed/dao/panel_h_thelanddaoprop.eth.dta
+DUPLICATE? processed/dao/panel_h_poh.eth.dta
+DUPLICATE? processed/dao/panel_h_masknetwork.eth.dta
+DUPLICATE? processed/dao/panel_h_dopedao.eth.dta
+DUPLICATE? processed/dao/panel_h_theopendao.eth.dta
+DUPLICATE? processed/dao/panel_h_klimadao.eth.dta
+DUPLICATE? processed/dao/panel_h_layer2dao.org.dta
+DUPLICATE? processed/dao/panel_h_ffdao.eth.dta
+DUPLICATE? processed/dao/panel_h_orbapp.eth.dta
+DUPLICATE? processed/dao/panel_h_harvestfi.eth.dta
+DUPLICATE? processed/dao/panel_h_0xgov.eth.dta
+DUPLICATE? processed/dao/panel_h_unipilot.eth.dta
+DUPLICATE? processed/dao/panel_h_varen.eth.dta
+DUPLICATE? processed/dao/panel_h_gauge.rbn.eth.dta
+DUPLICATE? processed/dao/panel_h_bestfork.eth.dta
+DUPLICATE? processed/dao/panel_h_dorg.eth.dta
+DUPLICATE? processed/dao/panel_h_expansiondao.eth.dta
+DUPLICATE? processed/dao/panel_h_sushigov.eth.dta
+DUPLICATE? processed/dao/panel_h_safe.eth.dta
+DUPLICATE? processed/dao/panel_h_freerossdao.eth.dta
+DUPLICATE? processed/dao/panel_h_aurafinance.eth.dta
+DUPLICATE? processed/dao/panel_h_swiveldao.eth.dta
+DUPLICATE? processed/dao/panel_h_olympusdao.eth.dta
+DUPLICATE? processed/dao/panel_h_grants.safe.eth.dta
+DUPLICATE? processed/dao/panel_h_primexyz.eth.dta
+DUPLICATE? processed/dao/panel_h_origingov.eth.dta
+DUPLICATE? processed/dao/panel_h_basenamedao.eth.dta
+DUPLICATE? processed/dao/panel_h_wearebeansprout.eth.dta
+DUPLICATE? processed/dao/panel_h_livelabs.eth.dta
+DUPLICATE? processed/dao/panel_h_beets.eth.dta
+DUPLICATE? processed/dao/panel_h_poktdao.eth.dta
+DUPLICATE? processed/dao/panel_h_glmrapes.eth.dta
+DUPLICATE? processed/dao/panel_h_krausehouse.eth.dta
+DUPLICATE? processed/dao/panel_h_arbitrumfoundation.eth.dta
+DUPLICATE? processed/dao/panel_h_level-finance.eth.dta
+DUPLICATE? processed/dao/panel_h_unlock-protocol.eth.dta
+DUPLICATE? processed/dao/panel_h_liberofinancial.eth.dta
+DUPLICATE? processed/dao/panel_h_zechubdao.eth.dta
+DUPLICATE? processed/dao/panel_h_ousdgov.eth.dta
+DUPLICATE? processed/dao/panel_h_diadao.eth.dta
+DUPLICATE? processed/dao/panel_h_rbn.eth.dta
+DUPLICATE? processed/dao/panel_h_morpho.eth.dta
+DUPLICATE? processed/dao/panel_h_mstablegovernance.eth.dta
+DUPLICATE? processed/dao/panel_h_mantra-dao.eth.dta
+DUPLICATE? processed/dao/panel_h_idlefinance.eth.dta
+DUPLICATE? processed/dao/panel_h_biswap-org.eth.dta
+DUPLICATE? processed/dao/panel_h_astardegens.eth.dta
+DUPLICATE? processed/dao/panel_h_banklessvault.eth.dta
+DUPLICATE? processed/dao/panel_h_undw3.eth.dta
+DUPLICATE? processed/dao/panel_h_mutantsdao.eth.dta
+DUPLICATE? processed/dao/panel_h_tigervc-dao.eth.dta
+DUPLICATE? processed/dao/panel_h_blackpoolhq.eth.dta
+DUPLICATE? processed/dao/panel_h_gov.radicle.eth.dta
+DUPLICATE? processed/dao/panel_h_10b57e6da0.eth.dta
+DUPLICATE? processed/dao/panel_h_trustwallet.dta
+DUPLICATE? processed/dao/panel_h_gmdao.eth.dta
+DUPLICATE? processed/dao/panel_h_balancer.eth.dta
+DUPLICATE? processed/dao/panel_h_yieldguild.eth.dta
+DUPLICATE? processed/dao/panel_h_apwine.eth.dta
+DUPLICATE? processed/dao/panel_h_dea.eth.dta
+DUPLICATE? processed/dao/panel_h_opiumprotocol.eth.dta
+DUPLICATE? processed/dao/panel_h_mocana.eth.dta
+DUPLICATE? processed/dao/panel_h_genesisblocks.eth.dta
+DUPLICATE? processed/dao/panel_h_tetu.eth.dta
+DUPLICATE? processed/dao/panel_h_radiantcapital.eth.dta
+DUPLICATE? processed/dao/panel_h_alluo.eth.dta
+DUPLICATE? processed/dao/panel_h_ilvgov.eth.dta
+DUPLICATE? processed/dao/panel_h_rook.eth.dta
+DUPLICATE? processed/dao/panel_h_luchadores.eth.dta
+DUPLICATE? processed/dao/panel_h_hectordao.eth.dta
+DUPLICATE? processed/dao/panel_h_dydxgov.eth.dta
+DUPLICATE? processed/dao/panel_h_beanstalkfarmsbudget.eth.dta
+DUPLICATE? processed/dao/panel_h_redactedcartel.eth.dta
+DUPLICATE? processed/dao/panel_h_cre8r.eth.dta
+DUPLICATE? processed/dao/panel_h_lido-snapshot.eth.dta
+DUPLICATE? processed/dao/panel_h_friendswithbenefits.eth.dta
+DUPLICATE? processed/dao/panel_h_moonbeam-foundation.eth.dta
+DUPLICATE? processed/dao/panel_h_fatcatsdao.eth.dta
+DUPLICATE? processed/dao/panel_h_jpeg’d.eth.dta
+DUPLICATE? processed/dao/panel_h_panda-dao.eth.dta
+DUPLICATE? processed/dao/panel_h_dodobird.eth.dta
+DUPLICATE? processed/dao/panel_h_streamr.eth.dta
+DUPLICATE? processed/dao/panel_h_cow.eth.dta
+DUPLICATE? processed/dao/panel_h_raidparty.eth.dta
+DUPLICATE? processed/dao/panel_h_ampleforthorg.eth.dta
+DUPLICATE? processed/dao/panel_h_decentralgames.eth.dta
+DUPLICATE? processed/dao/panel_h_dlytoken.eth.dta
+DUPLICATE? processed/dao/panel_h_sharkdao.eth.dta
+DUPLICATE? processed/dao/panel_h_pushdao.eth.dta
+DUPLICATE? processed/dao/panel_h_staking.idlefinance.eth.dta
+DUPLICATE? processed/dao/panel_h_pancakebunny.eth.dta
+DUPLICATE? processed/dao/panel_h_spookyswap.eth.dta
+DUPLICATE? processed/dao/panel_h_primerating.eth.dta
+DUPLICATE? processed/dao/panel_h_1inch.eth.dta
+DUPLICATE? processed/dao/panel_h_doodles.eth.dta
+DUPLICATE? processed/dao/panel_h_meritcircle.eth.dta
+DUPLICATE? processed/dao/panel_h_globalcoinresearch.eth.dta
+DUPLICATE? processed/dao/panel_h_beanstalkdao.eth.dta
+DUPLICATE? processed/dao/panel_h_graphprotocol.eth.dta
+DUPLICATE? processed/dao/panel_h_treschain.eth.dta
+DUPLICATE? processed/dao/panel_h_hbot-prp.eth.dta
+DUPLICATE? processed/dao/panel_h_alchemixstakers.eth.dta
+DUPLICATE? processed/dao/panel_h_zora.eth.dta
+DUPLICATE? processed/dao/panel_h_ilv.eth.dta
+DUPLICATE? processed/dao/panel_h_frax.eth.dta
+DUPLICATE? processed/dao/panel_h_piedao.eth.dta
+DUPLICATE? processed/dao/panel_h_evmaverick.eth.dta
+DUPLICATE? processed/dao/panel_h_popcorn-snapshot.eth.dta
+DUPLICATE? processed/dao/panel_h_alpacafinance.eth.dta
+DUPLICATE? processed/dao/panel_h_ens.eth.dta
+DUPLICATE? processed/dao/panel_h_cvx.eth.dta
+DUPLICATE? processed/dao/panel_h_rallygov.eth.dta
+DUPLICATE? processed/dao/panel_h_gdao.eth.dta
+DUPLICATE? processed/dao/panel_h_aavegotchi.eth.dta
+DUPLICATE? processed/dao/panel_h_xdaistake.eth.dta
+DUPLICATE? processed/dao/panel_h_jbdao.eth.dta
+DUPLICATE? processed/dao/panel_h_futera.eth.dta
+DUPLICATE? processed/dao/panel_h_wagdie.eth.dta
+DUPLICATE? processed/dao/panel_h_paraswap-dao.eth.dta
+DUPLICATE? processed/dao/panel_h_gal.eth.dta
+DUPLICATE? processed/dao/panel_h_metislayer2.eth.dta
+DUPLICATE? processed/dao/panel_h_yam.eth.dta
+DUPLICATE? processed/dao/panel_h_stakedao.eth.dta
+DUPLICATE? processed/dao/panel_h_gitcoindao.eth.dta
+DUPLICATE? processed/dao/panel_h_bancornetwork.eth.dta
+DUPLICATE? processed/dao/panel_h_gasdao.eth.dta
+DUPLICATE? processed/dao/panel_h_cryptexdao.eth.dta
+DUPLICATE? processed/dao/panel_h_conic-dao.eth.dta
+DUPLICATE? processed/dao/panel_h_vote.airswap.eth.dta
+DUPLICATE? processed/dao/panel_h_otterclam.eth.dta
+DUPLICATE? processed/dao/panel_h_beanstalkfarms.eth.dta
+DUPLICATE? processed/dao/panel_h_bitdao.eth.dta
+DUPLICATE? processed/dao/panel_h_synthetix-stakers-poll.eth.dta
+DUPLICATE? processed/dao/panel_h_tokenlon.eth.dta
+DUPLICATE? processed/dao/panel_h_younghwang.eth.dta
+DUPLICATE? processed/dao/panel_h_metabrands.eth.dta
+DUPLICATE? processed/dao/panel_h_poolpool.pooltogether.eth.dta
+DUPLICATE? processed/dao/panel_h_gnosis.eth.dta
+DUPLICATE? processed/dao/panel_h_seizerdao.eth.dta
+DUPLICATE? processed/dao/panel_h_colony.eth.dta
+DUPLICATE? processed/dao/panel_h_gov.dhedge.eth.dta
+DUPLICATE? processed/dao/panel_h_gro.xyz.dta
+DUPLICATE? processed/dao/panel_h_jadeprotocol.eth.dta
+DUPLICATE? processed/dao/panel_h_cream-finance.eth.dta
+DUPLICATE? processed/dao/panel_h_pooltogether.eth.dta
+DUPLICATE? processed/dao/panel_h_silofinance.eth.dta
+DUPLICATE? processed/dao/panel_h_ybaby.eth.dta
+DUPLICATE? processed/dao/panel_h_gearbox.eth.dta
+DUPLICATE? processed/dao/panel_h_tomoondao.eth.dta
+DUPLICATE? processed/dao/panel_h_squiggledaotreasurysquad.eth.dta
+DUPLICATE? processed/dao/panel_h_community.nexusmutual.eth.dta
+DUPLICATE? processed/dao/panel_h_thegurudao.eth.dta
+DUPLICATE? processed/dao/panel_h_badgerdao.eth.dta
+DUPLICATE? processed/dao/panel_h_phonon.eth.dta
+DUPLICATE? processed/dao/panel_h_shellprotocol.eth.dta
+DUPLICATE? processed/dao/panel_h_golflinks.eth.dta
+DUPLICATE? processed/dao/panel_h_shapeshiftdao.eth.dta
+DUPLICATE? processed/dao/panel_h_crowncapital.eth.dta
+DUPLICATE? processed/dao/panel_h_vote-perp.eth.dta
+DUPLICATE? processed/dao/panel_h_polygonpenguins.eth.dta
+DUPLICATE? processed/dao/panel_h_loot-dao.eth.dta
+DUPLICATE? processed/dao/panel_h_people-dao.eth.dta
+DUPLICATE? processed/dao/panel_h_tracer.eth.dta
+DUPLICATE? processed/dao/panel_h_hop.eth.dta
+DUPLICATE? processed/dao/panel_h_truefigov.eth.dta
+DUPLICATE? processed/dao/panel_h_metafactory.eth.dta
+DUPLICATE? processed/dao/panel_h_notional.eth.dta
+DUPLICATE? processed/dao/panel_h_beanft.eth.dta
+DUPLICATE? processed/dao/panel_h_leaguedao.eth.dta
+DUPLICATE? processed/dao/panel_h_uberhaus.eth.dta
+DUPLICATE? processed/dao/panel_h_qidao.eth.dta
+DUPLICATE? processed/dao/panel_h_bullsontheblock.eth.dta
+DUPLICATE? processed/dao/panel_h_songadao.eth.dta
+DUPLICATE? processed/dao/panel_h_defigeek.eth.dta
+DUPLICATE? processed/dao/panel_h_index-coop.eth.dta
+DUPLICATE? processed/dao/panel_h_grailers.eth.dta
+DUPLICATE? processed/dao/panel_h_decrypt-media.eth.dta
+DUPLICATE? processed/dao/panel_h_eulerdao.eth.dta
+DUPLICATE? processed/dao/panel_h_fingerprints.eth.dta
+DUPLICATE? processed/dao/panel_h_synapseprotocol.eth.dta
+DUPLICATE? processed/dao/panel_h_assangedao.eth.dta
+DUPLICATE? processed/dao/panel_h_pangolindex.eth.dta
+DUPLICATE? processed/dao/panel_h_pickle.eth.dta
+DUPLICATE? processed/dao/panel_h_kogecoin.eth.dta
+DUPLICATE? processed/dao/panel_h_devdao.eth.dta
+DUPLICATE? processed/dao/panel_h_botto.eth.dta
+DUPLICATE? processed/dao/panel_h_seedifyhodlers.eth.dta
+DUPLICATE? processed/dao/panel_h_sismo.eth.dta
+DUPLICATE? processed/dao/panel_h_tempusgov.eth.dta
+DUPLICATE? processed/dao/panel_h_rarible.eth.dta
+DUPLICATE? processed/dao/panel_h_cabindao.eth.dta
+DUPLICATE? processed/dao/panel_h_dcip.eth.dta
+DUPLICATE? processed/dao/panel_h_turbovote.eth.dta
+DUPLICATE? processed/dao/panel_h_officialoceandao.eth.dta
+DUPLICATE? processed/dao/panel_h_goodmorningnews.eth.dta
+DUPLICATE? processed/dao/panel_h_vote.vitadao.eth.dta
+DUPLICATE? processed/dao/panel_h_fei.eth.dta
+DUPLICATE? processed/dao/panel_h_jennydao.eth.dta
+DUPLICATE? processed/dao/panel_h_abracadabrabymerlinthemagician.eth.dta
+DUPLICATE? processed/dao/panel_h_apecoin.eth.dta
+DUPLICATE? processed/dao/panel_h_beanstalkbugbounty.eth.dta
+DUPLICATE? processed/dao/panel_h_instadapp-gov.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_apwine.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_dea.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_mocana.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_theopendao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_silofinance.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_alluo.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_elyfi-bsc.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_joegovernance.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_dlytoken.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_sharkdao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_seedifyhodlers.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_dodobird.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_cre8r.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_apecoin.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_morpho.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_meebitsdao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_cultivatordao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_brightmoments.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_arbitrumfoundation.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_1inch.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_barnbridge.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_rarible.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_club.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_rbn.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_diadao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_layer2dao.org.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_abracadabrabymerlinthemagician.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_metislayer2.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_harvestfi.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_safe.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_olympusdao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_balancer.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_unlock-protocol.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_gauge.rbn.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_cow.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_liberofinancial.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_swiveldao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_poolpool.pooltogether.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_gmdao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_pancakebunny.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_dorg.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_origingov.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_jpeg’d.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_undw3.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_lgcryptounicorns.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_ilvgov.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_meritcircle.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_snapshot.dcl.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_beanstalkfarms.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_opiumprotocol.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_superraredao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_genesisblocks.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_zechubdao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_ffdao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_glmrapes.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_tetu.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_community.nexusmutual.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_livelabs.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_primexyz.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_banklessvault.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_staking.idlefinance.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_yieldguild.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_gearbox.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_sushigov.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_mutantsdao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_poh.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_varen.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_10b57e6da0.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_mantra-dao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_biswap-org.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_bestfork.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_uniswap.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_friendswithbenefits.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_moonbeam-foundation.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_adidas.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_unipilot.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_level-finance.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_pangolindex.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_beets.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_klimadao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_wearebeansprout.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_magicappstore.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_metafactory.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_spookyswap.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_hectordao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_gnars.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_specialresolution.nexusmutual.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_aave.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_ampleforthorg.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_panda-dao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_squiggledaotreasurysquad.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_fatcatsdao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_beefydao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_lido-snapshot.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_curve.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_doodles.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_expansiondao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_raidparty.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_luchadores.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_orbapp.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_starknet.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_rook.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_gitcoindao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_redactedcartel.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_cakevote.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_beanft.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_pushdao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_stgdao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_bancornetwork.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_krausehouse.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_streamr.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_jennydao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_beanstalkfarmsbudget.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_gdao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_crowncapital.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_sismo.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_alpacafinance.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_frax.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_basenamedao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_treschain.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_grants.safe.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_tracer.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_hop.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_evmaverick.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_botto.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_aavegotchi.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_aurafinance.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_synapseprotocol.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_freerossdao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_cabindao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_dydxgov.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_phonon.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_decentralgames.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_zora.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_kogecoin.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_synthetix-stakers-poll.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_xdaistake.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_eulerdao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_goodmorningnews.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_aragon.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_defigeek.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_grailers.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_opcollective.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_graphprotocol.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_songadao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_fingerprints.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_conic-dao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_trustwallet.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_cream-finance.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_uberhaus.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_masknetwork.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_otterclam.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_notional.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_polygonpenguins.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_gov.dhedge.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_metabrands.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_beanstalkbugbounty.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_loot-dao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_fei.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_hypergptdao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_younghwang.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_vote.vitadao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_devdao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_ousdgov.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_seizerdao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_bullsontheblock.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_popcorn-snapshot.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_qidao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_radiantcapital.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_tomoondao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_cryptexdao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_pickle.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_gal.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_yam.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_primerating.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_gasdao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_badgerdao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_beanstalkdao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_piedao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_golflinks.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_cvx.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_ens.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_poktdao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_vote-perp.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_people-dao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_tokenlon.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_futera.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_mstablegovernance.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_wagdie.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_globalcoinresearch.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_shellprotocol.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_shapeshiftdao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_ilv.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_truefigov.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_thegurudao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_leaguedao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_ybaby.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_officialoceandao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_paraswap-dao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_gro.xyz.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_stakedao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_alchemixstakers.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_daocity.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_instadapp-gov.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_vote.airswap.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_dcip.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_gnosis.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_colony.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_astardegens.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_dopedao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_rallygov.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_tempusgov.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_tigervc-dao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_blackpoolhq.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_gov.radicle.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_jbdao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_turbovote.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_idlefinance.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_thelanddaoprop.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_bitdao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_hbot-prp.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_copernicusbeer.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_assangedao.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_daomstr.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_decrypt-media.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_jadeprotocol.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_pooltogether.eth.dta
+DUPLICATE? processed/dao/Aggregate/agg_panel_index-coop.eth.dta
+DUPLICATE? processed/coefficients_daos/__000001_mean_mis_basic_coef.csv
+DUPLICATE? processed/coefficients_daos/coefficients_daos.dta
+DUPLICATE? processed/coefficients_daos/__000000_mean_mis_q_coef.csv
+DUPLICATE? processed/coefficients_daos/__000001_mean_mis_q_coef.csv
+DUPLICATE? processed/coefficients_daos/__000000_mean_mis_app_coef.csv
+DUPLICATE? processed/coefficients_daos/__000000_mean_mis_w_coef.csv
+DUPLICATE? processed/coefficients_daos/__000001_mean_mis_w_coef.csv
+DUPLICATE? processed/coefficients_daos/__000000_mean_mis_rc_coef.csv
+DUPLICATE? processed/coefficients_daos/__000001_mean_mis_app_coef.csv
+DUPLICATE? processed/coefficients_daos/__000001_mean_voted_coef.csv
+DUPLICATE? processed/coefficients_daos/__000000_mean_voted_coef.csv
+DUPLICATE? processed/coefficients_daos/__000000_mean_mis_basic_coef.csv
+DUPLICATE? processed/coefficients_daos/__000001_mean_mis_coef.csv
+DUPLICATE? processed/coefficients_daos/__000000_mean_mis_coef.csv
+DUPLICATE? processed/coefficients_daos/__000001_mean_mis_rc_coef.csv
+DUPLICATE? processed/batches/panel_full_batch_processed_4.dta
+DUPLICATE? processed/batches/panel_full_batch_processed_5.dta
+DUPLICATE? processed/batches/panel_full_batch_processed_7.dta
+DUPLICATE? processed/batches/panel_full_batch_processed_6.dta
+DUPLICATE? processed/batches/panel_full_batch_processed_2.dta
+DUPLICATE? processed/batches/panel_full_batch_processed_3.dta
+DUPLICATE? processed/batches/panel_full_batch_processed_1.dta
+DUPLICATE? processed/batches/panel_full_batch_11.dta
+DUPLICATE? processed/batches/panel_full_batch_10.dta
+DUPLICATE? processed/batches/panel_full_batch_12.dta
+DUPLICATE? processed/batches/panel_full_batch_8.dta
+DUPLICATE? processed/batches/panel_full_batch_9.dta
+DUPLICATE? processed/batches/panel_full_batch_4.dta
+DUPLICATE? processed/batches/panel_full_batch_5.dta
+DUPLICATE? processed/batches/panel_full_batch_7.dta
+DUPLICATE? processed/batches/panel_full_batch_6.dta
+DUPLICATE? processed/batches/panel_full_batch_2.dta
+DUPLICATE? processed/batches/panel_full_batch_3.dta
+DUPLICATE? processed/batches/panel_full_batch_1.dta
+DUPLICATE? processed/batches/panel_full_batch_processed_11.dta
+DUPLICATE? processed/batches/panel_full_batch_processed_10.dta
+DUPLICATE? processed/batches/panel_full_batch_processed_12.dta
+DUPLICATE? processed/batches/panel_full_batch_processed_8.dta
+DUPLICATE? processed/batches/panel_full_batch_processed_9.dta
+DUPLICATE? processed/daos level aggregated/merged_panel_full_with_coefficients.dta
+DUPLICATE? processed/daos level aggregated/panel_almost_full.dta_with_str
+DUPLICATE? processed/split_files/panel_full_chunk_11.dta
+DUPLICATE? processed/split_files/panel_full_chunk_10.dta
+DUPLICATE? processed/split_files/regressions_in_chunks.do
+DUPLICATE? processed/split_files/panel_full_chunk_8.dta
+DUPLICATE? processed/split_files/~regressions_in_chunks.do.stswp
+DUPLICATE? processed/split_files/panel_full_chunk_9.dta
+DUPLICATE? processed/split_files/panel_full_chunk_4.dta
+DUPLICATE? processed/split_files/panel_full_chunk_5.dta
+DUPLICATE? processed/split_files/panel_full_chunk_7.dta
+DUPLICATE? processed/split_files/panel_full_chunk_6.dta
+DUPLICATE? processed/split_files/panel_full_chunk_2.dta
+DUPLICATE? processed/split_files/panel_full_chunk_3.dta
+DUPLICATE? processed/split_files/panel_full_chunk_1.dta
+DUPLICATE? archived/data_preparation_iterate.do
+DUPLICATE? archived/data_preparation_aggregate iterate home.do
+DUPLICATE? archived/data_preparation_aggregate iterate home2.do
+DUPLICATE? csvs/voter_information.csv
+DUPLICATE? csvs/dao_information.csv
+DUPLICATE? csvs/misalignment_calculation.csv
+DUPLICATE? csvs/proposal_information.csv
+DUPLICATE? csvs/mal_weighted.xlsx
+DUPLICATE? csvs/rolling_averages_shares.csv
+DUPLICATE? csvs/mal_weighted.csv
+DUPLICATE? csvs/interaction_terms.csv
+DUPLICATE? csvs/misalignment_calculation.xlsx
+Preview complete – rerun without --dry_run to apply.

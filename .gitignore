@@ -19,3 +19,5 @@ dao_misalignment.code-workspace
 
 # Ignore macOS system file
 .DS_Store
+!logs/clean_preview.log git add .gitignore logs/clean_preview.log
+!logs/clean_preview.log git add .gitignore logs/clean_preview.log
