@@ -564,7 +564,7 @@ for space in verified_dao_spaces:
         "prps_delegation",
         "prps_start",
         "prps_end",
-        "quorum",
+        "prps_quorum",
         "met_quorum",
         "scores_total",
         "prps_choices",
