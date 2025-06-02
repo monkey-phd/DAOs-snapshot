@@ -4,6 +4,7 @@ import numpy as np
 import json
 import ast
 import os
++from pathlib import Path 
 
 # working directory to the parent directory of the script's location
 os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -445,7 +446,7 @@ for space in verified_dao_spaces:
         continue
 
     result_comparison = (
-        votes_small.groupby("proposal")
+        votes_small.groupby("proposal", include_groups=False)
         .apply(calculate_winners_for_proposal)
         .reset_index()
     )
@@ -570,7 +571,8 @@ for space in verified_dao_spaces:
     # Only keep required columns
     merged_df = merged_df[required_columns]
 
-    file_string = "input/dao/data_" + space + ".csv"
+    file_string = f"input/dao/data_{space}.csv"
+    Path(file_string).parent.mkdir(parents=True, exist_ok=True)
 
     # Save the DataFrame as a CSV file
     merged_df.to_csv(file_string, index=False)
