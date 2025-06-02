@@ -180,120 +180,87 @@ def calculate_vote_alignment(data):
     return Misaligned, Not_Determined, Misaligned_C, Tied
 
 
-def calculate_own_margin(data):
-    # Creating an own score list
-    own_margin_list = []
+def calculate_own_margin(df: pd.DataFrame) -> pd.Series:
+    """
+    For every vote row return the margin of the voter’s own top-weighted choice.
+    Always returns a Series whose length equals len(df).
+    Any row that cannot yield a margin is np.nan.
+    """
+    out = []  # will be exactly len(df)
 
-    for index, row in data.iterrows():
-        voting_type = row.get("type", "")  # Retrieve the voting type if it exists
-        margins_list = str(row["margins"])
-        # print('Margins string', margins_list)
+    for _, row in df.iterrows():
+        # default if we fail at any point
+        own_margin = np.nan
+
+        # ---------- 1. get margins list ----------
         try:
-            margins = ast.literal_eval(margins_list)
-            if len(margins) == 0:
-                own_margin_list.append(np.nan)
-                continue
-        except:
-            own_margin_list.append(np.nan)
-            continue
-        # print(row['proposal'])
-        # print('Margins', margins)
+            margins = ast.literal_eval(str(row["margins"]))
+        except Exception:
+            margins = []
+        if not margins:
+            out.append(own_margin)
+            continue  #  ← one append, done with this row
 
-        # Initialize an empty dictionary for voter choices
-        # Choice dictionary stores the choice as key and voting power as value
-        choice_vp_dict = {}
+        # ---------- 2. build {choice: voting_power} ----------
+        voting_type = row.get("type", "")
+        choice_vp = {}
 
-        if voting_type in ["single-choice", "basic"]:
-            # print(voting_type, 'Choice', row['choice'])
-            if row["choice"].startswith("{"):
-                choice_vp_dict = json.loads(row["choice"])
-            elif isinstance(row["choice"], (str)):
-                try:
-                    choice_vp_dict[str(int(row["choice"]))] = 1
-                except:
-                    own_margin_list.append(np.nan)
-                    continue
-            elif isinstance(row["choice"], (int, float)):
-                # Single numeric choice
-                choice_vp_dict[str(int(row["choice"]))] = 1
-
-            if voting_type == "basic":
-                if not choice_vp_dict:
-                    own_margin_list.append(np.nan)
-                    continue
-                else:
-                    basic_choice = list(choice_vp_dict.keys())[0]
-                    if basic_choice == "3":
-                        own_margin_list.append(np.nan)
-                        continue
-        elif voting_type in ["weighted", "quadratic"]:
-            if row["choice"].startswith("{"):
-                choice_vp_dict = json.loads(row["choice"])
-        elif voting_type == "ranked-choice":
-            if row["choice"].startswith("["):
-                voter_choices = json.loads(row["choice"])
-                n = len(voter_choices)
-                choice_vp_dict = {
-                    str(int(choice)): n - idx
-                    for idx, choice in enumerate(voter_choices)
-                    if isinstance(choice, (int, str))
-                }
-            elif isinstance(row["choice"], list):
-                # Assign weights based on rank position (1st = n, 2nd = n-1, ...)
-                n = len(row["choice"])
-                choice_vp_dict = {
-                    str(int(choice)): n - idx
-                    for idx, choice in enumerate(row["choice"])
-                    if isinstance(choice, (int, str))
-                }
-            else:
-                print("Unknown ", voting_type, " ", row["choice"])
-            # Own_Score_List.append(own_score)
-        elif voting_type == "approval":
-            if row["choice"].startswith("["):
-                voter_choices = json.loads(row["choice"])
-                n = len(voter_choices)
-                choice_vp_dict = {
-                    str(int(choice)): 1
-                    for choice in voter_choices
-                    if isinstance(choice, (int, str))
-                }
-            elif isinstance(row["choice"], list):
-                # Assign weights based on 1 for all approved choices
-                n = len(row["choice"])
-                choice_vp_dict = {
-                    str(int(choice)): 1
-                    for choice in row["choice"]
-                    if isinstance(choice, (int, str))
-                }
-            else:
-                print("Unknown ", voting_type, " ", row["choice"])
-        else:
-            # If no known/standard voting type
-            own_margin_list.append(np.nan)
-        # print('Choice Dict', choice_vp_dict)
-        if not choice_vp_dict:
-            own_margin_list.append(np.nan)
-            continue
-        own_max_vp = max(choice_vp_dict.values())
-        # print('Own max score', own_max_vp)
-        own_max_choices = [
-            int(key) for key, value in choice_vp_dict.items() if value == own_max_vp
-        ]
-        own_max_choices = [item - 1 for item in own_max_choices]
-        # print('Own max choices', own_max_choices)
-        # Select the scores that are voter's max choices
         try:
-            own_margins = [margins[index] for index in own_max_choices]
-        except:
-            own_margin_list.append(np.nan)
-            continue
-        # print('Slice of scores', own_scores)
-        max_own_margin = max(own_margins)
-        # print('Max own score', max_own_score)
-        own_margin_list.append(max_own_margin)
+            # single-choice / basic
+            if voting_type in ["single-choice", "basic"]:
+                if isinstance(row["choice"], str) and row["choice"].startswith("{"):
+                    choice_vp = json.loads(row["choice"])
+                else:  # plain number or str-number
+                    choice_vp[str(int(float(row["choice"])))] = 1
+                if voting_type == "basic" and list(choice_vp.keys())[0] == "3":
+                    out.append(own_margin)
+                    continue
 
-    return own_margin_list
+            # weighted / quadratic
+            elif voting_type in ["weighted", "quadratic"]:
+                if isinstance(row["choice"], str) and row["choice"].startswith("{"):
+                    choice_vp = json.loads(row["choice"])
+
+            # ranked-choice
+            elif voting_type == "ranked-choice":
+                seq = None
+                if isinstance(row["choice"], str) and row["choice"].startswith("["):
+                    seq = json.loads(row["choice"])
+                elif isinstance(row["choice"], list):
+                    seq = row["choice"]
+                if seq:
+                    n = len(seq)
+                    choice_vp = {str(int(ch)): n - i for i, ch in enumerate(seq)}
+
+            # approval
+            elif voting_type == "approval":
+                seq = None
+                if isinstance(row["choice"], str) and row["choice"].startswith("["):
+                    seq = json.loads(row["choice"])
+                elif isinstance(row["choice"], list):
+                    seq = row["choice"]
+                if seq:
+                    choice_vp = {str(int(ch)): 1 for ch in seq}
+
+        except Exception:
+            pass  # keep choice_vp {}
+
+        if not choice_vp:
+            out.append(own_margin)
+            continue
+
+        # ---------- 3. compute margin ----------
+        try:
+            top_vp = max(choice_vp.values())
+            top_choices = [int(k) - 1 for k, v in choice_vp.items() if v == top_vp]
+            own_margin = max(margins[i] for i in top_choices)
+        except Exception:
+            pass
+
+        out.append(own_margin)
+
+    # Return Series aligned to df.index
+    return pd.Series(out, index=df.index)
 
 
 # Majority vs power winners calculation functions
