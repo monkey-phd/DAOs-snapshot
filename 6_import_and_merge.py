@@ -4,7 +4,7 @@ import numpy as np
 import json
 import ast
 import os
-+from pathlib import Path 
+from pathlib import Path
 
 # working directory to the parent directory of the script's location
 os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
