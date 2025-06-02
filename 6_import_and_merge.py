@@ -1,9 +1,9 @@
-import os
 # Import relevant libraries
 import pandas as pd
 import numpy as np
 import json
 import ast
+import os
 
 # working directory to the parent directory of the script's location
 os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))

@@ -15,7 +15,6 @@ from langdetect.lang_detect_exception import LangDetectException
 from sklearn.decomposition import LatentDirichletAllocation
 from tqdm import tqdm
 
-
 nltk.download("punkt")
 nltk.download("stopwords")
 nltk.download("wordnet")
@@ -107,6 +106,7 @@ def determine_winning_choice_and_score(row):
             return max_indexes, max_score, second_max_score, met_quorum
     return None, None, None, None
 
+
 def extract_first_field(json_str):
     try:
         # Parse the JSON string into a dictionary or list of dictionaries
@@ -132,7 +132,7 @@ def extract_first_strategy_name(strategy_str):
     # Find all complete JSON objects in the string
     strategies = list()
     # print(strategy_str)
-    matches = re.findall(r'\{.*?\}', strategy_str)
+    matches = re.findall(r"\{.*?\}", strategy_str)
     if matches:
         for match in matches:
             # print(match)
@@ -140,7 +140,7 @@ def extract_first_strategy_name(strategy_str):
             strat = re.search(r'"name":"(.*?)"', strategy_str)
             # print(stra.group(1))
             # Return the first name found
-            new_strat  = strat.group(1)
+            new_strat = strat.group(1)
             if new_strat not in strategies:
                 strategies.append(new_strat)
     return strategies
@@ -166,6 +166,7 @@ def remove_non_english(text):
         # If language detection fails, return the original text
         return text
 
+
 # Function to keep only specific Unicode characters in the text
 def keep_specific_unicode_characters(text):
     return re.sub(r"[^\u0000-\u0370]", "", text)
@@ -181,6 +182,7 @@ def preprocess_text(text):
         if word.isalpha() and word.lower() not in stop_words
     ]
     return " ".join(lemmatized_tokens)
+
 
 # Function to display the top words in each topic
 def display_topics(model, feature_names, no_top_words):
@@ -216,26 +218,28 @@ props["choices"] = props["choices"].apply(ast.literal_eval)
 props["prps_choices"] = props["choices"].apply(len)
 
 # Apply the function to create a new column
-props['first_strategy_names'] = props['strategies'].apply(extract_first_strategy_name)
+props["first_strategy_names"] = props["strategies"].apply(extract_first_strategy_name)
 
 # Count unique values in column 'A'
-value_counts = props['first_strategy_names'].value_counts()
+value_counts = props["first_strategy_names"].value_counts()
 
 print(value_counts)
 
-props['first_strategy_name'] = props['first_strategy_names'].astype(str)
+props["first_strategy_name"] = props["first_strategy_names"].astype(str)
 
-del props['first_strategy_names']
+del props["first_strategy_names"]
 
-props['delegation'] = props['first_strategy_name'].apply(lambda x: 1 if 'delegat' in x else 0)
+props["delegation"] = props["first_strategy_name"].apply(
+    lambda x: 1 if "delegat" in x else 0
+)
 
 # Ensure "choices" is treated as a string and check for "abstain" in any capitalization
 props.loc[
-    (props['type'] == 'single-choice') &
-    (props['prps_choices'] == 3) &
-    (props['choices'].astype(str).str.contains('abstain', case=False, na=False)),
-    'type'
-] = 'single-choice-abstain'
+    (props["type"] == "single-choice")
+    & (props["prps_choices"] == 3)
+    & (props["choices"].astype(str).str.contains("abstain", case=False, na=False)),
+    "type",
+] = "single-choice-abstain"
 
 # Parse 'plugins' and 'strategies' columns
 props["plugins"] = props["plugins"].apply(
@@ -320,6 +324,7 @@ proposal_text = props["body"].apply(preprocess_text)
 vectorizer = CountVectorizer(max_df=0.95, min_df=2, stop_words="english")
 dtm = vectorizer.fit_transform(proposal_text)
 
+
 # Create and fit the LDA model
 class ProgressBarLDA(LatentDirichletAllocation):
     def fit(self, X, y=None):
@@ -328,6 +333,7 @@ class ProgressBarLDA(LatentDirichletAllocation):
                 super(ProgressBarLDA, self).partial_fit(X, y)
                 pbar.update(1)
         return self
+
 
 lda = ProgressBarLDA(
     n_components=n_topics, max_iter=10, learning_method="online", random_state=42

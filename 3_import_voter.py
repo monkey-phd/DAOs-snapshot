@@ -1,7 +1,7 @@
-import os
 # Import relevant libraries
 import pandas as pd
 import json
+import os
 
 # working directory to the parent directory of the script's location
 os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
