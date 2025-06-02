@@ -61,7 +61,9 @@ import json
 votes = pd.read_pickle("processed/votes_verified.pkl")
 props_small = pd.read_pickle("processed/proposals_final.pkl")
 # Get winning choice from proposal dataframe
-props_small = props_small[["proposal_id", "space", "winning_choices", "type", "scores"]]
+props_small = props_small[
+    ["proposal_id", "space", "margins", "winning_choices", "type", "scores"]
+]
 
 votes = votes.merge(
     props_small,
