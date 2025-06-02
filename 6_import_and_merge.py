@@ -191,10 +191,10 @@ def calculate_own_margin(data):
         try:
             margins = ast.literal_eval(margins_list)
             if len(margins) == 0:
-                own_margin_list.append(np.NaN)
+                own_margin_list.append(np.nan)
                 continue
         except:
-            own_margin_list.append(np.NaN)
+            own_margin_list.append(np.nan)
             continue
         # print(row['proposal'])
         # print('Margins', margins)
@@ -211,7 +211,7 @@ def calculate_own_margin(data):
                 try:
                     choice_vp_dict[str(int(row["choice"]))] = 1
                 except:
-                    own_margin_list.append(np.NaN)
+                    own_margin_list.append(np.nan)
                     continue
             elif isinstance(row["choice"], (int, float)):
                 # Single numeric choice
@@ -219,12 +219,12 @@ def calculate_own_margin(data):
 
             if voting_type == "basic":
                 if not choice_vp_dict:
-                    own_margin_list.append(np.NaN)
+                    own_margin_list.append(np.nan)
                     continue
                 else:
                     basic_choice = list(choice_vp_dict.keys())[0]
                     if basic_choice == "3":
-                        own_margin_list.append(np.NaN)
+                        own_margin_list.append(np.nan)
                         continue
         elif voting_type in ["weighted", "quadratic"]:
             if row["choice"].startswith("{"):
@@ -270,10 +270,10 @@ def calculate_own_margin(data):
                 print("Unknown ", voting_type, " ", row["choice"])
         else:
             # If no known/standard voting type
-            own_margin_list.append(np.NaN)
+            own_margin_list.append(np.nan)
         # print('Choice Dict', choice_vp_dict)
         if not choice_vp_dict:
-            own_margin_list.append(np.NaN)
+            own_margin_list.append(np.nan)
             continue
         own_max_vp = max(choice_vp_dict.values())
         # print('Own max score', own_max_vp)
@@ -286,7 +286,7 @@ def calculate_own_margin(data):
         try:
             own_margins = [margins[index] for index in own_max_choices]
         except:
-            own_margin_list.append(np.NaN)
+            own_margin_list.append(np.nan)
             continue
         # print('Slice of scores', own_scores)
         max_own_margin = max(own_margins)
