@@ -217,6 +217,26 @@ props["choices"] = props["choices"].apply(ast.literal_eval)
 
 props["prps_choices"] = props["choices"].apply(len)
 
+
+# Winning- / losing-margin per option (normalised by total votes)
+def calculate_margins(row):
+    scores_json, total = row["scores"], row["scores_total"]
+    if total == 0 or pd.isna(scores_json) or not scores_json:
+        return None  # no votes => no margins
+
+    scores = [float(x) for x in ast.literal_eval(scores_json)]
+    norm = [s / total for s in scores]  # 0-1 scale
+    top = max(norm)
+    second = sorted(norm, reverse=True)[1] if len(norm) > 1 else 0
+    win_mar = top - second  # winner’s margin
+
+    # winner gets its own margin (positive); all others negative
+    return [(s - top) if s != top else win_mar for s in norm]
+
+
+# column with a list of margins (same order as proposal["choices"])
+props["margins"] = props.apply(calculate_margins, axis=1)
+
 # Apply the function to create a new column
 props["first_strategy_names"] = props["strategies"].apply(extract_first_strategy_name)
 
@@ -256,6 +276,7 @@ props["strategy_delegation"] = props["strategies"].apply(
     if any("delegation" in strategy.get("name", "") for strategy in x)
     else 0
 )
+
 
 # Determine whether overlapping
 # Check whether prior proposals end time is later than current proposals start time
@@ -388,7 +409,6 @@ props.rename(columns={"start": "prps_start"}, inplace=True)
 props.rename(columns={"end": "prps_end"}, inplace=True)
 props.rename(columns={"first_strategy_name": "prps_strategy"}, inplace=True)
 props.rename(columns={"plugin_safesnap": "prps_safesnap"}, inplace=True)
-props.rename(columns={"first_strategy_name": "prps_strategy"}, inplace=True)
 props.rename(columns={"strategy_delegation": "prps_delegation"}, inplace=True)
 props.rename(columns={"quorum": "prps_quorum"}, inplace=True)
 
@@ -421,6 +441,7 @@ props = props[
         "scores",
         "votes",
         "winning_choices",
+        "margins",
         "met_quorum",
         "second_score",
         "winning_score",
