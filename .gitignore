@@ -24,3 +24,4 @@ dao_misalignment.code-workspace
 
 # macOS
 .DS_Store
+.venv/

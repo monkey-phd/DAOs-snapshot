@@ -1,3 +1,4 @@
+import os
 # %%
 # Import relevant libraries
 import pandas as pd
@@ -282,10 +283,10 @@ def calculate_score_own_choice(data):
         try:
             scores = ast.literal_eval(scores_str)
             if len(scores) == 0:
-                Own_Score_List.append(np.NaN)
+                Own_Score_List.append(np.nan)
                 continue
         except:
-            Own_Score_List.append(np.NaN)
+            Own_Score_List.append(np.nan)
             continue
         # print(row['proposal'])
         # print('Scores', scores)
@@ -302,7 +303,7 @@ def calculate_score_own_choice(data):
                 try:
                     choice_vp_dict[str(int(row["choice"]))] = 1
                 except:
-                    Own_Score_List.append(np.NaN)
+                    Own_Score_List.append(np.nan)
                     continue
             elif isinstance(row["choice"], (int, float)):
                 # Single numeric choice
@@ -310,12 +311,12 @@ def calculate_score_own_choice(data):
 
             if voting_type == "basic":
                 if not choice_vp_dict:
-                    Own_Score_List.append(np.NaN)
+                    Own_Score_List.append(np.nan)
                     continue
                 else:
                     basic_choice = list(choice_vp_dict.keys())[0]
                     if basic_choice == "3":
-                        Own_Score_List.append(np.NaN)
+                        Own_Score_List.append(np.nan)
                         continue
         elif voting_type in ["weighted", "quadratic"]:
             if row["choice"].startswith("{"):
@@ -361,10 +362,10 @@ def calculate_score_own_choice(data):
                 print("Unknown ", voting_type, " ", row["choice"])
         else:
             # If no known/standard voting type
-            Own_Score_List.append(np.NaN)
+            Own_Score_List.append(np.nan)
         # print('Choice Dict', choice_vp_dict)
         if not choice_vp_dict:
-            Own_Score_List.append(np.NaN)
+            Own_Score_List.append(np.nan)
             continue
         own_max_vp = max(choice_vp_dict.values())
         # print('Own max score', own_max_vp)
@@ -377,7 +378,7 @@ def calculate_score_own_choice(data):
         try:
             own_scores = [scores[index] for index in own_max_choices]
         except:
-            Own_Score_List.append(np.NaN)
+            Own_Score_List.append(np.nan)
             continue
         # print('Slice of scores', own_scores)
         max_own_score = max(own_scores)
