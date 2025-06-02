@@ -446,7 +446,7 @@ for space in verified_dao_spaces:
         continue
 
     result_comparison = (
-        votes_small.groupby("proposal", include_groups=False)
+        votes_small.groupby("proposal")
         .apply(calculate_winners_for_proposal)
         .reset_index()
     )
