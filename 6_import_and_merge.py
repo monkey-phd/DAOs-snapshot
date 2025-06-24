@@ -1,13 +1,29 @@
-# Import relevant libraries
+import os, json, ast, multiprocessing
+from pathlib import Path
+from concurrent.futures import ProcessPoolExecutor, as_completed
+
 import pandas as pd
 import numpy as np
-import json
-import ast
-import os
-from pathlib import Path
 
-# working directory to the parent directory of the script's location
-os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# ------------------------------------------------------------
+# 0. Setup
+# ------------------------------------------------------------
+# run relative to repo root
+os.chdir(Path(__file__).resolve().parent.parent)
+
+# keep-only column whitelist
+required_columns = [
+    "voter","vote_created","space","proposal","choice","voting_power",
+    "misaligned","not_determined","own_choice_tied","misaligned_c",
+    "prps_author","prps_created","type","prps_safesnap","prps_delegation",
+    "prps_start","prps_end","prps_quorum","met_quorum","scores_total",
+    "prps_choices","votes","own_margin","prps_len","prps_link","prps_stub",
+    "privacy","topic_0","topic_1","topic_2","topic_3","topic_4","topic_5",
+    "topic_6","topic_7","topic_8","topic_9","topic_10","topic_11",
+    "topic_12","topic_13","topic_14","topic_15","topic_16","topic_17",
+    "topic_18","topic_19","space_created_at","voter_created",
+    "winning_choices","is_majority_win",
+]
 
 
 # Function to determine each voter's alignment with winning choice
@@ -426,155 +442,80 @@ def calculate_winners_for_proposal(proposal_group):
         }
     )
 
+# ---------------------------------------------------------------------------
+# 2.  Per-DAO worker
+# ---------------------------------------------------------------------------
+def process_space(space: str) -> str:
+    out_path = Path(f"input/dao/data_{space}.csv")
+    if out_path.exists():
+        print(f"✔ {space} already processed — skipping")
+        return space
 
-proposals = pd.read_pickle("processed/proposals_final.pkl")
-spaces = pd.read_pickle("processed/spaces.pkl")
-follows = pd.read_pickle("processed/follows.pkl")
-users = pd.read_pickle("processed/users.pkl")
-votes = pd.read_pickle("processed/votes_verified_merged.pkl")
-verified_dao_spaces = pd.read_csv("input/verified-spaces.csv")
+    # reload big tables inside each worker
+    proposals  = pd.read_pickle("processed/proposals_final.pkl")
+    spaces_df  = pd.read_pickle("processed/spaces.pkl")
+    follows_df = pd.read_pickle("processed/follows.pkl")
+    users_df   = pd.read_pickle("processed/users.pkl")
+    votes_df   = pd.read_pickle("processed/votes_verified_merged.pkl")
 
-# 2. Extract the unique 'space_name' values into a list
-verified_dao_spaces = verified_dao_spaces["space_name"].unique().tolist()
+    v = votes_df[votes_df["space"] == space].copy()
+    if v.empty:
+        print(f"⚠ {space}: zero votes — skipped")
+        return space
 
-for space in verified_dao_spaces:
-    votes_small = votes[votes["space"] == space].copy()
-    max_rows_votes = len(votes_small)
-    print("Maximum number of rows in", space, " :", max_rows_votes)
-    if max_rows_votes == 0:
-        print("No votes in this DAO ", space)
-        continue
-
-    result_comparison = (
-        votes_small.groupby("proposal")
+    comp = (
+        v.groupby("proposal")
         .apply(calculate_winners_for_proposal)
         .reset_index()
     )
-    votes_small = votes_small.merge(
-        result_comparison[["proposal", "is_majority_win"]], on="proposal", how="left"
+    v = v.merge(comp[["proposal","is_majority_win"]], on="proposal", how="left")
+
+    v["misaligned"], v["not_determined"], v["misaligned_c"], v["tied"] = \
+        calculate_vote_alignment(v)
+    v["own_margin"] = calculate_own_margin(v)
+
+    v["created"] = pd.to_datetime(v["created"], unit="s")
+    v.rename(columns={
+        "created": "vote_created",
+        "vp": "voting_power",
+        "tied": "own_choice_tied",
+    }, inplace=True)
+
+    v = v[[
+        "voter","vote_created","space","proposal","choice","voting_power",
+        "vp_by_strategy","margins","misaligned","not_determined",
+        "misaligned_c","own_choice_tied","own_margin","is_majority_win",
+    ]]
+
+    merged = v.merge(
+        proposals, how="left", left_on="proposal", right_on="proposal_id"
+    ).merge(
+        spaces_df,  how="left", left_on="space", right_on="space_id"
+    ).merge(
+        follows_df, how="left",
+        left_on=["voter","space"], right_on=["follower","space"]
+    ).merge(
+        users_df,   how="left", left_on="voter", right_on="voter_id"
     )
 
-    (
-        votes_small["misaligned"],
-        votes_small["not_determined"],
-        votes_small["misaligned_c"],
-        votes_small["tied"],
-    ) = calculate_vote_alignment(votes_small)
-    votes_small["own_margin"] = calculate_own_margin(votes_small)
-    votes_small["created"] = pd.to_datetime(votes_small["created"], unit="s")
-    votes_small.rename(columns={"created": "vote_created"}, inplace=True)
-    votes_small.rename(columns={"vp": "voting_power"}, inplace=True)
-    votes_small.rename(columns={"tied": "own_choice_tied"}, inplace=True)
+    merged = merged[required_columns]
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    merged.to_csv(out_path, index=False)
+    return space
 
-    # Select only the specified columns
-    votes_small = votes_small[
-        [
-            "voter",
-            "vote_created",
-            "space",
-            "proposal",
-            "choice",
-            "voting_power",
-            "vp_by_strategy",
-            "margins",
-            "misaligned",
-            "not_determined",
-            "misaligned_c",
-            "own_choice_tied",
-            "own_margin",
-            "is_majority_win",
-        ]
-    ]
-    # Save the DataFrame as a CSV file
+# ---------------------------------------------------------------------------
+# 3.  Main launcher
+# ---------------------------------------------------------------------------
+if __name__ == "__main__":
+    verified_dao_spaces = pd.read_csv(
+        "input/verified-spaces.csv")["space_name"].unique().tolist()
 
-    # Sequentially merge dataframes
-    merged_df = votes_small.merge(
-        proposals,
-        how="left",
-        left_on="proposal",
-        right_on="proposal_id",
-        suffixes=("", "_proposal"),
-    )
-    merged_df = merged_df.merge(
-        spaces,
-        how="left",
-        left_on="space",
-        right_on="space_id",
-        suffixes=("", "_space"),
-    )
-    merged_df = merged_df.merge(
-        follows,
-        how="left",
-        left_on=["voter", "space"],
-        right_on=["follower", "space"],
-        suffixes=("", "_follow"),
-    )
-    merged_df = merged_df.merge(
-        users, how="left", left_on="voter", right_on="voter_id", suffixes=("", "_user")
-    )
+    workers = max(1, multiprocessing.cpu_count() - 1)  # leave 1 core free
+    print(f"Launching {workers} worker processes …")
 
-    # Keep these columns and drop the rest for performance improvement
-    required_columns = [
-        "voter",
-        "vote_created",
-        "space",
-        "proposal",
-        "choice",
-        "voting_power",
-        "misaligned",
-        "not_determined",
-        "own_choice_tied",
-        "misaligned_c",
-        "prps_author",
-        "prps_created",
-        "type",
-        "prps_safesnap",
-        "prps_delegation",
-        "prps_start",
-        "prps_end",
-        "prps_quorum",
-        "met_quorum",
-        "scores_total",
-        "prps_choices",
-        "votes",
-        "own_margin",
-        "prps_len",
-        "prps_link",
-        "prps_stub",
-        "privacy",
-        "topic_0",
-        "topic_1",
-        "topic_2",
-        "topic_3",
-        "topic_4",
-        "topic_5",
-        "topic_6",
-        "topic_7",
-        "topic_8",
-        "topic_9",
-        "topic_10",
-        "topic_11",
-        "topic_12",
-        "topic_13",
-        "topic_14",
-        "topic_15",
-        "topic_16",
-        "topic_17",
-        "topic_18",
-        "topic_19",
-        "space_created_at",
-        "voter_created",
-        "winning_choices",
-        "is_majority_win",
-    ]
+    with ProcessPoolExecutor(max_workers=workers) as ex:
+        futs = [ex.submit(process_space, sp) for sp in verified_dao_spaces]
+        for fut in as_completed(futs):
+            print(f"✓ finished {fut.result()}")
 
-    # Only keep required columns
-    merged_df = merged_df[required_columns]
-
-    file_string = f"input/dao/data_{space}.csv"
-    Path(file_string).parent.mkdir(parents=True, exist_ok=True)
-
-    # Save the DataFrame as a CSV file
-    merged_df.to_csv(file_string, index=False)
-
-print("Done")
+    print("All DAO spaces processed.")
