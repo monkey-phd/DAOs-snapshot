@@ -13,16 +13,16 @@ os.chdir(Path(__file__).resolve().parent.parent)
 
 # keep-only column whitelist
 required_columns = [
-    "voter","vote_created","space","proposal","choice","voting_power",
-    "misaligned","not_determined","own_choice_tied","misaligned_c",
-    "prps_author","prps_created","type","prps_safesnap","prps_delegation",
-    "prps_start","prps_end","prps_quorum","met_quorum","scores_total",
-    "prps_choices","votes","own_margin","prps_len","prps_link","prps_stub",
-    "privacy","topic_0","topic_1","topic_2","topic_3","topic_4","topic_5",
-    "topic_6","topic_7","topic_8","topic_9","topic_10","topic_11",
-    "topic_12","topic_13","topic_14","topic_15","topic_16","topic_17",
-    "topic_18","topic_19","space_created_at","voter_created",
-    "winning_choices","is_majority_win",
+    "voter", "vote_created", "space", "proposal", "choice", "voting_power",
+    "misaligned", "not_determined", "own_choice_tied", "misaligned_c",
+    "prps_author", "prps_created", "type", "prps_safesnap", "prps_delegation",
+    "prps_start", "prps_end", "prps_quorum", "met_quorum", "scores_total",
+    "prps_choices", "votes", "own_margin", "prps_len", "prps_link", "prps_stub",
+    "privacy", "topic_0", "topic_1", "topic_2", "topic_3", "topic_4", "topic_5",
+    "topic_6", "topic_7", "topic_8", "topic_9", "topic_10", "topic_11",
+    "topic_12", "topic_13", "topic_14", "topic_15", "topic_16", "topic_17",
+    "topic_18", "topic_19", "space_created_at", "voter_created",
+    "winning_choices", "is_majority_win",
 ]
 
 
@@ -33,30 +33,28 @@ def calculate_vote_alignment(data):
     Misaligned_C = []
     Tied = []
 
-    for index, row in data.iterrows():
-        space = row["space"]
-        proposal = row["proposal"]
-        winning_choices = row["winning_choices"]
-        voting_type = row.get("type", "")  # Retrieve the voting type if it exists
+    for row in data.itertuples():
+        winning_choices = row.winning_choices
+        voting_type = row.type if "type" in dir(row) else ""
 
         # Initialize an empty dictionary for voter choices
         # Choice dictionary stores the choice as key and voting power as value
         choice_dict = {}
 
         # Handle different types of choice
-        if isinstance(row["choice"], str):
-            if row["choice"].startswith("{") and voting_type in [
+        if isinstance(row.choice, str):
+            if row.choice.startswith("{") and voting_type in [
                 "weighted",
                 "quadratic",
             ]:
                 # JSON dictionary-like string
-                choice_dict = json.loads(row["choice"])
-            elif row["choice"].startswith("[") and voting_type in [
+                choice_dict = json.loads(row.choice)
+            elif row.choice.startswith("[") and voting_type in [
                 "ranked-choice",
                 "approval",
             ]:
                 # JSON list-like string for ranked-choice or approval voting
-                voter_choices = json.loads(row["choice"])
+                voter_choices = json.loads(row.choice)
                 if voting_type == "ranked-choice":
                     # Assign weights based on rank position (1st = n, 2nd = n-1, ...)
                     n = len(voter_choices)
@@ -75,31 +73,31 @@ def calculate_vote_alignment(data):
             else:
                 try:
                     # Single choice as a string
-                    choice_dict[str(int(row["choice"]))] = 1
+                    choice_dict[str(int(row.choice))] = 1
                 except ValueError:
                     pass
-        elif isinstance(row["choice"], (int, float)):
+        elif isinstance(row.choice, (int, float)):
             # Single numeric choice
-            choice_dict[str(int(row["choice"]))] = 1
+            choice_dict[str(int(row.choice))] = 1
 
-        elif isinstance(row["choice"], list) and voting_type in [
+        elif isinstance(row.choice, list) and voting_type in [
             "ranked-choice",
             "approval",
         ]:
             # List of choices for ranked-choice or approval voting
             if voting_type == "ranked-choice":
                 # Assign weights based on rank position (1st = n, 2nd = n-1, ...)
-                n = len(row["choice"])
+                n = len(row.choice)
                 choice_dict = {
                     str(int(choice)): n - idx
-                    for idx, choice in enumerate(row["choice"])
+                    for idx, choice in enumerate(row.choice)
                     if isinstance(choice, (int, str))
                 }
             else:
                 # Approval voting: assign weight of 1 to all choices
                 choice_dict = {
                     str(int(choice)): 1
-                    for choice in row["choice"]
+                    for choice in row.choice
                     if isinstance(choice, (int, str))
                 }
 
@@ -186,7 +184,7 @@ def calculate_vote_alignment(data):
 
             # Calculate Tied (if there are multiple choices with the highest score)
             if len(most_weight_choices) > 1 and any(
-                choice in most_weight_choices for choice in winning_choices
+                    choice in most_weight_choices for choice in winning_choices
             ):
                 Tied.append(1)
             else:
@@ -205,46 +203,46 @@ def calculate_own_margin(df: pd.DataFrame) -> pd.Series:
     """
     out = []  # will be exactly len(df)
 
-    for _, row in df.iterrows():
+    for row in df.itertuples():
         # default if we fail at any point
         own_margin = np.nan
 
         # ---------- 1. get margins list ----------
         try:
-            margins = ast.literal_eval(str(row["margins"]))
+            margins = ast.literal_eval(str(row.margins))
         except Exception:
             margins = []
         if not margins:
             out.append(own_margin)
-            continue  #  ← one append, done with this row
+            continue  # ← one append, done with this row
 
         # ---------- 2. build {choice: voting_power} ----------
-        voting_type = row.get("type", "")
+        voting_type = row.type if "type" in dir(row) else ""
         choice_vp = {}
 
         try:
             # single-choice / basic
             if voting_type in ["single-choice", "basic"]:
-                if isinstance(row["choice"], str) and row["choice"].startswith("{"):
-                    choice_vp = json.loads(row["choice"])
+                if isinstance(row.choice, str) and row.choice.startswith("{"):
+                    choice_vp = json.loads(row.choice)
                 else:  # plain number or str-number
-                    choice_vp[str(int(float(row["choice"])))] = 1
+                    choice_vp[str(int(float(row.choice)))] = 1
                 if voting_type == "basic" and list(choice_vp.keys())[0] == "3":
                     out.append(own_margin)
                     continue
 
             # weighted / quadratic
             elif voting_type in ["weighted", "quadratic"]:
-                if isinstance(row["choice"], str) and row["choice"].startswith("{"):
-                    choice_vp = json.loads(row["choice"])
+                if isinstance(row.choice, str) and row.choice.startswith("{"):
+                    choice_vp = json.loads(row.choice)
 
             # ranked-choice
             elif voting_type == "ranked-choice":
                 seq = None
-                if isinstance(row["choice"], str) and row["choice"].startswith("["):
-                    seq = json.loads(row["choice"])
-                elif isinstance(row["choice"], list):
-                    seq = row["choice"]
+                if isinstance(row.choice, str) and row.choice.startswith("["):
+                    seq = json.loads(row.choice)
+                elif isinstance(row.choice, list):
+                    seq = row.choice
                 if seq:
                     n = len(seq)
                     choice_vp = {str(int(ch)): n - i for i, ch in enumerate(seq)}
@@ -252,10 +250,10 @@ def calculate_own_margin(df: pd.DataFrame) -> pd.Series:
             # approval
             elif voting_type == "approval":
                 seq = None
-                if isinstance(row["choice"], str) and row["choice"].startswith("["):
-                    seq = json.loads(row["choice"])
-                elif isinstance(row["choice"], list):
-                    seq = row["choice"]
+                if isinstance(row.choice, str) and row.choice.startswith("["):
+                    seq = json.loads(row.choice)
+                elif isinstance(row.choice, list):
+                    seq = row.choice
                 if seq:
                     choice_vp = {str(int(ch)): 1 for ch in seq}
 
@@ -363,9 +361,9 @@ def calculate_winners_for_proposal(proposal_group):
     raw_vote_counts = {}
     power_sums = {}
 
-    for _, vote in proposal_group.iterrows():
-        user_vp = vote.get("vp", 0.0)
-        choice_weights = parse_vote_choice(vote.get("choice"), vote_type)
+    for vote in proposal_group.itertuples():
+        user_vp = vote.vp if "vp" in dir(vote) else 0.0
+        choice_weights = parse_vote_choice(vote.choice, vote_type)
 
         # Sum of all weights allocated by the user
         total_user_weight = sum(choice_weights.values())
@@ -442,6 +440,7 @@ def calculate_winners_for_proposal(proposal_group):
         }
     )
 
+
 # ---------------------------------------------------------------------------
 # 2.  Per-DAO worker
 # ---------------------------------------------------------------------------
@@ -451,13 +450,6 @@ def process_space(space: str) -> str:
         print(f"✔ {space} already processed — skipping")
         return space
 
-    # reload big tables inside each worker
-    proposals  = pd.read_pickle("processed/proposals_final.pkl")
-    spaces_df  = pd.read_pickle("processed/spaces.pkl")
-    follows_df = pd.read_pickle("processed/follows.pkl")
-    users_df   = pd.read_pickle("processed/users.pkl")
-    votes_df   = pd.read_pickle("processed/votes_verified_merged.pkl")
-
     v = votes_df[votes_df["space"] == space].copy()
     if v.empty:
         print(f"⚠ {space}: zero votes — skipped")
@@ -465,15 +457,13 @@ def process_space(space: str) -> str:
 
     comp = (
         v.groupby("proposal")
-        .apply(calculate_winners_for_proposal)
+        .apply(calculate_winners_for_proposal, include_groups=False)
         .reset_index()
     )
-    v = v.merge(comp[["proposal","is_majority_win"]], on="proposal", how="left")
+    v = v.merge(comp[["proposal", "is_majority_win"]], on="proposal", how="left")
 
-    v["misaligned"], v["not_determined"], v["misaligned_c"], v["tied"] = \
-        calculate_vote_alignment(v)
+    v["misaligned"], v["not_determined"], v["misaligned_c"], v["tied"] = calculate_vote_alignment(v)
     v["own_margin"] = calculate_own_margin(v)
-
     v["created"] = pd.to_datetime(v["created"], unit="s")
     v.rename(columns={
         "created": "vote_created",
@@ -482,26 +472,27 @@ def process_space(space: str) -> str:
     }, inplace=True)
 
     v = v[[
-        "voter","vote_created","space","proposal","choice","voting_power",
-        "vp_by_strategy","margins","misaligned","not_determined",
-        "misaligned_c","own_choice_tied","own_margin","is_majority_win",
+        "voter", "vote_created", "space", "proposal", "choice", "voting_power", "misaligned", "not_determined",
+        "misaligned_c", "own_choice_tied", "own_margin", "is_majority_win", "type"
     ]]
 
     merged = v.merge(
-        proposals, how="left", left_on="proposal", right_on="proposal_id"
+        proposals, how="left", left_on="proposal", right_on="proposal_id", suffixes=("_v", "_p")
     ).merge(
-        spaces_df,  how="left", left_on="space", right_on="space_id"
+        spaces_df, how="left", left_on="space_v", right_on="space_id", suffixes=("_v", "_s")
     ).merge(
-        follows_df, how="left",
-        left_on=["voter","space"], right_on=["follower","space"]
+        follows_df, how="left", left_on=["voter", "space_v"], right_on=["follower", "space"], suffixes=("_v", "_f")
     ).merge(
-        users_df,   how="left", left_on="voter", right_on="voter_id"
+        users_df, how="left", left_on="voter", right_on="voter_id", suffixes=("_v", "_u")
     )
 
+    merged = merged.rename(columns={"type_v": "type"})
     merged = merged[required_columns]
+
     out_path.parent.mkdir(parents=True, exist_ok=True)
     merged.to_csv(out_path, index=False)
     return space
+
 
 # ---------------------------------------------------------------------------
 # 3.  Main launcher
@@ -512,6 +503,13 @@ if __name__ == "__main__":
 
     workers = max(1, multiprocessing.cpu_count() - 1)  # leave 1 core free
     print(f"Launching {workers} worker processes …")
+
+    # For memory reasons only load once into global namespace
+    proposals = pd.read_pickle("processed/proposals_final.pkl")
+    spaces_df = pd.read_pickle("processed/spaces.pkl")
+    follows_df = pd.read_pickle("processed/follows.pkl")
+    users_df = pd.read_pickle("processed/users.pkl")
+    votes_df = pd.read_pickle("processed/votes_verified_merged.pkl")
 
     with ProcessPoolExecutor(max_workers=workers) as ex:
         futs = [ex.submit(process_space, sp) for sp in verified_dao_spaces]
