@@ -10,7 +10,7 @@ import validators
 
 # load propositions
 props = pd.read_csv("input/snapshot-hub-mainnet-2023-08-30-proposals_0.csv", low_memory=False)
-filename = "csvs/form_urls.csv"
+filename = "csvs/forum_urls.csv"
 
 def get_urls():
     if os.path.exists(filename):
