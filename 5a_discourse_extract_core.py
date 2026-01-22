@@ -13,7 +13,9 @@
 
 import json
 import re
+import os
 from collections import defaultdict
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -21,6 +23,10 @@ import pandas as pd
 # -----------------------------
 # URL canonicalization (for reliable join)
 # -----------------------------
+repo_root = Path(__file__).resolve().parent
+os.chdir(repo_root)
+Path("csvs").mkdir(parents=True, exist_ok=True)
+
 def canonicalize_url(u) -> str:
     if u is None:
         return ""

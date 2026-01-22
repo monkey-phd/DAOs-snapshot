@@ -7,10 +7,16 @@ import re
 import requests
 import time
 import validators
+from pathlib import Path
 
 from bs4 import BeautifulSoup
 from seleniumbase import SB
 
+
+repo_root = Path(__file__).resolve().parent
+os.chdir(repo_root)
+Path("csvs").mkdir(parents=True, exist_ok=True)
+Path("json").mkdir(parents=True, exist_ok=True)
 
 # load propositions
 props = pd.read_csv("input/snapshot-hub-mainnet-2023-08-30-proposals_0.csv", low_memory=False)

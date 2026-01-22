@@ -9,7 +9,7 @@ import numpy as np
 # 0. Setup
 # ------------------------------------------------------------
 # run relative to repo root
-os.chdir(Path(__file__).resolve().parent.parent)
+os.chdir(Path(__file__).resolve().parent)
 
 # keep-only column whitelist
 required_columns = [
