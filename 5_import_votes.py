@@ -58,7 +58,7 @@ import pandas as pd
 import numpy as np
 import json
 
-votes = pd.read_pickle("processed/votes_verified.pkl")
+votes = pd.read_pickle("DAOs-snapshot/processed/votes_verified.pkl")
 props_small = pd.read_pickle("processed/proposals_final.pkl")
 # Get winning choice from proposal dataframe
 props_small = props_small[

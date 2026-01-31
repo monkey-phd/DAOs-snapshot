@@ -3,10 +3,10 @@
 ********************************************************************************
 clear all
 set more off
-global dao_folder "/Users/magnusvanhaaren/Erasmus Universiteit Rotterdam Dropbox/Magnus van Haaren/Empirical Paper on DAOs/Empirical Paper on DAOs (MvHxHK)/Data" 
+global dao_folder "C:/Users/hklapper/Dropbox/Empirical Paper on DAOs (MvHxHK)/Data"
 
 // Load data
-use "$dao_folder/processed/panel_almost_full.dta", clear
+use "$dao_folder/processed/panel_full.dta", clear
 
 // Setup panel structure    
 xtset voter_space_id voter_space_prps_counter
@@ -29,7 +29,7 @@ foreach var in 1m 3m 6m {
        c.voted ///
        c.misaligned_wmiss ///
        type_approval type_basic type_quadratic type_ranked_choice type_weighted ///
-       plugin_safesnap strategy_delegation is_majority_win privacy ///
+        is_majority_win privacy ///
        if end_`var' == 0 & own_choice_tied == 0 & own_margin != 0, ///
        absorb(voter_id year_month_num) vce(cluster voter_space_id)
 
@@ -38,7 +38,7 @@ foreach var in 1m 3m 6m {
        c.voted ///
        c.misaligned_wmiss ///
        type_approval type_basic type_quadratic type_ranked_choice type_weighted ///
-       plugin_safesnap strategy_delegation is_majority_win privacy ///
+        is_majority_win privacy ///
        c.voter_tenure_space c.times_voted_space_cum ///
        c.diff_days_last_vote_space c.relative_voting_power_act ///
        c.votes_dao_cum ///
@@ -50,7 +50,7 @@ foreach var in 1m 3m 6m {
        c.voted ///
        c.misaligned_wmiss ///
        type_approval type_basic type_quadratic type_ranked_choice type_weighted ///
-       plugin_safesnap strategy_delegation is_majority_win privacy ///
+        is_majority_win privacy ///
        c.voter_tenure_space c.times_voted_space_cum ///
        c.diff_days_last_vote_space c.relative_voting_power_act ///
        c.votes_dao_cum ///
