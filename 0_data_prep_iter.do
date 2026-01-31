@@ -2,7 +2,7 @@
 * Data Preparation Script for DAO Analysis
 *------------------------------------------------------*
 
-global dao_folder "C:/Users/hklapper/Dropbox/Empirical Paper on DAOs (MvHxHK)/Data" // change with your actual path
+global dao_folder "/Users/magnusvanhaaren/Erasmus Universiteit Rotterdam Dropbox/Magnus van Haaren/Empirical Paper on DAOs/Empirical Paper on DAOs (MvHxHK)/Data" // change with your actual path
 
 * Set seed for reproducibility
 set seed 8472
@@ -30,7 +30,7 @@ set linesize 200
 *------------------------------------------------------*
 
 * Load the master list containing DAO names
-import delimited "$dao_folder/input/verified-spaces_short.csv", varnames(1) clear /// before, verified-spaces_almost_full.csv
+import delimited "$dao_folder/input/verified-spaces.csv", varnames(1) clear /// before, verified-spaces_almost_full.csv
 
 * Extract DAO names into a local macro
 levelsof space_name, local(daos)
@@ -133,14 +133,14 @@ foreach dao in `daos' {
     *--------------------------------------------------*
     * 3.4. Calculate Relative Quorum
     *--------------------------------------------------*
-	
+
     * Calculate highest scores per space
     egen space_high_scores = record(scores_total), by(space_id) order(proposal_start_date)
-    qui gen prps_rel_quorum = prps_quorum / space_high_scores
+    qui gen prps_rel_quorum = quorum / space_high_scores
     qui gen prps_quorum_bin = 0
-    replace prps_quorum_bin = 1 if prps_quorum > 0 & prps_quorum != .
-    drop prps_quorum
-	
+    replace prps_quorum_bin = 1 if quorum > 0 & quorum != .
+    drop quorum
+
     *--------------------------------------------------*
     * 3.5. Create Proposal Counter
     *--------------------------------------------------*
@@ -713,11 +713,11 @@ label variable times_voted_all_cum "Cumulative Times Voted (All)"
 label variable diff_days_last_proposal_all "Days Since Last Proposal (All)"
 label variable diff_days_last_vote_all "Days Since Last Vote (All)"
 label variable voter_space_counter "Voter Space Counter"
-label variable prps_safesnap "Safesnap On-chain"
-label variable prps_delegation "Strategy Delegation"
+label variable plugin_safesnap "Safesnap On-chain"
+label variable strategy_delegation "Strategy Delegation"
 
 * Save the final dataset
-save "$dao_folder/processed/panel_full_small.dta", replace
+save "$dao_folder/processed/panel_full.dta", replace
 
 *------------------------------------------------------*
 * 9. End of Script and Clean Up

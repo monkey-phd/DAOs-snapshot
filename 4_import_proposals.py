@@ -29,7 +29,7 @@ n_topics = 20
 no_top_words = 10
 
 # working directory to the parent directory of the script's location
-os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # load propos
 props = pd.read_csv(

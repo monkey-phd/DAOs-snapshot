@@ -13,57 +13,16 @@ os.chdir(Path(__file__).resolve().parent.parent)
 
 # keep-only column whitelist
 required_columns = [
-    "voter",
-    "vote_created",
-    "space",
-    "proposal",
-    "choice",
-    "voting_power",
-    "misaligned",
-    "not_determined",
-    "own_choice_tied",
-    "misaligned_c",
-    "prps_author",
-    "prps_created",
-    "type",
-    "prps_safesnap",
-    "prps_delegation",
-    "prps_start",
-    "prps_end",
-    "prps_quorum",
-    "met_quorum",
-    "scores_total",
-    "prps_choices",
-    "votes",
-    "own_margin",
-    "prps_len",
-    "prps_link",
-    "prps_stub",
-    "privacy",
-    "topic_0",
-    "topic_1",
-    "topic_2",
-    "topic_3",
-    "topic_4",
-    "topic_5",
-    "topic_6",
-    "topic_7",
-    "topic_8",
-    "topic_9",
-    "topic_10",
-    "topic_11",
-    "topic_12",
-    "topic_13",
-    "topic_14",
-    "topic_15",
-    "topic_16",
-    "topic_17",
-    "topic_18",
-    "topic_19",
-    "space_created_at",
-    "voter_created",
-    "winning_choices",
-    "is_majority_win",
+    "voter", "vote_created", "space", "proposal", "choice", "voting_power",
+    "misaligned", "not_determined", "own_choice_tied", "misaligned_c",
+    "prps_author", "prps_created", "type", "prps_safesnap", "prps_delegation",
+    "prps_start", "prps_end", "prps_quorum", "met_quorum", "scores_total",
+    "prps_choices", "votes", "own_margin", "prps_len", "prps_link", "prps_stub",
+    "privacy", "topic_0", "topic_1", "topic_2", "topic_3", "topic_4", "topic_5",
+    "topic_6", "topic_7", "topic_8", "topic_9", "topic_10", "topic_11",
+    "topic_12", "topic_13", "topic_14", "topic_15", "topic_16", "topic_17",
+    "topic_18", "topic_19", "space_created_at", "voter_created",
+    "winning_choices", "is_majority_win",
 ]
 
 
@@ -225,7 +184,7 @@ def calculate_vote_alignment(data):
 
             # Calculate Tied (if there are multiple choices with the highest score)
             if len(most_weight_choices) > 1 and any(
-                choice in most_weight_choices for choice in winning_choices
+                    choice in most_weight_choices for choice in winning_choices
             ):
                 Tied.append(1)
             else:
@@ -503,67 +462,28 @@ def process_space(space: str) -> str:
     )
     v = v.merge(comp[["proposal", "is_majority_win"]], on="proposal", how="left")
 
-    v["misaligned"], v["not_determined"], v["misaligned_c"], v["tied"] = (
-        calculate_vote_alignment(v)
-    )
+    v["misaligned"], v["not_determined"], v["misaligned_c"], v["tied"] = calculate_vote_alignment(v)
     v["own_margin"] = calculate_own_margin(v)
     v["created"] = pd.to_datetime(v["created"], unit="s")
-    v.rename(
-        columns={
-            "created": "vote_created",
-            "vp": "voting_power",
-            "tied": "own_choice_tied",
-        },
-        inplace=True,
-    )
+    v.rename(columns={
+        "created": "vote_created",
+        "vp": "voting_power",
+        "tied": "own_choice_tied",
+    }, inplace=True)
 
-    v = v[
-        [
-            "voter",
-            "vote_created",
-            "space",
-            "proposal",
-            "choice",
-            "voting_power",
-            "misaligned",
-            "not_determined",
-            "misaligned_c",
-            "own_choice_tied",
-            "own_margin",
-            "is_majority_win",
-            "type",
-        ]
-    ]
+    v = v[[
+        "voter", "vote_created", "space", "proposal", "choice", "voting_power", "misaligned", "not_determined",
+        "misaligned_c", "own_choice_tied", "own_margin", "is_majority_win", "type"
+    ]]
 
-    merged = (
-        v.merge(
-            proposals,
-            how="left",
-            left_on="proposal",
-            right_on="proposal_id",
-            suffixes=("_v", "_p"),
-        )
-        .merge(
-            spaces_df,
-            how="left",
-            left_on="space_v",
-            right_on="space_id",
-            suffixes=("_v", "_s"),
-        )
-        .merge(
-            follows_df,
-            how="left",
-            left_on=["voter", "space_v"],
-            right_on=["follower", "space"],
-            suffixes=("_v", "_f"),
-        )
-        .merge(
-            users_df,
-            how="left",
-            left_on="voter",
-            right_on="voter_id",
-            suffixes=("_v", "_u"),
-        )
+    merged = v.merge(
+        proposals, how="left", left_on="proposal", right_on="proposal_id", suffixes=("_v", "_p")
+    ).merge(
+        spaces_df, how="left", left_on="space_v", right_on="space_id", suffixes=("_v", "_s")
+    ).merge(
+        follows_df, how="left", left_on=["voter", "space_v"], right_on=["follower", "space"], suffixes=("_v", "_f")
+    ).merge(
+        users_df, how="left", left_on="voter", right_on="voter_id", suffixes=("_v", "_u")
     )
 
     merged = merged.rename(columns={"type_v": "type"})
@@ -578,9 +498,8 @@ def process_space(space: str) -> str:
 # 3.  Main launcher
 # ---------------------------------------------------------------------------
 if __name__ == "__main__":
-    verified_dao_spaces = (
-        pd.read_csv("input/verified-spaces.csv")["space_name"].unique().tolist()
-    )
+    verified_dao_spaces = pd.read_csv(
+        "input/verified-spaces.csv")["space_name"].unique().tolist()
 
     workers = max(1, multiprocessing.cpu_count() - 1)  # leave 1 core free
     print(f"Launching {workers} worker processes …")
