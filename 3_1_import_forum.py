@@ -135,3 +135,93 @@ if __name__ == "__main__":
     scarpe_selenium()
     get_discourse_data()
     filter_usable_data()
+
+# builds discourse_posts_final.csv from discourse.csv
+
+
+def export_discourse_posts_final(
+    input_csv="csvs/discourse.csv",
+    output_csv="csvs/discourse_posts_final.csv",
+):
+    if not os.path.exists(input_csv):
+        raise FileNotFoundError(f"{input_csv} not found. Expected it to already exist.")
+
+    df = pd.read_csv(input_csv, low_memory=False)
+
+    if "url" not in df.columns or "json" not in df.columns:
+        raise ValueError(
+            f"{input_csv} must contain columns 'url' and 'json'. "
+            f"Found: {list(df.columns)}"
+        )
+
+    # ---- extract posts from Discourse JSON ----
+    def extract_posts(json_str):
+        if pd.isna(json_str) or not str(json_str).strip():
+            return []
+        try:
+            data = json.loads(json_str)
+            return data.get("post_stream", {}).get("posts", []) or []
+        except Exception:
+            return []
+
+    df["posts"] = df["json"].apply(extract_posts)
+
+    # ---- explode to one row per post ----
+    df_posts = df[["url", "posts"]].explode("posts").dropna(subset=["posts"])
+
+    posts_expanded = df_posts["posts"].apply(pd.Series)
+
+    df_posts = pd.concat(
+        [
+            df_posts.drop(columns=["posts"]).reset_index(drop=True),
+            posts_expanded.reset_index(drop=True),
+        ],
+        axis=1,
+    )
+
+    # ---- select ONLY platform-assigned variables ----
+    FINAL_COLUMNS = [
+        "url",
+        "id",  # post id
+        "post_number",
+        "reply_to_post_number",
+        "username",
+        "trust_level",
+        "created_at",
+        "updated_at",
+        "reads",
+        "score",
+        "cooked",
+    ]
+
+    df_final = df_posts[[c for c in FINAL_COLUMNS if c in df_posts.columns]].copy()
+
+    # rename for clarity
+    if "id" in df_final.columns:
+        df_final.rename(columns={"id": "post_id"}, inplace=True)
+
+    # numeric coercion (Stata-safe)
+    for col in ["post_number", "reply_to_post_number", "trust_level", "reads"]:
+        if col in df_final.columns:
+            df_final[col] = pd.to_numeric(df_final[col], errors="coerce")
+
+    if "score" in df_final.columns:
+        df_final["score"] = pd.to_numeric(df_final["score"], errors="coerce")
+
+    # stable ordering
+    if "post_number" in df_final.columns:
+        df_final = df_final.sort_values(["url", "post_number"])
+
+    df_final.to_csv(output_csv, index=False)
+
+    print("--------------------------------------------------")
+    print("[export_discourse_posts_final]")
+    print(f"Threads read : {len(df):,}")
+    print(f"Posts exported: {len(df_final):,}")
+    print(f"Saved to     : {output_csv}")
+    print("--------------------------------------------------")
+
+
+# ---- run ONLY the export (no scraping, no selenium) ----
+if __name__ == "__main__":
+    export_discourse_posts_final()
