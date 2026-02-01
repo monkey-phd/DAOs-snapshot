@@ -1,5 +1,4 @@
 # 6_import_and_merge.py
-
 import os
 import sys
 import json
@@ -710,24 +709,21 @@ def process_space(space: str) -> str:
         print(f"⚠ {space}: zero votes — skipped")
         return space
 
-    # majority win
-    try:
-        comp = (
-            v.groupby("proposal")
-            .apply(calculate_winners_for_proposal, include_groups=False)
-            .reset_index()
-        )
-    except TypeError:
-        comp = v.groupby("proposal").apply(calculate_winners_for_proposal).reset_index()
+    # Majority vs power winner (proposal-level)
+    comp = (
+        v.groupby("proposal")
+        .apply(calculate_winners_for_proposal, include_groups=False)
+        .reset_index()
+    )
 
-    if "is_majority_win" in comp.columns:
-        v = v.merge(comp[["proposal", "is_majority_win"]], on="proposal", how="left")
-    else:
-        v["is_majority_win"] = np.nan
+    v = v.merge(comp[["proposal", "is_majority_win"]], on="proposal", how="left")
 
-    # alignment
+    # alignment — preserve winning_choices from votes merge
     if "winning_choices" not in v.columns:
-        v["winning_choices"] = np.nan
+        raise RuntimeError(
+            f"winning_choices missing in votes_df for space {space}. "
+            "This indicates an upstream merge failure in 5_import_votes.py."
+        )
 
     v["misaligned"], v["not_determined"], v["misaligned_c"], v["tied"] = (
         calculate_vote_alignment(v)
@@ -779,6 +775,10 @@ def process_space(space: str) -> str:
         right_on="proposal_id",
         suffixes=("_v", "_p"),
     )
+
+    # Ensure winning_choices comes from votes, not proposals
+    if "winning_choices_v" in merged.columns:
+        merged["winning_choices"] = merged["winning_choices_v"]
 
     # Ensure expected space suffix exists for downstream merges
     if "space_v" not in merged.columns:
