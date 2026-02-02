@@ -65,6 +65,9 @@ props_small = props_small[
     ["proposal_id", "space", "margins", "winning_choices", "type", "scores"]
 ]
 
+votes["proposal"] = votes["proposal"].astype(str).str.strip()
+props_small["proposal_id"] = props_small["proposal_id"].astype(str).str.strip()
+
 votes = votes.merge(
     props_small,
     how="left",
