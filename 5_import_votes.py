@@ -4,9 +4,12 @@ import pandas as pd
 import numpy as np
 import json
 import os
+from pathlib import Path
 
-# working directory to the parent directory of the script's location
-os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# working directory to the repository root
+repo_root = Path(__file__).resolve().parent
+os.chdir(repo_root)
+Path("processed").mkdir(parents=True, exist_ok=True)
 
 votes = pd.read_csv(
     "input/snapshot-hub-mainnet-2023-08-30-votes_0.csv", low_memory=False

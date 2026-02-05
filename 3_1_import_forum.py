@@ -7,12 +7,18 @@ import re
 import requests
 import time
 import validators
+from pathlib import Path
 
 from bs4 import BeautifulSoup
 from seleniumbase import SB
 
 # working directory to the parent directory of the script's location
 os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+repo_root = Path(__file__).resolve().parent
+os.chdir(repo_root)
+Path("csvs").mkdir(parents=True, exist_ok=True)
+Path("json").mkdir(parents=True, exist_ok=True)
 
 # load propositions
 props = pd.read_csv(

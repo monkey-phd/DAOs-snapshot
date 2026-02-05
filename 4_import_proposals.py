@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import json
 import os
+from pathlib import Path
 import ast
 from itertools import zip_longest
 from sklearn.feature_extraction.text import CountVectorizer
@@ -28,8 +29,10 @@ n_topics = 20
 
 no_top_words = 10
 
-# working directory to the parent directory of the script's location
-# os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# working directory to the repository root
+repo_root = Path(__file__).resolve().parent
+os.chdir(repo_root)
+Path("processed").mkdir(parents=True, exist_ok=True)
 
 # load propos
 props = pd.read_csv(
